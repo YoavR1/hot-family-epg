@@ -24,10 +24,16 @@ FREETV = {  # FreeTV live id -> (our id, name)
     '7313888': ('FreeTVTeva.il.extra', 'Free TV Teva'),
     '7313885': ('FreeTVComedy2.il.extra', 'Free TV Comedy 2'),
 }
+HOT = {     # hot.net.il channelID -> (our id, name). HOT's site only answers from Israel.
+    '676': ('HOTBuzz.il.extra', 'HOT Buzz'),
+}
 BIG = {     # large XMLTV guides: channel id -> (our id, name)
     'http://epg.one/epg.xml.gz': {'11375': ('HOTSenior.il.extra', 'HOT Senior')},
 }
 DAYS = 3
+FREETV_DAYS = 14   # FreeTV publishes ~2 weeks ahead; it only answers from Israel, so fetch far ahead when we can
+# If a source is unreachable (FreeTV and HOT block non-Israeli servers), keep the listings already in the
+# previous extra.xml for that channel, so a run on GitHub never wipes data fetched earlier from Israel.
 ctx = ssl._create_unverified_context()
 UA = {'User-Agent': 'Mozilla/5.0', 'Accept': 'application/json'}
 now = datetime.datetime.now(datetime.timezone.utc)
@@ -66,7 +72,7 @@ for code, (cid, name) in YES.items():
 # FreeTV
 for live, (cid, name) in FREETV.items():
     channels.append((cid, name)); seen = set()
-    for d in range(-1, DAYS):
+    for d in range(-1, FREETV_DAYS):
         base = (now + datetime.timedelta(days=d)).astimezone(datetime.timezone(datetime.timedelta(hours=2))).replace(hour=0, minute=0, second=0, microsecond=0)
         q = urllib.parse.urlencode({'liveId[]': live, 'since': base.strftime('%Y-%m-%dT%H:%M%z'),
                                     'till': (base + datetime.timedelta(days=1)).strftime('%Y-%m-%dT%H:%M%z'), 'lang': 'HEB', 'platform': 'BROWSER'})
@@ -77,6 +83,30 @@ for live, (cid, name) in FREETV.items():
         for it in items:
             if it.get('id') in seen or not it.get('since') or not it.get('till'): continue
             seen.add(it.get('id')); add(cid, it['since'], it['till'], it['title'], it.get('description') or it.get('lead'))
+
+# HOT
+IL = datetime.timezone(datetime.timedelta(hours=2))
+try:
+    from zoneinfo import ZoneInfo
+    IL = ZoneInfo('Asia/Jerusalem')
+except Exception:
+    pass
+for cid, name in HOT.values(): channels.append((cid, name))
+try:
+    d0 = datetime.datetime.now(IL); d1 = d0 + datetime.timedelta(days=7)
+    body = json.dumps({'ProgramsStartDateTime': d0.strftime('%Y/%m/%d 00:00:00'),
+                       'ProgramsEndDateTime': d1.strftime('%Y/%m/%d 23:59:59')}).encode()
+    req = urllib.request.Request('https://www.hot.net.il/HotCmsApiFront/api/ProgramsSchedual/GetProgramsSchedual', data=body,
+                                 headers={'Content-Type': 'application/json', 'User-Agent': 'Mozilla/5.0'})
+    hp = json.load(urllib.request.urlopen(req, timeout=120, context=ctx))['data']['programsDetails']
+    def hiso(s): return datetime.datetime.strptime(s, '%Y/%m/%d %H:%M:%S').replace(tzinfo=IL).isoformat()
+    seen = set()
+    for p in sorted(hp, key=lambda p: p['programStartTime']):
+        if p['channelID'] in HOT and (p['channelID'], p['programStartTime']) not in seen:
+            seen.add((p['channelID'], p['programStartTime']))
+            add(HOT[p['channelID']][0], hiso(p['programStartTime']), hiso(p['programEndTime']), p['programTitle'], (p.get('synopsis') or '').strip() or None)
+except Exception as e:
+    print('hot', e)
 
 # big XMLTV guides
 cutoff = (now - datetime.timedelta(hours=12)).strftime('%Y%m%d%H%M%S')
@@ -102,6 +132,17 @@ for url, wanted in BIG.items():
             el.clear()
         elif el.tag in ('programme', 'channel'):
             el.clear()
+
+# keep earlier listings for channels whose source was unreachable this time
+try:
+    for p in ET.parse(sys.argv[1]).getroot().findall('programme'):
+        c = p.get('channel')
+        if c in {cid for cid, _ in channels} and not report.get(c) and utc14(p.get('stop')) > cutoff:
+            progs.append(p); report[c + ' (kept)'] = report.get(c + ' (kept)', 0) + 1
+except Exception as e:
+    print('no previous file to keep from:', e)
+for k in [k for k in report if k.endswith(' (kept)')]:
+    report[k[:-7]] = f'{report.pop(k)} (kept from last run)'
 
 for cid, name in channels:
     ch = ET.SubElement(tv, 'channel', {'id': cid}); ET.SubElement(ch, 'display-name').text = name
