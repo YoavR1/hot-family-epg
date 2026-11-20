@@ -10,7 +10,8 @@ import gzip, io, os, sys, json, ssl, urllib.request, datetime, collections, xml.
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO_RAW = 'https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/'
 ctx = ssl._create_unverified_context()
-cutoff = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=12)).strftime('%Y%m%d%H%M%S')
+KEEP_DAYS = 7    # past listings kept so catch-up (7 days on the main provider) can be browsed in the guide
+cutoff = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=KEEP_DAYS)).strftime('%Y%m%d%H%M%S')
 
 def utc14(s):
     s = s.strip(); b = datetime.datetime.strptime(s[:14], '%Y%m%d%H%M%S'); off = s[14:].strip() or '+0000'
@@ -61,12 +62,16 @@ for src, wanted in by_src.items():
             el.clear()
 empty = []
 for m in MAP:
-    lst = progs.get(m['id']) or old.get(m['id'], [])
-    if not progs.get(m['id']): empty.append(m['name'] + (' (kept old)' if lst else ''))
+    fresh = progs.get(m['id'], [])
+    if not fresh: empty.append(m['name'] + (' (kept old)' if old.get(m['id']) else ''))
+    # past listings from earlier runs + everything the sources give now; fresh data wins where they overlap
+    first_fresh = min((utc14(p.get('start')) for p in fresh), default='99999999999999')
+    lst = [p for p in old.get(m['id'], []) if utc14(p.get('start')) < first_fresh] + fresh
     seen = set()
-    for p in sorted(lst, key=lambda p: p.get('start')):
-        if p.get('start') in seen: continue
-        seen.add(p.get('start')); tv.append(p)
+    for p in sorted(lst, key=lambda p: utc14(p.get('start'))):
+        k = utc14(p.get('start'))
+        if k in seen: continue
+        seen.add(k); tv.append(p)
 raw = ET.tostring(tv, encoding='utf-8', xml_declaration=True)
 with gzip.GzipFile(out_path, 'wb', mtime=0) as f: f.write(raw)
 print(f'{len(MAP)} channels, {sum(1 for _ in tv.iter("programme"))} programmes, {os.path.getsize(out_path)//1024} KB')
