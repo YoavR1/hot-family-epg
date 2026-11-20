@@ -1,50 +1,110 @@
-"""Build a small XMLTV file with a few Israeli channels that only exist in very large guides
-(iptvx.one, epg.one), so the IPTV app does not have to download those huge files itself."""
-import gzip, io, sys, ssl, urllib.request, datetime, xml.etree.ElementTree as ET
+"""Build a small XMLTV file for Israeli channels that the usual free guides don't cover.
 
-# source guide -> {channel id in that guide: (id written to our file, display name)}
-SOURCES = {
-    'https://iptvx.one/epg/epg.xml.gz': {
-        'sport6-il': ('Sport6.il.extra', 'Sport 6'),
-        'yes-plus-love-il': ('YesPlusLove.il.extra', 'Yes+ Love'),
-        'yes-plus-dark-il': ('YesPlusDark.il.extra', 'Yes+ Dark'),
-        'mtv-00s-il': ('MTV00s.il.extra', 'MTV 00s'),
-    },
-    'http://epg.one/epg.xml.gz': {
-        '11375': ('HOTSenior.il.extra', 'HOT Senior'),
-    },
+Sources (all public, no login):
+  - yes schedule API (svc.yes.co.il)        - Hebrew listings with descriptions
+  - FreeTV schedule API (web.freetv.tv)      - Hebrew listings
+  - epg.one big guide                        - a few channels only found there
+"""
+import gzip, io, sys, ssl, json, urllib.request, urllib.parse, datetime, xml.etree.ElementTree as ET
+
+YES = {   # yes channelId -> (our id, name)
+    'YS21': ('YesPlusLove.il.extra', 'Yes+ Love'),
+    'YS22': ('YesPlusDark.il.extra', 'Yes+ Dark'),
+    'YS19': ('YesPlusCinema.il.extra', 'Yes+ Cinema'),
+    'YS20': ('YesPlusDiamonds.il.extra', 'Yes+ Diamonds'),
+    'CN48': ('Sport6.il.extra', 'Sport 6'),
+    'CN49': ('5SportMAX.il.extra', '5Sport MAX'),
+    'TV37': ('MTV00s.il.extra', 'MTV 00s'),
+    'TV35': ('MTV.il.extra', 'MTV'),
+    'CN57': ('BamaIsraelit.il.extra', 'Bama Israelit'),
+    'CN66': ('Channel16.il.extra', 'Channel 16'),
+    'CN58': ('DramotYomiyot.il.extra', 'Dramot Yomiyot'),
 }
+FREETV = {  # FreeTV live id -> (our id, name)
+    '7313888': ('FreeTVTeva.il.extra', 'Free TV Teva'),
+    '7313885': ('FreeTVComedy2.il.extra', 'Free TV Comedy 2'),
+}
+BIG = {     # large XMLTV guides: channel id -> (our id, name)
+    'http://epg.one/epg.xml.gz': {'11375': ('HOTSenior.il.extra', 'HOT Senior')},
+}
+DAYS = 3
 ctx = ssl._create_unverified_context()
-cutoff = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=12)).strftime('%Y%m%d%H%M%S')
+UA = {'User-Agent': 'Mozilla/5.0', 'Accept': 'application/json'}
+now = datetime.datetime.now(datetime.timezone.utc)
 
-def utc14(s):
-    s = s.strip(); base = datetime.datetime.strptime(s[:14], '%Y%m%d%H%M%S'); off = s[14:].strip() or '+0000'
-    sign = 1 if off[0] == '+' else -1
-    return (base - sign * datetime.timedelta(hours=int(off[1:3]), minutes=int(off[3:5]))).strftime('%Y%m%d%H%M%S')
+def get(url, timeout=60):
+    data = urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=timeout, context=ctx).read()
+    return gzip.decompress(data) if data[:2] == bytes([0x1f, 0x8b]) else data
+
+def xmltime(iso):
+    d = datetime.datetime.fromisoformat(iso.replace('Z', '+00:00')).astimezone(datetime.timezone.utc)
+    return d.strftime('%Y%m%d%H%M%S +0000')
 
 tv = ET.Element('tv', {'generator-info-name': 'extra_epg.py'})
-progs = []
-for url, wanted in SOURCES.items():
-    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-    data = urllib.request.urlopen(req, timeout=300, context=ctx).read()
-    if data[:2] == bytes([0x1f, 0x8b]): data = gzip.decompress(data)
+channels, progs, report = [], [], {}
+
+def add(cid, start, stop, title, desc=None, icon=None):
+    p = ET.Element('programme', {'start': xmltime(start), 'stop': xmltime(stop), 'channel': cid})
+    ET.SubElement(p, 'title', {'lang': 'he'}).text = title
+    if desc: ET.SubElement(p, 'desc', {'lang': 'he'}).text = desc
+    if icon: ET.SubElement(p, 'icon', {'src': icon})
+    progs.append(p); report[cid] = report.get(cid, 0) + 1
+
+# yes
+for code, (cid, name) in YES.items():
+    channels.append((cid, name)); seen = set()
+    for d in range(-1, DAYS):
+        day = (now + datetime.timedelta(days=d)).astimezone(datetime.timezone(datetime.timedelta(hours=2))).strftime('%Y-%m-%d')
+        try:
+            items = json.loads(get(f'https://svc.yes.co.il/api/content/broadcast-schedule/channels/{code}?date={day}&ignorePastItems=false'))['items']
+        except Exception as e:
+            print('yes', code, day, e); continue
+        for it in items:
+            if it['id'] in seen or not it.get('starts') or not it.get('ends'): continue
+            seen.add(it['id']); add(cid, it['starts'], it['ends'], it['title'], it.get('description'), it.get('imageUrl'))
+
+# FreeTV
+for live, (cid, name) in FREETV.items():
+    channels.append((cid, name)); seen = set()
+    for d in range(-1, DAYS):
+        base = (now + datetime.timedelta(days=d)).astimezone(datetime.timezone(datetime.timedelta(hours=2))).replace(hour=0, minute=0, second=0, microsecond=0)
+        q = urllib.parse.urlencode({'liveId[]': live, 'since': base.strftime('%Y-%m-%dT%H:%M%z'),
+                                    'till': (base + datetime.timedelta(days=1)).strftime('%Y-%m-%dT%H:%M%z'), 'lang': 'HEB', 'platform': 'BROWSER'})
+        try:
+            items = json.loads(get('https://web.freetv.tv/api/products/lives/programmes?' + q))
+        except Exception as e:
+            print('freetv', live, e); continue
+        for it in items:
+            if it.get('id') in seen or not it.get('since') or not it.get('till'): continue
+            seen.add(it.get('id')); add(cid, it['since'], it['till'], it['title'], it.get('description') or it.get('lead'))
+
+# big XMLTV guides
+cutoff = (now - datetime.timedelta(hours=12)).strftime('%Y%m%d%H%M%S')
+def utc14(s):
+    s = s.strip(); b = datetime.datetime.strptime(s[:14], '%Y%m%d%H%M%S'); off = s[14:].strip() or '+0000'
+    sign = 1 if off[0] == '+' else -1
+    return (b - sign * datetime.timedelta(hours=int(off[1:3]), minutes=int(off[3:5]))).strftime('%Y%m%d%H%M%S')
+for url, wanted in BIG.items():
+    for cid, name in wanted.values(): channels.append((cid, name))
+    try:
+        data = get(url, timeout=300)
+    except Exception as e:
+        print('big', url, e); continue
     for ev, el in ET.iterparse(io.BytesIO(data)):
-        if el.tag == 'programme':
-            c = el.get('channel')
-            if c in wanted:
-                try:
-                    keep = utc14(el.get('stop')) > cutoff
-                except Exception:
-                    keep = False
-                if keep:
-                    el.set('channel', wanted[c][0]); progs.append(el)
+        if el.tag == 'programme' and el.get('channel') in wanted:
+            try:
+                if utc14(el.get('stop')) > cutoff:
+                    el.set('channel', wanted[el.get('channel')][0]); progs.append(el)
+                    report[el.get('channel')] = report.get(el.get('channel'), 0) + 1
                     continue
+            except Exception:
+                pass
             el.clear()
-        elif el.tag == 'channel':
+        elif el.tag in ('programme', 'channel'):
             el.clear()
-for url, wanted in SOURCES.items():
-    for _, (cid, name) in wanted.items():
-        ch = ET.SubElement(tv, 'channel', {'id': cid}); ET.SubElement(ch, 'display-name').text = name
+
+for cid, name in channels:
+    ch = ET.SubElement(tv, 'channel', {'id': cid}); ET.SubElement(ch, 'display-name').text = name
 for p in progs: tv.append(p)
 ET.ElementTree(tv).write(sys.argv[1], encoding='utf-8', xml_declaration=True)
-print(len(progs), 'programmes written')
+for cid, _ in channels: print(f'{cid:28} {report.get(cid, 0)} programmes')
