@@ -5,7 +5,7 @@ Sources (all public, no login):
   - FreeTV schedule API (web.freetv.tv)      - Hebrew listings
   - epg.one big guide                        - a few channels only found there
 """
-import gzip, io, sys, ssl, json, urllib.request, urllib.parse, datetime, xml.etree.ElementTree as ET
+import gzip, io, os, sys, ssl, json, urllib.request, urllib.parse, datetime, xml.etree.ElementTree as ET
 
 YES = {   # yes channelId -> (our id, name)
     'YS21': ('YesPlusLove.il.extra', 'Yes+ Love'),
@@ -38,6 +38,18 @@ ctx = ssl._create_unverified_context()
 UA = {'User-Agent': 'Mozilla/5.0', 'Accept': 'application/json'}
 now = datetime.datetime.now(datetime.timezone.utc)
 
+# extra channels requested by playlists, kept in sources_new.json: {'yes': {code: name}, 'hot': {...}, 'ftv': {...}}
+_SN = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'sources_new.json')
+NEW = json.load(open(_SN, encoding='utf-8')) if os.path.exists(_SN) else {}
+def merged(base, new, prefix):
+    out = {}
+    for code, (cid, name) in base.items(): out.setdefault(code, []).append((cid, name))
+    for code, name in new.items(): out.setdefault(code, []).append((f'{prefix}_{code}.il', name))
+    return out
+YESM = merged(YES, NEW.get('yes', {}), 'yes')
+FTVM = merged(FREETV, NEW.get('ftv', {}), 'ftv')
+HOTM = merged(HOT, NEW.get('hot', {}), 'hot')
+
 def get(url, timeout=60):
     data = urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=timeout, context=ctx).read()
     return gzip.decompress(data) if data[:2] == bytes([0x1f, 0x8b]) else data
@@ -57,8 +69,9 @@ def add(cid, start, stop, title, desc=None, icon=None):
     progs.append(p); report[cid] = report.get(cid, 0) + 1
 
 # yes
-for code, (cid, name) in YES.items():
-    channels.append((cid, name)); seen = set()
+for code, ents in YESM.items():
+    for cid, name in ents: channels.append((cid, name))
+    seen = set()
     for d in range(-1, DAYS):
         day = (now + datetime.timedelta(days=d)).astimezone(datetime.timezone(datetime.timedelta(hours=2))).strftime('%Y-%m-%d')
         try:
@@ -67,11 +80,13 @@ for code, (cid, name) in YES.items():
             print('yes', code, day, e); continue
         for it in items:
             if it['id'] in seen or not it.get('starts') or not it.get('ends'): continue
-            seen.add(it['id']); add(cid, it['starts'], it['ends'], it['title'], it.get('description'), it.get('imageUrl'))
+            seen.add(it['id'])
+            for cid, _ in ents: add(cid, it['starts'], it['ends'], it['title'], it.get('description'), it.get('imageUrl'))
 
 # FreeTV
-for live, (cid, name) in FREETV.items():
-    channels.append((cid, name)); seen = set()
+for live, ents in FTVM.items():
+    for cid, name in ents: channels.append((cid, name))
+    seen = set()
     for d in range(-1, FREETV_DAYS):
         base = (now + datetime.timedelta(days=d)).astimezone(datetime.timezone(datetime.timedelta(hours=2))).replace(hour=0, minute=0, second=0, microsecond=0)
         q = urllib.parse.urlencode({'liveId[]': live, 'since': base.strftime('%Y-%m-%dT%H:%M%z'),
@@ -82,7 +97,8 @@ for live, (cid, name) in FREETV.items():
             print('freetv', live, e); continue
         for it in items:
             if it.get('id') in seen or not it.get('since') or not it.get('till'): continue
-            seen.add(it.get('id')); add(cid, it['since'], it['till'], it['title'], it.get('description') or it.get('lead'))
+            seen.add(it.get('id'))
+            for cid, _ in ents: add(cid, it['since'], it['till'], it['title'], it.get('description') or it.get('lead'))
 
 # HOT
 IL = datetime.timezone(datetime.timedelta(hours=2))
@@ -91,7 +107,8 @@ try:
     IL = ZoneInfo('Asia/Jerusalem')
 except Exception:
     pass
-for cid, name in HOT.values(): channels.append((cid, name))
+for ents in HOTM.values():
+    for cid, name in ents: channels.append((cid, name))
 try:
     d0 = datetime.datetime.now(IL); d1 = d0 + datetime.timedelta(days=7)
     body = json.dumps({'ProgramsStartDateTime': d0.strftime('%Y/%m/%d 00:00:00'),
@@ -102,9 +119,10 @@ try:
     def hiso(s): return datetime.datetime.strptime(s, '%Y/%m/%d %H:%M:%S').replace(tzinfo=IL).isoformat()
     seen = set()
     for p in sorted(hp, key=lambda p: p['programStartTime']):
-        if p['channelID'] in HOT and (p['channelID'], p['programStartTime']) not in seen:
+        if p['channelID'] in HOTM and (p['channelID'], p['programStartTime']) not in seen:
             seen.add((p['channelID'], p['programStartTime']))
-            add(HOT[p['channelID']][0], hiso(p['programStartTime']), hiso(p['programEndTime']), p['programTitle'], (p.get('synopsis') or '').strip() or None)
+            for cid, _ in HOTM[p['channelID']]:
+                add(cid, hiso(p['programStartTime']), hiso(p['programEndTime']), p['programTitle'], (p.get('synopsis') or '').strip() or None)
 except Exception as e:
     print('hot', e)
 

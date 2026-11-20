@@ -844,5 +844,1073 @@
   "name": "Yam Tichoni 2",
   "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
   "src_id": "ים.תיכוני.2.il"
+ },
+ {
+  "id": "yes_CH30.il",
+  "name": "Kan HD",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH30.il"
+ },
+ {
+  "id": "yes_CH32.il",
+  "name": "Makan",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH32.il"
+ },
+ {
+  "id": "yes_CN28.il",
+  "name": "i24 Hebrew",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN28.il"
+ },
+ {
+  "id": "yes_CH34.il",
+  "name": "Keshet HD",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH34.il"
+ },
+ {
+  "id": "yes_CH36.il",
+  "name": "Reshet HD",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH36.il"
+ },
+ {
+  "id": "yes_PT92.il",
+  "name": "Channel 14 HD",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT92.il"
+ },
+ {
+  "id": "yes_CN32.il",
+  "name": "Economics 10",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN32.il"
+ },
+ {
+  "id": "yes_CH57.il",
+  "name": "Kan Educational",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH57.il"
+ },
+ {
+  "id": "yes_TV67.il",
+  "name": "Music 24",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_TV67.il"
+ },
+ {
+  "id": "yes_TV43.il",
+  "name": "Kehilaty (98)",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_TV43.il"
+ },
+ {
+  "id": "yes_PT65.il",
+  "name": "HALA TV (Ben)",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT65.il"
+ },
+ {
+  "id": "yes_TV89.il",
+  "name": "Knesset",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_TV89.il"
+ },
+ {
+  "id": "yes_TV50.il",
+  "name": "Israel Plus (9)",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_TV50.il"
+ },
+ {
+  "id": "yes_PT53.il",
+  "name": "Sport 1 HD",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT53.il"
+ },
+ {
+  "id": "yes_PT98.il",
+  "name": "Sport 2 HD",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT98.il"
+ },
+ {
+  "id": "yes_CH09.il",
+  "name": "Sport 3 HD",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH09.il"
+ },
+ {
+  "id": "yes_CH11.il",
+  "name": "Sport 4 HD",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH11.il"
+ },
+ {
+  "id": "yes_PT26.il",
+  "name": "Sport 5 HD (55)",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT26.il"
+ },
+ {
+  "id": "yes_CN48.il",
+  "name": "Sport 6 HD",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN48.il"
+ },
+ {
+  "id": "yes_CN49.il",
+  "name": "Sport 5 MAX",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN49.il"
+ },
+ {
+  "id": "yes_TR01.il",
+  "name": "ONE HD",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_TR01.il"
+ },
+ {
+  "id": "yes_CH58.il",
+  "name": "ONE2 HD",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH58.il"
+ },
+ {
+  "id": "yes_CH54.il",
+  "name": "Sport 5+ HD (56)",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH54.il"
+ },
+ {
+  "id": "yes_PT62.il",
+  "name": "Sport 5 Live HD (58)",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT62.il"
+ },
+ {
+  "id": "yes_MU03.il",
+  "name": "Sport 5 Gold (57)",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_MU03.il"
+ },
+ {
+  "id": "yes_CH56.il",
+  "name": "Sport 5 Stars HD (59)",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH56.il"
+ },
+ {
+  "id": "yes_CHN3.il",
+  "name": "ONE EDGE",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CHN3.il"
+ },
+ {
+  "id": "yes_CHN2.il",
+  "name": "ONE DOCO",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CHN2.il"
+ },
+ {
+  "id": "yes_CN33.il",
+  "name": "World Action 1",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN33.il"
+ },
+ {
+  "id": "yes_CN34.il",
+  "name": "World Action 2",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN34.il"
+ },
+ {
+  "id": "yes_YSA1.il",
+  "name": "yes Movies Drama",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_YSA1.il"
+ },
+ {
+  "id": "yes_YS19.il",
+  "name": "yes+ cinema",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_YS19.il"
+ },
+ {
+  "id": "yes_YSA3.il",
+  "name": "yes Movies Comedy",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_YSA3.il"
+ },
+ {
+  "id": "yes_YSA4.il",
+  "name": "yes Movies Kids",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_YSA4.il"
+ },
+ {
+  "id": "yes_YESV.il",
+  "name": "yes TV Action",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_YESV.il"
+ },
+ {
+  "id": "yes_YESP.il",
+  "name": "yes TV Comedy",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_YESP.il"
+ },
+ {
+  "id": "yes_YESU.il",
+  "name": "yes TV Drama",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_YESU.il"
+ },
+ {
+  "id": "yes_YSAU.il",
+  "name": "yes Israeli Cinema HD IP only",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_YSAU.il"
+ },
+ {
+  "id": "yes_PT94.il",
+  "name": "Discovery IP HD SSR SD",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT94.il"
+ },
+ {
+  "id": "yes_CN27.il",
+  "name": "Pop up X",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN27.il"
+ },
+ {
+  "id": "yes_YS20.il",
+  "name": "yes+ diamonds",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_YS20.il"
+ },
+ {
+  "id": "yes_YSAT.il",
+  "name": "yes Docu HD",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_YSAT.il"
+ },
+ {
+  "id": "yes_CH71.il",
+  "name": "National G. Wild HD",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH71.il"
+ },
+ {
+  "id": "yes_TV61.il",
+  "name": "ANIMAL PLANET",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_TV61.il"
+ },
+ {
+  "id": "yes_PT25.il",
+  "name": "National G. HD IP Only",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT25.il"
+ },
+ {
+  "id": "yes_PT55.il",
+  "name": "History HD",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT55.il"
+ },
+ {
+  "id": "yes_TV09.il",
+  "name": "LifeStyle",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_TV09.il"
+ },
+ {
+  "id": "yes_CH72.il",
+  "name": "Reality Channel (Reshet)",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH72.il"
+ },
+ {
+  "id": "yes_CH79.il",
+  "name": "Music IL",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH79.il"
+ },
+ {
+  "id": "yes_PT41.il",
+  "name": "Home and Family",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT41.il"
+ },
+ {
+  "id": "yes_TV10.il",
+  "name": "E",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_TV10.il"
+ },
+ {
+  "id": "yes_CH43.il",
+  "name": "TLC",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH43.il"
+ },
+ {
+  "id": "yes_TV20.il",
+  "name": "Viva Telenovelas (Viva)",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_TV20.il"
+ },
+ {
+  "id": "yes_PT60.il",
+  "name": "Viva Istanbul (Viva Plus)",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT60.il"
+ },
+ {
+  "id": "yes_CN08.il",
+  "name": "Childhood",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN08.il"
+ },
+ {
+  "id": "yes_PT20.il",
+  "name": "Food Channel",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT20.il"
+ },
+ {
+  "id": "yes_PT91.il",
+  "name": "Disney HD",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT91.il"
+ },
+ {
+  "id": "yes_CH18.il",
+  "name": "TeenNick",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH18.il"
+ },
+ {
+  "id": "yes_CH19.il",
+  "name": "Kids Stars Channel",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH19.il"
+ },
+ {
+  "id": "yes_CH13.il",
+  "name": "WiZ",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH13.il"
+ },
+ {
+  "id": "yes_PT85.il",
+  "name": "ZOOM",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT85.il"
+ },
+ {
+  "id": "yes_PT59.il",
+  "name": "Disney Junior",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT59.il"
+ },
+ {
+  "id": "yes_NK01.il",
+  "name": "Nickelodeon",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_NK01.il"
+ },
+ {
+  "id": "yes_PT69.il",
+  "name": "NICK Junior",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT69.il"
+ },
+ {
+  "id": "yes_PT28.il",
+  "name": "Travel Channel",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT28.il"
+ },
+ {
+  "id": "yes_PT14.il",
+  "name": "Health Channel",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT14.il"
+ },
+ {
+  "id": "yes_PT39.il",
+  "name": "EUROSPORT IP HD SSR SD",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT39.il"
+ },
+ {
+  "id": "yes_CH33.il",
+  "name": "Eurosport 2",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH33.il"
+ },
+ {
+  "id": "yes_CH91.il",
+  "name": "MTV HITS",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH91.il"
+ },
+ {
+  "id": "yes_TV35.il",
+  "name": "MTV (MTV Music)",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_TV35.il"
+ },
+ {
+  "id": "yes_TV37.il",
+  "name": "MTV 00s (VH1)",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_TV37.il"
+ },
+ {
+  "id": "yes_CN23.il",
+  "name": "Greek music (MAD World)",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN23.il"
+ },
+ {
+  "id": "yes_TV40.il",
+  "name": "MEZZO",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_TV40.il"
+ },
+ {
+  "id": "yes_CN21.il",
+  "name": "MEZZO Live",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN21.il"
+ },
+ {
+  "id": "yes_CN58.il",
+  "name": "Daily Drama",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN58.il"
+ },
+ {
+  "id": "yes_CN57.il",
+  "name": "Israeli Stage",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN57.il"
+ },
+ {
+  "id": "yes_PT38.il",
+  "name": "Big Brother HD",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT38.il"
+ },
+ {
+  "id": "yes_YS22.il",
+  "name": "yes+ Dark",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_YS22.il"
+ },
+ {
+  "id": "yes_YS21.il",
+  "name": "yes+ Love",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_YS21.il"
+ },
+ {
+  "id": "yes_CN36.il",
+  "name": "Luli",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN36.il"
+ },
+ {
+  "id": "yes_CH62.il",
+  "name": "Style Channel (Fashion IL)",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH62.il"
+ },
+ {
+  "id": "yes_CH61.il",
+  "name": "Design Channel (DIY)",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH61.il"
+ },
+ {
+  "id": "yes_CN30.il",
+  "name": "Spanish Drama 1",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN30.il"
+ },
+ {
+  "id": "yes_CN31.il",
+  "name": "Spanish Drama 2",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN31.il"
+ },
+ {
+  "id": "yes_CH70.il",
+  "name": "Turkish Drama",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH70.il"
+ },
+ {
+  "id": "yes_CH80.il",
+  "name": "Turkish Drama 2",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH80.il"
+ },
+ {
+  "id": "yes_CH77.il",
+  "name": "Turkish Drama 3",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH77.il"
+ },
+ {
+  "id": "yes_CN19.il",
+  "name": "Indian Drama 1",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN19.il"
+ },
+ {
+  "id": "yes_CN20.il",
+  "name": "Indian Drama 2",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN20.il"
+ },
+ {
+  "id": "yes_CH90.il",
+  "name": "Mediterranean Plus",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH90.il"
+ },
+ {
+  "id": "yes_PT72.il",
+  "name": "Mediterranean Channel",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT72.il"
+ },
+ {
+  "id": "yes_CN04.il",
+  "name": "Mediterranean Channel 2",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN04.il"
+ },
+ {
+  "id": "yes_CH89.il",
+  "name": "Viva Love Story (Viva Premium)",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH89.il"
+ },
+ {
+  "id": "yes_CH75.il",
+  "name": "Viva Vintage",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH75.il"
+ },
+ {
+  "id": "yes_CH65.il",
+  "name": "Humor Channel",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH65.il"
+ },
+ {
+  "id": "yes_CH68.il",
+  "name": "Bollywood Series",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH68.il"
+ },
+ {
+  "id": "yes_PT02.il",
+  "name": "Bollywood Movies",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT02.il"
+ },
+ {
+  "id": "yes_CH97.il",
+  "name": "Vacation Channel",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH97.il"
+ },
+ {
+  "id": "yes_CN56.il",
+  "name": "Beautyz",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN56.il"
+ },
+ {
+  "id": "yes_CN35.il",
+  "name": "Mediterranean movies 1",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN35.il"
+ },
+ {
+  "id": "yes_CN37.il",
+  "name": "Mediterranean movies 2",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN37.il"
+ },
+ {
+  "id": "yes_YS17.il",
+  "name": "23 - Only Israeli",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_YS17.il"
+ },
+ {
+  "id": "yes_YSA2.il",
+  "name": "yes Movies Action",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_YSA2.il"
+ },
+ {
+  "id": "yes_PT15.il",
+  "name": "1+1",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT15.il"
+ },
+ {
+  "id": "yes_TV47.il",
+  "name": "ARTE",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_TV47.il"
+ },
+ {
+  "id": "yes_PT36.il",
+  "name": "Dom Kino",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT36.il"
+ },
+ {
+  "id": "yes_TA02.il",
+  "name": "Baby",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_TA02.il"
+ },
+ {
+  "id": "yes_TV60.il",
+  "name": "NTV MIR",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_TV60.il"
+ },
+ {
+  "id": "yes_PT46.il",
+  "name": "HOP! Childhood",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT46.il"
+ },
+ {
+  "id": "yes_CN24.il",
+  "name": "Yoyo",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN24.il"
+ },
+ {
+  "id": "yes_PT30.il",
+  "name": "Hidabroot",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT30.il"
+ },
+ {
+  "id": "yes_PT64.il",
+  "name": "Mediaset",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT64.il"
+ },
+ {
+  "id": "yes_TV02.il",
+  "name": "METV",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_TV02.il"
+ },
+ {
+  "id": "yes_TV57.il",
+  "name": "PROTV",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_TV57.il"
+ },
+ {
+  "id": "yes_TV49.il",
+  "name": "TVE",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_TV49.il"
+ },
+ {
+  "id": "yes_TV82.il",
+  "name": "RTR",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_TV82.il"
+ },
+ {
+  "id": "yes_TV45.il",
+  "name": "SAT 1",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_TV45.il"
+ },
+ {
+  "id": "yes_TV42.il",
+  "name": "Sky News",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_TV42.il"
+ },
+ {
+  "id": "yes_PT74.il",
+  "name": "TELECAFE",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT74.il"
+ },
+ {
+  "id": "yes_PT73.il",
+  "name": "VREMYA",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT73.il"
+ },
+ {
+  "id": "yes_TV98.il",
+  "name": "ZEETV",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_TV98.il"
+ },
+ {
+  "id": "yes_TV12.il",
+  "name": "CNN",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_TV12.il"
+ },
+ {
+  "id": "yes_TV13.il",
+  "name": "Fox News",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_TV13.il"
+ },
+ {
+  "id": "yes_TV94.il",
+  "name": "France 2 (F2)",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_TV94.il"
+ },
+ {
+  "id": "yes_PT18.il",
+  "name": "FRANCE 24",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT18.il"
+ },
+ {
+  "id": "yes_PT51.il",
+  "name": "CTC",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT51.il"
+ },
+ {
+  "id": "yes_PT13.il",
+  "name": "DAYSTAR",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_PT13.il"
+ },
+ {
+  "id": "yes_TA05.il",
+  "name": "Junior",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_TA05.il"
+ },
+ {
+  "id": "yes_CN13.il",
+  "name": "i24 English",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN13.il"
+ },
+ {
+  "id": "yes_CN26.il",
+  "name": "Classic Comedies",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN26.il"
+ },
+ {
+  "id": "yes_CN38.il",
+  "name": "Foody",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN38.il"
+ },
+ {
+  "id": "yes_CH98.il",
+  "name": "ZOOM TOON",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CH98.il"
+ },
+ {
+  "id": "yes_CN09.il",
+  "name": "Childhood songs",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN09.il"
+ },
+ {
+  "id": "yes_CN14.il",
+  "name": "i24 Arabic",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN14.il"
+ },
+ {
+  "id": "yes_CN63.il",
+  "name": "Humor Channel 2",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "yes_CN63.il"
+ },
+ {
+  "id": "hot_803.il",
+  "name": "פשע אמיתי",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "hot_803.il"
+ },
+ {
+  "id": "hot_129.il",
+  "name": "HOT cinema 1",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "hot_129.il"
+ },
+ {
+  "id": "hot_130.il",
+  "name": "HOT cinema 2",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "hot_130.il"
+ },
+ {
+  "id": "hot_131.il",
+  "name": "HOT cinema 3",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "hot_131.il"
+ },
+ {
+  "id": "hot_228.il",
+  "name": "HOT cinema 4",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "hot_228.il"
+ },
+ {
+  "id": "hot_787.il",
+  "name": "Cinema 5   - קולנוע בלתי נשכח",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "hot_787.il"
+ },
+ {
+  "id": "hot_575.il",
+  "name": "HOT Senior",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "hot_575.il"
+ },
+ {
+  "id": "hot_764.il",
+  "name": "HOT MIND",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "hot_764.il"
+ },
+ {
+  "id": "hot_606.il",
+  "name": "HOT Family",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "hot_606.il"
+ },
+ {
+  "id": "hot_550.il",
+  "name": "HOT בידור",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "hot_550.il"
+ },
+ {
+  "id": "hot_243.il",
+  "name": "HOT COMEDY",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "hot_243.il"
+ },
+ {
+  "id": "hot_127.il",
+  "name": "HOT Zone",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "hot_127.il"
+ },
+ {
+  "id": "hot_666.il",
+  "name": "הוט קולנוע ישראלי",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "hot_666.il"
+ },
+ {
+  "id": "hot_286.il",
+  "name": "HOT8",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "hot_286.il"
+ },
+ {
+  "id": "hot_215.il",
+  "name": "HOT DRAMA",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "hot_215.il"
+ },
+ {
+  "id": "hot_160.il",
+  "name": "HOT3",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "hot_160.il"
+ },
+ {
+  "id": "hot_555.il",
+  "name": "HOT Real",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "hot_555.il"
+ },
+ {
+  "id": "ftv_3513312.il",
+  "name": "וואמוס",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "ftv_3513312.il"
+ },
+ {
+  "id": "ftv_5040827.il",
+  "name": "FreeTV סרטים פיל גוד",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "ftv_5040827.il"
+ },
+ {
+  "id": "ftv_3540298.il",
+  "name": "FreeTV גלובל",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "ftv_3540298.il"
+ },
+ {
+  "id": "ftv_5323466.il",
+  "name": "סרטים FreeTV 10 STARS",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "ftv_5323466.il"
+ },
+ {
+  "id": "ftv_3479998.il",
+  "name": "FreeTV סרטים פעולה",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "ftv_3479998.il"
+ },
+ {
+  "id": "ftv_3579246.il",
+  "name": "FreeTV סרטים קומדיה",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "ftv_3579246.il"
+ },
+ {
+  "id": "ftv_3579247.il",
+  "name": "FreeTV סרטים דרמה",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "ftv_3579247.il"
+ },
+ {
+  "id": "ftv_4810483.il",
+  "name": "FreeTV סרטים משפחה",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "ftv_4810483.il"
+ },
+ {
+  "id": "ftv_3579248.il",
+  "name": "FreeTV סרטים אימה",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "ftv_3579248.il"
+ },
+ {
+  "id": "ftv_3579249.il",
+  "name": "FreeTV סרטים רומנטי",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "ftv_3579249.il"
+ },
+ {
+  "id": "ftv_5310110.il",
+  "name": "FreeTV סרטים מתח",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "ftv_5310110.il"
+ },
+ {
+  "id": "ftv_3479997.il",
+  "name": "FreeTV סרטים ישראלי",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "ftv_3479997.il"
+ },
+ {
+  "id": "ftv_3540299.il",
+  "name": "ערוץ סברי מרנן",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "ftv_3540299.il"
+ },
+ {
+  "id": "ftv_3579250.il",
+  "name": "ערוץ ארץ נהדרת",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "ftv_3579250.il"
+ },
+ {
+  "id": "ftv_3520308.il",
+  "name": "FOMO",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "ftv_3520308.il"
+ },
+ {
+  "id": "ftv_3566487.il",
+  "name": "פלא",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "ftv_3566487.il"
+ },
+ {
+  "id": "ftv_3513313.il",
+  "name": "ערוץ הילדים",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "ftv_3513313.il"
+ },
+ {
+  "id": "ftv_3343444.il",
+  "name": "A Plus",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "ftv_3343444.il"
+ },
+ {
+  "id": "ftv_3513314.il",
+  "name": "לוגי",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "ftv_3513314.il"
+ },
+ {
+  "id": "ftv_4721323.il",
+  "name": "ערוץ הקריוקי",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "ftv_4721323.il"
+ },
+ {
+  "id": "ftv_4344511.il",
+  "name": "i24 French",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "ftv_4344511.il"
+ },
+ {
+  "id": "ftv_3598042.il",
+  "name": "FreeTV סדרות דרמה",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "ftv_3598042.il"
+ },
+ {
+  "id": "ftv_3598043.il",
+  "name": "FreeTV סדרות קומדיה",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "ftv_3598043.il"
+ },
+ {
+  "id": "ftv_3611643.il",
+  "name": "FreeTV לייף סטייל",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "ftv_3611643.il"
+ },
+ {
+  "id": "ftv_3611644.il",
+  "name": "FreeTV אוכל",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "ftv_3611644.il"
+ },
+ {
+  "id": "ftv_3611642.il",
+  "name": "FreeTV דוקו",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "ftv_3611642.il"
  }
 ]
