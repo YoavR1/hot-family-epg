@@ -1,0 +1,848 @@
+[
+ {
+  "id": "Reshet13.il",
+  "name": "Reshet 13 HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "רשת.il"
+ },
+ {
+  "id": "Channel9.il",
+  "name": "Channel 9 (1080p)",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "ישראלפלוס.il"
+ },
+ {
+  "id": "I24News.il",
+  "name": "i24 News IL",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "עברית.i24.il"
+ },
+ {
+  "id": "I24NewsArabic.il",
+  "name": "i24NEWS Arabic (1080p)",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "i24NEWS.ARABIC.il"
+ },
+ {
+  "id": "Kan11.il",
+  "name": "Kan 11 (1080p)",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "כאן11.il"
+ },
+ {
+  "id": "Keshet12.il",
+  "name": "Keshet 12 FHD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "קשת.il"
+ },
+ {
+  "id": "KnessetChannel.il",
+  "name": "Knesset Channel IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "ערוץהכנסת.il"
+ },
+ {
+  "id": "Now14.il",
+  "name": "Now 14 (1080p)",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "ערוץ14.il"
+ },
+ {
+  "id": "Kalkala10.il",
+  "name": "Kalkala 10 (Economy)",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "ערוץ.הכלכלה.il"
+ },
+ {
+  "id": "5Sport4K.il",
+  "name": "5Sport 4K IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "5SPORT4K.il"
+ },
+ {
+  "id": "5Sport.il",
+  "name": "5Sport FHD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "5sportHD.il"
+ },
+ {
+  "id": "5SportGold.il",
+  "name": "5Sport Gold HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "5GOLD.il"
+ },
+ {
+  "id": "5SportLive.il",
+  "name": "5Sport Live FHD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "5LIVEHD.il"
+ },
+ {
+  "id": "5SportStars.il",
+  "name": "5Sport Stars FHD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "5STARS.il"
+ },
+ {
+  "id": "One1Doco.il",
+  "name": "ONE 1 DOCO HD IL",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "ONE.DOCO.il"
+ },
+ {
+  "id": "One2.il",
+  "name": "One 2 HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "ONE2.il"
+ },
+ {
+  "id": "One.il",
+  "name": "One HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "ONE.il"
+ },
+ {
+  "id": "Sport1.il",
+  "name": "Sport 1 HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "ספורט1HD.il"
+ },
+ {
+  "id": "Sport2.il",
+  "name": "SPORT 2 HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "ספורט2HD.il"
+ },
+ {
+  "id": "Sport3.il",
+  "name": "Sport 3 HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "ספורט3HD.il"
+ },
+ {
+  "id": "Sport4.il",
+  "name": "Sport 4 FHD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "ספורט4HD.il"
+ },
+ {
+  "id": "SportEdge.il",
+  "name": "Sport Edge",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "SPORT.EDGE.il"
+ },
+ {
+  "id": "5SportPlus.il",
+  "name": "5Sport Plus",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "5PLUSHD.il"
+ },
+ {
+  "id": "5SportMax.il",
+  "name": "5Sport MAX",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "5SportMAX.il.extra"
+ },
+ {
+  "id": "Sport6.il",
+  "name": "Sport 6",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "Sport6.il.extra"
+ },
+ {
+  "id": "Eurosport2.il",
+  "name": "Eurosport 2 HD",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "EUROSPORT2.il"
+ },
+ {
+  "id": "Eurosport1.il",
+  "name": "Eurosport 1",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "יורוספורט.1.HD.il"
+ },
+ {
+  "id": "BabyTv.il",
+  "name": "Baby TV IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "בייבי.il"
+ },
+ {
+  "id": "DisneyChannel.il",
+  "name": "DISNEY CHANNEL HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "דיסניHD.il"
+ },
+ {
+  "id": "DisneyJr.il",
+  "name": "DISNEY JR. HD IL",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "דיסני.ג’וניור.il"
+ },
+ {
+  "id": "Hop.il",
+  "name": "Hop! HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "הופ!.il"
+ },
+ {
+  "id": "Junior.il",
+  "name": "Junior HD IL",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "ג’וניור.il"
+ },
+ {
+  "id": "KanEducational.il",
+  "name": "Kan Educational IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "ערוץ23חינוכית.il"
+ },
+ {
+  "id": "Luli.il",
+  "name": "Luli IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "HOTLuli.il"
+ },
+ {
+  "id": "NickJr.il",
+  "name": "Nick Jr. IL",
+  "src": "https://raw.githubusercontent.com/amitu20/il-epg/main/epg.xml.gz",
+  "src_id": "tm204"
+ },
+ {
+  "id": "Nickelodeon.il",
+  "name": "Nickelodeon HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "ניקלודיאון.il"
+ },
+ {
+  "id": "Wiz.il",
+  "name": "WIZ HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "ערוץWiZ.il"
+ },
+ {
+  "id": "YesMoviesKids.il",
+  "name": "Yes Movies Kids FHD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "yesMOVIESKIDS.il"
+ },
+ {
+  "id": "Zoom.il",
+  "name": "Zoom IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "Zoom.il"
+ },
+ {
+  "id": "CellcomMoviesKids.il",
+  "name": "Cellcom Movies Kids",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "סלקום.קידס.il"
+ },
+ {
+  "id": "HopIsraeliChildhood.il",
+  "name": "Hop! Israeli Childhood",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "ילדותישראלית.il"
+ },
+ {
+  "id": "HopPele.il",
+  "name": "Hop! Pele",
+  "src": "https://www.open-epg.com/files/israel2.xml",
+  "src_id": "פלא.il"
+ },
+ {
+  "id": "JimJam.il",
+  "name": "Jim Jam",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "JimJam.il"
+ },
+ {
+  "id": "Logi.il",
+  "name": "Logi",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "לוגי.il"
+ },
+ {
+  "id": "Teennick.il",
+  "name": "TeenNick",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "Teennick.il"
+ },
+ {
+  "id": "Yalduti.il",
+  "name": "Yalduti",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "ילדותי.il"
+ },
+ {
+  "id": "Yoyo.il",
+  "name": "YoYo",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "יויו.il"
+ },
+ {
+  "id": "ZoomToon.il",
+  "name": "Zoom Toon",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "ZOOMTOON.il"
+ },
+ {
+  "id": "BollywoodIndianFilms.il",
+  "name": "BollywooD Indian Films IL",
+  "src": "https://raw.githubusercontent.com/amitu20/il-epg/main/epg.xml.gz",
+  "src_id": "tm220"
+ },
+ {
+  "id": "FreeTvMoviesComedy.il",
+  "name": "FREE TV MOVIES COMEDY HD",
+  "src": "https://www.open-epg.com/files/israel2.xml",
+  "src_id": "FreeTV סרטים קומדיה.il"
+ },
+ {
+  "id": "HotCinema1.il",
+  "name": "HOT Cinema 1 FHD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "HOTCinema1.il"
+ },
+ {
+  "id": "HotCinema2.il",
+  "name": "HOT Cinema 2 HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "HOTCinema2.il"
+ },
+ {
+  "id": "HotCinema3.il",
+  "name": "HOT Cinema 3 FHD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "HOTCinema3.il"
+ },
+ {
+  "id": "HotCinema4.il",
+  "name": "HOT Cinema 4 HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "HOTCinema4.il"
+ },
+ {
+  "id": "HotCinemaFamily.il",
+  "name": "HOT Cinema Family HD IL",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/hot_family.xml",
+  "src_id": "HOTFamily.il"
+ },
+ {
+  "id": "YesMoviesAction.il",
+  "name": "Yes Movies Action FHD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "yesMOVIESACTION.il"
+ },
+ {
+  "id": "YesMoviesComedy.il",
+  "name": "Yes Movies Comedy FHD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "yesMOVIESCOMEDY.il"
+ },
+ {
+  "id": "YesMoviesDrama.il",
+  "name": "Yes Movies Drama FHD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "yesMOVIESDRAMA.il"
+ },
+ {
+  "id": "CellcomMoviesAction.il",
+  "name": "Cellcom Movies Action",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "סלקום.ACTION.MOVIES.il"
+ },
+ {
+  "id": "FreeMoviesAction.il",
+  "name": "Free Movies Action",
+  "src": "https://www.open-epg.com/files/israel2.xml",
+  "src_id": "FreeTV סרטים פעולה.il"
+ },
+ {
+  "id": "FreeMoviesDrama.il",
+  "name": "Free Movies Drama",
+  "src": "https://www.open-epg.com/files/israel2.xml",
+  "src_id": "FreeTV סרטים דרמה.il"
+ },
+ {
+  "id": "FreeMoviesHorror.il",
+  "name": "Free Movies Horror",
+  "src": "https://www.open-epg.com/files/israel2.xml",
+  "src_id": "FreeTV סרטים אימה.il"
+ },
+ {
+  "id": "FreeMoviesRomantic.il",
+  "name": "Free Movies Romantic",
+  "src": "https://www.open-epg.com/files/israel2.xml",
+  "src_id": "FreeTV סרטים רומנטי.il"
+ },
+ {
+  "id": "FreeMoviesFamily.il",
+  "name": "Free Movies Family",
+  "src": "https://www.open-epg.com/files/israel2.xml",
+  "src_id": "FreeTV סרטים משפחה.il"
+ },
+ {
+  "id": "FreeMovies10Stars.il",
+  "name": "Free Movies 10 Stars",
+  "src": "https://www.open-epg.com/files/israel2.xml",
+  "src_id": "סרטים FreeTV 10 STARS.il"
+ },
+ {
+  "id": "FreeIsraeliMovies.il",
+  "name": "Free Israeli Movies",
+  "src": "https://www.open-epg.com/files/israel2.xml",
+  "src_id": "FreeTV סרטים ישראלי.il"
+ },
+ {
+  "id": "HotCinemaIsraeli.il",
+  "name": "HOT Cinema Israeli",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "ערוץ.הקולנוע.הישראלי.il"
+ },
+ {
+  "id": "YesPlusDiamonds.il",
+  "name": "Yes+ Diamonds",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "YesPlusDiamonds.il.extra"
+ },
+ {
+  "id": "YesPlusCinema.il",
+  "name": "Yes+ Cinema",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "YesPlusCinema.il.extra"
+ },
+ {
+  "id": "YesPlusLove.il",
+  "name": "Yes+ Love",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "YesPlusLove.il.extra"
+ },
+ {
+  "id": "YesPlusDark.il",
+  "name": "Yes+ Dark",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "YesPlusDark.il.extra"
+ },
+ {
+  "id": "DiscoveryChannel.il",
+  "name": "Discovery Channel FHD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "דיסקבריHD.il"
+ },
+ {
+  "id": "History.il",
+  "name": "History FHD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "היסטוריהHD.il"
+ },
+ {
+  "id": "Hot8.il",
+  "name": "HOT 8 IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "HOT8.il"
+ },
+ {
+  "id": "NationalGeographic.il",
+  "name": "National Geographic HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "NationalGeographic.il"
+ },
+ {
+  "id": "NationalGeographicWild.il",
+  "name": "National Geographic Wild FHD",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "NGWILD.il"
+ },
+ {
+  "id": "YesDocu.il",
+  "name": "Yes Docu HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "yesדוקו.il"
+ },
+ {
+  "id": "AnimalPlanet.il",
+  "name": "Animal Planet",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "AnimalPlanet.il"
+ },
+ {
+  "id": "CellcomDoco.il",
+  "name": "Cellcom Doco",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "סלקום.דוקו.il"
+ },
+ {
+  "id": "FreeTvDoco.il",
+  "name": "Free TV Doco",
+  "src": "https://www.open-epg.com/files/israel2.xml",
+  "src_id": "FreeTV דוקו.il"
+ },
+ {
+  "id": "FreeTvTeva.il",
+  "name": "Free TV Teva",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "FreeTVTeva.il.extra"
+ },
+ {
+  "id": "FoodNetwork.il",
+  "name": "Food Network HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "ערוץהאוכל.il"
+ },
+ {
+  "id": "GoodLife.il",
+  "name": "Good Life IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "החייםהטובים.il"
+ },
+ {
+  "id": "Health.il",
+  "name": "Health IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "ערוץבריאות.il"
+ },
+ {
+  "id": "HomePlus.il",
+  "name": "Home Plus IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "בית+.il"
+ },
+ {
+  "id": "TravelChannel.il",
+  "name": "Travel Channel IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "ערוץהטיולים.il"
+ },
+ {
+  "id": "FreeTvLifestyle.il",
+  "name": "Free TV Lifestyle",
+  "src": "https://www.open-epg.com/files/israel2.xml",
+  "src_id": "FreeTV לייף סטייל.il"
+ },
+ {
+  "id": "FreeTvCooking.il",
+  "name": "Free TV Cooking",
+  "src": "https://www.open-epg.com/files/israel2.xml",
+  "src_id": "FreeTV אוכל.il"
+ },
+ {
+  "id": "Foody.il",
+  "name": "Foody",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "FOODY.il"
+ },
+ {
+  "id": "IsraeliFashionChannel.il",
+  "name": "Israeli Fashion Channel",
+  "src": "https://raw.githubusercontent.com/amitu20/il-epg/main/epg.xml.gz",
+  "src_id": "tm110"
+ },
+ {
+  "id": "Tlc.il",
+  "name": "TLC",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "TLC.il"
+ },
+ {
+  "id": "Channel24.il",
+  "name": "Channel 24 HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "ערוץ24החדש.il"
+ },
+ {
+  "id": "BamaIsraelit.il",
+  "name": "Bama Israelit",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "BamaIsraelit.il.extra"
+ },
+ {
+  "id": "FreeTvKaraoke.il",
+  "name": "Free TV Karaoke",
+  "src": "https://www.open-epg.com/files/israel2.xml",
+  "src_id": "ערוץ הקריוקי.il"
+ },
+ {
+  "id": "Mtv.il",
+  "name": "MTV HD",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "MTV.il.extra"
+ },
+ {
+  "id": "Mtv00S.il",
+  "name": "MTV 00s",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "MTV00s.il.extra"
+ },
+ {
+  "id": "Bollywood.il",
+  "name": "Bollywood HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "yesBollywood.il"
+ },
+ {
+  "id": "E.il",
+  "name": "E! HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "E!.il"
+ },
+ {
+  "id": "Hot3.il",
+  "name": "HOT 3 FHD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "HOT3.il"
+ },
+ {
+  "id": "HotBidur.il",
+  "name": "HOT Bidur HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "HOTEntertainment.il"
+ },
+ {
+  "id": "HotComedy.il",
+  "name": "HOT Comedy HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "HOTComedyCentral.il"
+ },
+ {
+  "id": "HotHbo.il",
+  "name": "HOT HBO HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "HOTHBO.il"
+ },
+ {
+  "id": "HotReal.il",
+  "name": "HOT Real HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "HOTReal.il"
+ },
+ {
+  "id": "HotZone.il",
+  "name": "HOT Zone HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "HOTZone.il"
+ },
+ {
+  "id": "StarChannel.il",
+  "name": "STAR Channel IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "ערוץהכוכבים.il"
+ },
+ {
+  "id": "TurkishDramas2.il",
+  "name": "Turkish Dramas 2 FHD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "ערוץהדרמותהטורקיות2.il"
+ },
+ {
+  "id": "TurkishDramas3.il",
+  "name": "Turkish Dramas 3 FHD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "ערוץהדרמותהטורקיות3.il"
+ },
+ {
+  "id": "TurkishDramasPlus.il",
+  "name": "Turkish Dramas Plus FHD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "ערוץהדרמותהטורקיות+.il"
+ },
+ {
+  "id": "VivaIstanbul.il",
+  "name": "Viva Istanbul IL",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "ויוה.איסטנבול.il"
+ },
+ {
+  "id": "VivaPremium.il",
+  "name": "Viva Premium HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "VivaPremium.il"
+ },
+ {
+  "id": "YamTichoni.il",
+  "name": "Yam Tichoni (1080p)",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "יםתיכוני.il"
+ },
+ {
+  "id": "YamTichoniPlus.il",
+  "name": "Yam Tichoni+ HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "הערוץהיםתיכוני+.il"
+ },
+ {
+  "id": "YesIsraeli.il",
+  "name": "Yes Israeli IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "yesקולנועישראלי.il"
+ },
+ {
+  "id": "YesTvAction.il",
+  "name": "Yes TV Action HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "yesTVACTION.il"
+ },
+ {
+  "id": "YesTvComedy.il",
+  "name": "Yes TV Comedy HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "yesTVCOMEDY.il"
+ },
+ {
+  "id": "YesTvDrama.il",
+  "name": "Yes TV Drama HD IL",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "yesTVDRAMA.il"
+ },
+ {
+  "id": "HumorChannel.il",
+  "name": "Humor Channel HD",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "ערוץההומור.il"
+ },
+ {
+  "id": "VivaVintage.il",
+  "name": "Viva Vintage",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "ויוה.וינטג.il"
+ },
+ {
+  "id": "IndianDramas1.il",
+  "name": "Indian Dramas 1",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "ערוץ.הדרמות.ההודיות.1.il"
+ },
+ {
+  "id": "IndianDramas2.il",
+  "name": "Indian Dramas 2",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "ערוץ.הדרמות.ההודיות.2.il"
+ },
+ {
+  "id": "Channel16.il",
+  "name": "Channel 16",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "Channel16.il.extra"
+ },
+ {
+  "id": "CellcomTvShows.il",
+  "name": "Cellcom TV Shows",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "סלקום.סדרות.il"
+ },
+ {
+  "id": "DramotYomiyot.il",
+  "name": "Dramot Yomiyot",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "DramotYomiyot.il.extra"
+ },
+ {
+  "id": "EgoTotal.il",
+  "name": "Ego Total",
+  "src": "https://iptv-epg.org/files/epg-il.xml",
+  "src_id": "ערוץאגו.il"
+ },
+ {
+  "id": "EretzNehederet.il",
+  "name": "Eretz Nehederet",
+  "src": "https://www.open-epg.com/files/israel2.xml",
+  "src_id": "ערוץ ארץ נהדרת.il"
+ },
+ {
+  "id": "FreeTvDrama.il",
+  "name": "Free TV Drama",
+  "src": "https://www.open-epg.com/files/israel2.xml",
+  "src_id": "FreeTV סדרות דרמה.il"
+ },
+ {
+  "id": "FreeTvComedy.il",
+  "name": "Free TV Comedy",
+  "src": "https://www.open-epg.com/files/israel2.xml",
+  "src_id": "FreeTV סדרות קומדיה.il"
+ },
+ {
+  "id": "FreeTvComedy2.il",
+  "name": "Free TV Comedy 2",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "FreeTVComedy2.il.extra"
+ },
+ {
+  "id": "FreeTvFeelGood.il",
+  "name": "Free TV Feel Good",
+  "src": "https://www.open-epg.com/files/israel2.xml",
+  "src_id": "FreeTV סרטים פיל גוד.il"
+ },
+ {
+  "id": "FreeSeriesGlobal.il",
+  "name": "Free Series Global",
+  "src": "https://www.open-epg.com/files/israel2.xml",
+  "src_id": "FreeTV גלובל.il"
+ },
+ {
+  "id": "Fomo.il",
+  "name": "FOMO",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "FOMO.il"
+ },
+ {
+  "id": "HotSenior.il",
+  "name": "HOT Senior",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "HOTSenior.il.extra"
+ },
+ {
+  "id": "HotBuzz.il",
+  "name": "HOT Buzz",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "HOTBuzz.il.extra"
+ },
+ {
+  "id": "RealityChannel.il",
+  "name": "Reality Channel",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "ערוץ.הריאליטי.il"
+ },
+ {
+  "id": "Savri.il",
+  "name": "Savri",
+  "src": "https://www.open-epg.com/files/israel2.xml",
+  "src_id": "ערוץ סברי מרנן.il"
+ },
+ {
+  "id": "SpanishDramas1.il",
+  "name": "Spanish Dramas 1",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "ערוץ.הדרמות.הספרדיות.1.il"
+ },
+ {
+  "id": "SpanishDramas2.il",
+  "name": "Spanish Dramas 2",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "ערוץ.הדרמות.הספרדיות..2.il"
+ },
+ {
+  "id": "VivaTelenovelas.il",
+  "name": "Viva Telenovelas",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "ויוה.טלנובלות.il"
+ },
+ {
+  "id": "WorldAction1.il",
+  "name": "World Action 1",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "ערוץ.האקשן.העולמי.1.il"
+ },
+ {
+  "id": "WorldAction2.il",
+  "name": "World Action 2",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "ערוץ.האקשן.העולמי.2.il"
+ },
+ {
+  "id": "YamTichoni2.il",
+  "name": "Yam Tichoni 2",
+  "src": "https://epgshare01.online/epgshare01/epg_ripper_IL1.xml.gz",
+  "src_id": "ים.תיכוני.2.il"
+ }
+]
