@@ -55,5 +55,6 @@ jobs:
             echo "No guide changes"
           else
             git commit -m "Daily EPG refresh $(date -u +%Y-%m-%dT%H:%MZ)"
+            git pull --rebase origin main
             git push
           fi
