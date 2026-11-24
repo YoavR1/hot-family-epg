@@ -49,26 +49,48 @@ def token_from_playlist():
     return m.group(1)
 
 
-def daily_entries(day, token):
-    start = int(day.timestamp())
-    url = f'https://4.hls.gd/ch4051/mono-{start}-86400.m3u8?token={token}'
-    r = SESSION.get(url, timeout=240)
-    r.raise_for_status()
-    if len(r.content) < 100000:
-        raise RuntimeError(f'stub manifest for {day:%Y-%m-%d} ({len(r.content)} bytes)')
+def parse_manifest(url, text):
     entries = []
     cur = None
-    for line in r.text.splitlines():
+    for line in text.splitlines():
         if line.startswith('#EXT-X-PROGRAM-DATE-TIME:'):
             cur = dt.datetime.fromisoformat(line.split(':', 1)[1].replace('Z', '+00:00')).timestamp()
         elif line and not line.startswith('#') and cur is not None:
             entries.append([cur, None, urllib.parse.urljoin(url, line.strip())])
             cur = None
-    if len(entries) < 100:
-        raise RuntimeError(f'too few segments for {day:%Y-%m-%d}: {len(entries)}')
     for i, e in enumerate(entries):
         e[1] = entries[i + 1][0] if i + 1 < len(entries) else e[0] + 6.0
     return entries
+
+
+def hourly_entries(day, token):
+    entries = []
+    for hour in range(24):
+        when = day + dt.timedelta(hours=hour)
+        url = f'https://4.hls.gd/ch4051/mono-{int(when.timestamp())}-3600.m3u8?token={token}'
+        try:
+            r = SESSION.get(url, timeout=120)
+            r.raise_for_status()
+            if len(r.content) > 1000:
+                entries.extend(parse_manifest(url, r.text))
+        except Exception:
+            continue
+    entries.sort(key=lambda e: e[0])
+    if len(entries) < 100:
+        raise RuntimeError(f'too few hourly segments for {day:%Y-%m-%d}: {len(entries)}')
+    return entries
+
+
+def daily_entries(day, token):
+    start = int(day.timestamp())
+    url = f'https://4.hls.gd/ch4051/mono-{start}-86400.m3u8?token={token}'
+    r = SESSION.get(url, timeout=240)
+    if r.status_code == 200 and len(r.content) > 100000:
+        entries = parse_manifest(url, r.text)
+        if len(entries) >= 100:
+            return entries
+    print(f'{day:%Y-%m-%d}: daily manifest stubbed ({len(r.content)} bytes), using hourly manifests', flush=True)
+    return hourly_entries(day, token)
 
 
 def get_segment(url):
