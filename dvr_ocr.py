@@ -28,8 +28,12 @@ UA = {'User-Agent': 'Mozilla/5.0'}
 SAMPLE_MINUTES = int(os.getenv('SAMPLE_MINUTES', '20'))
 CHANNEL_ID = 'TVTeamArutzHagiborim.il'
 ORIGIN = 'https://4.hls.gd'
-# GitHub Actions reaches the DVR host through the Worker; local runs stay direct.
+# Optional proxy for local/manual recovery. The scheduled cloud job stays direct:
+# Cloudflare-to-DVR returned 522 from GitHub, while direct failures finish fast.
 DVR_BASE = os.getenv('DVR_BASE', '').rstrip('/')
+MANIFEST_TIMEOUT = int(os.getenv('MANIFEST_TIMEOUT', '20'))
+DAILY_TIMEOUT = int(os.getenv('DAILY_TIMEOUT', '45'))
+SEGMENT_TIMEOUT = int(os.getenv('SEGMENT_TIMEOUT', '30'))
 
 TITLES = {
     'A': 'גיבורי חרבות ברזל',
@@ -80,7 +84,7 @@ def hourly_entries(day, token):
         rel = f'mono-{int(when.timestamp())}-3600.m3u8'
         url = dvr_url(rel, token)
         try:
-            r = SESSION.get(url, timeout=120)
+            r = SESSION.get(url, timeout=MANIFEST_TIMEOUT)
             if r.status_code != 200:
                 key = f'http {r.status_code}'
                 failures[key] = failures.get(key, 0) + 1
@@ -106,7 +110,7 @@ def hourly_entries(day, token):
 def daily_entries(day, token):
     start = int(day.timestamp())
     url = dvr_url(f'mono-{start}-86400.m3u8', token)
-    r = SESSION.get(url, timeout=240)
+    r = SESSION.get(url, timeout=DAILY_TIMEOUT)
     if r.status_code == 200 and len(r.content) > 100000:
         entries = parse_manifest(url, r.text)
         if len(entries) >= 100:
@@ -120,16 +124,16 @@ def daily_entries(day, token):
 
 
 def get_segment(url):
-    for attempt in range(3):
+    for attempt in range(2):
         try:
-            r = SESSION.get(url, timeout=60)
+            r = SESSION.get(url, timeout=SEGMENT_TIMEOUT)
             r.raise_for_status()
             if len(r.content) > 1000:
                 return r.content
         except Exception:
             pass
-        if attempt < 2:
-            time.sleep(0.5 + attempt)
+        if attempt < 1:
+            time.sleep(0.5)
     raise RuntimeError(f'could not fetch segment {url.split("?")[0]}')
 
 

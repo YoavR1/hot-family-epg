@@ -42,7 +42,6 @@ jobs:
       - name: Recover Arutz Hagiborim schedule from DVR
         env:
           SAMPLE_MINUTES: '20'
-          DVR_BASE: https://hls-healer.rivkinyoav.workers.dev/dvr
         run: python dvr_ocr.py
 
       - name: Build combined guide
