@@ -1,4 +1,4 @@
-#EXTM3U url-tvg="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/guide.xml.gz" x-tvg-url="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/guide.xml.gz"#AUTO-SYNC-TEST2
+#EXTM3U url-tvg="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/guide.xml.gz" x-tvg-url="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/guide.xml.gz"
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/sections/sep_main_channels.png" group-title="News",━━━━  Main Channels  ━━━━
 https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/separator.mp4?section=news-main-channels
 #EXTINF:-1 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch428/mono-${start}-${duration}.m3u8?token=olgasergej.v2_bulPY7EibdSxZpdOJDGa6ZLfj4_QizuacFDYKTql0gKLMCmHh5Bw7IOME4RLuaXpxU53rmPOV40Bhg" tvg-id="Kan11.il" tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/kan11.png" group-title="News",Kan 11 (1080p)
