@@ -1,0 +1,20 @@
+name: Sync hosted playlist
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - playlist.m3u8
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Refresh the HLS healer worker
+        run: |
+          for i in 1 2 3; do
+            curl -fsS https://hls-healer.rivkinyoav.workers.dev/refresh && exit 0
+            sleep 5
+          done
+          exit 1
