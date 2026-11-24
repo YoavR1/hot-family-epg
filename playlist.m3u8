@@ -1,0 +1,527 @@
+#EXTM3U url-tvg="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/guide.xml.gz" x-tvg-url="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/guide.xml.gz"
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/sections/sep_main_channels.png" group-title="News",━━━━  Main Channels  ━━━━
+https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/separator.mp4?section=news-main-channels
+#EXTINF:-1 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch428/mono-${start}-${duration}.m3u8?token=olgasergej.v2_bulPY7EibdSxZpdOJDGa6ZLfj4_QizuacFDYKTql0gKLMCmHh5Bw7IOME4RLuaXpxU53rmPOV40Bhg" tvg-id="Kan11.il" tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/kan11.png" group-title="News",Kan 11 (1080p)
+https://4.hls.gd/ch428/mono.m3u8?token=olgasergej.v2_bulPY7EibdSxZpdOJDGa6ZLfj4_QizuacFDYKTql0gKLMCmHh5Bw7IOME4RLuaXpxU53rmPOV40Bhg
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch429/mono-${start}-${duration}.m3u8?token=olgasergej.v2_X_aEhZbKDIb_lvfZJPMF_6ZY0d_o7gvpzIXbzRJJsi6pdI3ZCgbv98lOOK82OiAXa0ah-jhBjfMwbg" tvg-id="Keshet12.il" tvg-logo="https://i.imgur.com/fY3eakc.png" group-title="News" tvg-rec="3",Keshet 12 FHD IL
+https://4.hls.gd/ch429/mono.m3u8?token=olgasergej.v2_X_aEhZbKDIb_lvfZJPMF_6ZY0d_o7gvpzIXbzRJJsi6pdI3ZCgbv98lOOK82OiAXa0ah-jhBjfMwbg
+#EXTINF:-1 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch430/mono-${start}-${duration}.m3u8?token=olgasergej.v2_Xt4hwmfdCZH0pJm_gbp7FQYnfjxz4cFkfp5DxOTEw_Sh7ZqP7GsjqTjqGjO7xV5XyqHl_KYpjYt1HQ" tvg-id="Reshet13.il" tvg-logo="https://i.imgur.com/eFM3bTq.png" group-title="News",Reshet 13 HD IL
+https://4.hls.gd/ch430/mono.m3u8?token=olgasergej.v2_Xt4hwmfdCZH0pJm_gbp7FQYnfjxz4cFkfp5DxOTEw_Sh7ZqP7GsjqTjqGjO7xV5XyqHl_KYpjYt1HQ
+#EXTINF:-1 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1119/mono-${start}-${duration}.m3u8?token=olgasergej.v2_KWj4ur-jse69apAT5eVwwUl2GozwkJmYP6pDqcE0jiZ6SnZlcMonj1Xe-SRQMN7LRd5JeEnAuqbMmHQ" tvg-id="Now14.il" tvg-logo="https://i.imgur.com/Iq2Kb69.png" group-title="News",Now 14 (1080p)
+https://4.hls.gd/ch1119/mono.m3u8?token=olgasergej.v2_KWj4ur-jse69apAT5eVwwUl2GozwkJmYP6pDqcE0jiZ6SnZlcMonj1Xe-SRQMN7LRd5JeEnAuqbMmHQ
+#EXTINF:-1 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch427/mono-${start}-${duration}.m3u8?token=olgasergej.v2_WYQj12S-486hI-LajyHMoztPtIvfAtqscDgUu5nQ_E8IVsPPjlZmhWXnPKHGveDXexNxvE6HsEiXUQ" tvg-id="Channel9.il" tvg-logo="https://i.imgur.com/pttM3KQ.png" group-title="News",Channel 9 (1080p)
+https://4.hls.gd/ch427/mono.m3u8?token=olgasergej.v2_WYQj12S-486hI-LajyHMoztPtIvfAtqscDgUu5nQ_E8IVsPPjlZmhWXnPKHGveDXexNxvE6HsEiXUQ
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/sections/sep_news_current_affairs.png" group-title="News",━━━━  News & Current Affairs  ━━━━
+https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/separator.mp4?section=news-news-current-affairs
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2824/mono-${start}-${duration}.m3u8?token=olgasergej.v2_7SFkU7EEcXe-l_MDT6umebNe14poZy52AbH1cw2fS4EDcdopvByt5fSDdpYwzaO2rseHaxP922J9w_o" tvg-id="I24News.il" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/LOGO_i24NEWS.png/960px-LOGO_i24NEWS.png" group-title="News" tvg-rec="3",i24 News IL
+https://4.hls.gd/ch2824/mono.m3u8?token=olgasergej.v2_7SFkU7EEcXe-l_MDT6umebNe14poZy52AbH1cw2fS4EDcdopvByt5fSDdpYwzaO2rseHaxP922J9w_o
+#EXTINF:-1 tvg-id="I24NewsArabic.il" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/LOGO_i24NEWS.png/960px-LOGO_i24NEWS.png" group-title="News",i24NEWS Arabic (1080p)
+https://i24newsarabic-cdn.encoders.immergo.tv/master.m3u8
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch3134/mono-${start}-${duration}.m3u8?token=olgasergej.v2_qqRVfkIFB7tsjcdTIMyV98I8uAjj5lxdgYB0Hk2JE-N4mImv75zB8Inoirfy7Adx0W1he0u4wWlPSWY" tvg-id="Kalkala10.il" group-title="News" tvg-logo="https://hls.gd/images/chIcons/3134.png",Kalkala 10 (Economy)
+https://4.hls.gd/ch3134/mono.m3u8?token=olgasergej.v2_qqRVfkIFB7tsjcdTIMyV98I8uAjj5lxdgYB0Hk2JE-N4mImv75zB8Inoirfy7Adx0W1he0u4wWlPSWY
+#EXTINF:0 tvg-id="KnessetChannel.il" group-title="News" tvg-logo="http://epg.one/img2/4306.png" tvg-rec="0",Knesset Channel IL
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12269/index.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/sections/sep_sport_1_6.png" group-title="Sports - Israel",━━━━  Sport 1-6  ━━━━
+https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/separator.mp4?section=sports-israel-sport-1-6
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1128/mono-${start}-${duration}.m3u8?token=olgasergej.v2_U6PYa_PE58FRCZDcr6Hx4vw-R9hsema3862byyteq82BWCox6O8J4UPqAutqUr7F0iCjNswOy-z0isI" tvg-id="Sport1.il" tvg-logo="https://i.imgur.com/DqE1143.png" group-title="Sports - Israel" tvg-rec="0",Sport 1 HD IL
+https://4.hls.gd/ch1128/mono.m3u8?token=olgasergej.v2_U6PYa_PE58FRCZDcr6Hx4vw-R9hsema3862byyteq82BWCox6O8J4UPqAutqUr7F0iCjNswOy-z0isI
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1129/mono-${start}-${duration}.m3u8?token=olgasergej.v2_S1h-YVEtKJrtxzzFvuNebBQ2zDA7E8O3b8zQxfwcSAFLgcawnBqGB7-uVwm8x0Foz-3xkFO1NHHmJSY" tvg-id="Sport2.il" tvg-logo="https://i.imgur.com/Headxmx.png" group-title="Sports - Israel" tvg-rec="0",SPORT 2 HD IL
+https://4.hls.gd/ch1129/mono.m3u8?token=olgasergej.v2_S1h-YVEtKJrtxzzFvuNebBQ2zDA7E8O3b8zQxfwcSAFLgcawnBqGB7-uVwm8x0Foz-3xkFO1NHHmJSY
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1130/mono-${start}-${duration}.m3u8?token=olgasergej.v2_n8KMwwbODEh6UCQRZPKf5vUZiJ87PkVKZMBVS-2U7EfgjM7ShRaOaAUJLDsoYudgIrFjd8tWwIeGAks" tvg-id="Sport3.il" tvg-logo="https://i.imgur.com/stSrBBh.png" group-title="Sports - Israel" tvg-rec="0",Sport 3 HD IL
+https://4.hls.gd/ch1130/mono.m3u8?token=olgasergej.v2_n8KMwwbODEh6UCQRZPKf5vUZiJ87PkVKZMBVS-2U7EfgjM7ShRaOaAUJLDsoYudgIrFjd8tWwIeGAks
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1131/mono-${start}-${duration}.m3u8?token=olgasergej.v2_d-qwJ536x30ywi5T5G1xu1WDcOZ6psTMCLxiyaq0UpmffuWt8ugx_i1Ae6uz08wiKnaAxDLfIj62OEU" tvg-id="Sport4.il" tvg-logo="https://i.imgur.com/wFXzzYs.png" group-title="Sports - Israel" tvg-rec="0",Sport 4 FHD IL
+https://4.hls.gd/ch1131/mono.m3u8?token=olgasergej.v2_d-qwJ536x30ywi5T5G1xu1WDcOZ6psTMCLxiyaq0UpmffuWt8ugx_i1Ae6uz08wiKnaAxDLfIj62OEU
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2628/mono-${start}-${duration}.m3u8?token=olgasergej.v2_qMhlcA3aNvR4j2mWkL2RHeWd7WzpwOn7FTPLkOaPkKioCXu6DgIkyZCM9YZWVHHrN3wWh8UAVgetKxY" tvg-id="Sport6.il" group-title="Sports - Israel" tvg-logo="https://hls.gd/images/chIcons/2628.png",Sport 6
+https://4.hls.gd/ch2628/mono.m3u8?token=olgasergej.v2_qMhlcA3aNvR4j2mWkL2RHeWd7WzpwOn7FTPLkOaPkKioCXu6DgIkyZCM9YZWVHHrN3wWh8UAVgetKxY
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/sections/sep_5sport.png" group-title="Sports - Israel",━━━━  5Sport  ━━━━
+https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/separator.mp4?section=sports-israel-5sport
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1132/mono-${start}-${duration}.m3u8?token=olgasergej.v2_Migq14SKXd59NLDZAStT_9W6pjuHgwUnPJ-DF6p_bF2_-xC8k0Pbnp-PVs3nAmFJIe7mVXMEjjYUmpY" tvg-id="5Sport.il" group-title="Sports - Israel" tvg-logo="http://epg.one/img2/2682.png" tvg-rec="3",5Sport FHD IL
+https://4.hls.gd/ch1132/mono.m3u8?token=olgasergej.v2_Migq14SKXd59NLDZAStT_9W6pjuHgwUnPJ-DF6p_bF2_-xC8k0Pbnp-PVs3nAmFJIe7mVXMEjjYUmpY
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1134/mono-${start}-${duration}.m3u8?token=olgasergej.v2_aKGfCejk0ncT01jMQOItu8cZMg7uCxje7tUeCk5uvZ1uyddCMuERplmqKOWgsj6TSzCGeHi1wcjoBvc" tvg-id="5SportPlus.il" group-title="Sports - Israel" tvg-logo="https://hls.gd/images/chIcons/1134.png",5Sport Plus
+https://4.hls.gd/ch1134/mono.m3u8?token=olgasergej.v2_aKGfCejk0ncT01jMQOItu8cZMg7uCxje7tUeCk5uvZ1uyddCMuERplmqKOWgsj6TSzCGeHi1wcjoBvc
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1135/mono-${start}-${duration}.m3u8?token=olgasergej.v2_IQg3EsmHjp80ngQ0fs1McbB8gl9Aij9_zQFbLXVU8W__o3WIN2xYyypfEXGg2gxlU9FvPdngMCrK2lg" tvg-id="5SportGold.il" group-title="Sports - Israel" tvg-logo="http://epg.one/img2/3992.png" tvg-rec="0",5Sport Gold HD IL
+https://4.hls.gd/ch1135/mono.m3u8?token=olgasergej.v2_IQg3EsmHjp80ngQ0fs1McbB8gl9Aij9_zQFbLXVU8W__o3WIN2xYyypfEXGg2gxlU9FvPdngMCrK2lg
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1155/mono-${start}-${duration}.m3u8?token=olgasergej.v2_Px2sh0KzhVYZ8nqonBmtbPXklkcRv9kRDJES5jJlBY5ddQxjH16QVazGrLz8YJnT38aok_4Z2jX4v4I" tvg-id="5SportLive.il" group-title="Sports - Israel" tvg-logo="http://epg.one/img2/3993.png" tvg-rec="3",5Sport Live FHD IL
+https://4.hls.gd/ch1155/mono.m3u8?token=olgasergej.v2_Px2sh0KzhVYZ8nqonBmtbPXklkcRv9kRDJES5jJlBY5ddQxjH16QVazGrLz8YJnT38aok_4Z2jX4v4I
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1156/mono-${start}-${duration}.m3u8?token=olgasergej.v2_IebvgzVgZHR8sIvO7FODwNssKq6ldTnR3Uwg-kNDQ-by5uoP53tp1cOy3aU7fCUG5sRfSY4UEqMA-Gw" tvg-id="5SportStars.il" group-title="Sports - Israel" tvg-logo="http://epg.one/img2/3994.png" tvg-rec="0",5Sport Stars FHD IL
+https://4.hls.gd/ch1156/mono.m3u8?token=olgasergej.v2_IebvgzVgZHR8sIvO7FODwNssKq6ldTnR3Uwg-kNDQ-by5uoP53tp1cOy3aU7fCUG5sRfSY4UEqMA-Gw
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2623/mono-${start}-${duration}.m3u8?token=olgasergej.v2_gvuSL1-6hHNGQnbaj4q8kfnjldN9BbYU6_QuDtxeyUHIY0BEv_TCbt8GjibA2UbQrMiiyJOSt8-ofgk" tvg-id="5SportMax.il" group-title="Sports - Israel" tvg-logo="https://hls.gd/images/chIcons/2623.png",5Sport MAX
+https://4.hls.gd/ch2623/mono.m3u8?token=olgasergej.v2_gvuSL1-6hHNGQnbaj4q8kfnjldN9BbYU6_QuDtxeyUHIY0BEv_TCbt8GjibA2UbQrMiiyJOSt8-ofgk
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2211/mono-${start}-${duration}.m3u8?token=olgasergej.v2_8JjkyLPs0DoumPJwaIy_bz-hGPceYNwS1azN69m9Fc-WUsVxH-xAOoFbofH5rWZHC79HgQfT98v_kGg" tvg-id="5Sport4K.il" tvg-logo="https://iptv-epg.org/images/oifhoMGddxpGAzNHtyOX3PpLHvP_fkolnntWDoNQ1FCXs3-VxdzvQSvhqfGbkGGaB88IWvtKLivWTUoYiq9tP45p-ew0J4Ycg9fN7STqNa4a" group-title="Sports - Israel" tvg-rec="0",5Sport 4K IL
+https://4.hls.gd/ch2211/mono.m3u8?token=olgasergej.v2_8JjkyLPs0DoumPJwaIy_bz-hGPceYNwS1azN69m9Fc-WUsVxH-xAOoFbofH5rWZHC79HgQfT98v_kGg
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/sections/sep_one.png" group-title="Sports - Israel",━━━━  ONE  ━━━━
+https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/separator.mp4?section=sports-israel-one
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1186/mono-${start}-${duration}.m3u8?token=olgasergej.v2_a2ebctuAcyQm1tTr_9x--9hWtgyFcLBrtMKtcqgEZ2Q5WlFHJjdXp_x-3msftoiOi0loSk3kAx4dRWE" tvg-id="One.il" group-title="Sports - Israel" tvg-logo="http://epg.one/img2/2681.png" tvg-rec="3",One HD IL
+https://4.hls.gd/ch1186/mono.m3u8?token=olgasergej.v2_a2ebctuAcyQm1tTr_9x--9hWtgyFcLBrtMKtcqgEZ2Q5WlFHJjdXp_x-3msftoiOi0loSk3kAx4dRWE
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1145/mono-${start}-${duration}.m3u8?token=olgasergej.v2_CvxFLixVkG0HkEuqfvWW2vrGBXPvj9shsbLqafivu5fY6iRzbIUhlzUPDoEv6X0QOqtz3cndwAiQInM" tvg-id="One2.il" group-title="Sports - Israel" tvg-logo="http://epg.one/img2/2704.png" tvg-rec="0",One 2 HD IL
+https://4.hls.gd/ch1145/mono.m3u8?token=olgasergej.v2_CvxFLixVkG0HkEuqfvWW2vrGBXPvj9shsbLqafivu5fY6iRzbIUhlzUPDoEv6X0QOqtz3cndwAiQInM
+#EXTINF:-1 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1195/mono-${start}-${duration}.m3u8?token=olgasergej.v2_EbngJohFeztJeVkvcjISavtL1TE7ld16YECllAhdeAxcCmJJTT_b4zPvwMXvaUFeZGoaO4jTIYFlQHI" tvg-id="One1Doco.il" group-title="Sports - Israel"  tvg-logo="http://odinson.me/storage/iptv/channels/5GLJrlclTi.png" ,ONE 1 DOCO HD IL
+https://4.hls.gd/ch1195/mono.m3u8?token=olgasergej.v2_EbngJohFeztJeVkvcjISavtL1TE7ld16YECllAhdeAxcCmJJTT_b4zPvwMXvaUFeZGoaO4jTIYFlQHI
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2629/mono-${start}-${duration}.m3u8?token=olgasergej.v2_WHFu6nVqYlbOvuBRaxlFBrcGbLoGmIw3NVJdr61OezS3pI66x3pn3HAny4QMoAfX56M17kJzNoubFyM" tvg-id="SportEdge.il" group-title="Sports - Israel" tvg-logo="https://hls.gd/images/chIcons/2629.png",Sport Edge
+https://4.hls.gd/ch2629/mono.m3u8?token=olgasergej.v2_WHFu6nVqYlbOvuBRaxlFBrcGbLoGmIw3NVJdr61OezS3pI66x3pn3HAny4QMoAfX56M17kJzNoubFyM
+#EXTINF:-1 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2497/mono-${start}-${duration}.m3u8?token=olgasergej.v2_ioWg19Q_cFAZ8YKVz0jG5DfOYXvMSK0eErnA-ApeZbVKq6KyRoYbuvwSuYbIbTnLgI6EBHe7-IZcLDI" tvg-id="Eurosport2.il" tvg-logo="https://iptv-epg.org/images/eXlhT1dJmDQjgPMrR30V6BHOzmpfcQfJ9wWM3jQwVSkMuF3e8g1By5_ZoNbGUR1ioj5OfxrvVjEje-EPayGAaXvDTb0erRB5bj8vITcqhhGIpRs" group-title="Sports - International",Eurosport 2 HD
+https://4.hls.gd/ch2497/mono.m3u8?token=olgasergej.v2_ioWg19Q_cFAZ8YKVz0jG5DfOYXvMSK0eErnA-ApeZbVKq6KyRoYbuvwSuYbIbTnLgI6EBHe7-IZcLDI
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2496/mono-${start}-${duration}.m3u8?token=olgasergej.v2_CTa0XVB2F3e3dYn20QaMlpuTG-AnAudRbj2JH_zETDn0L2HplafsUIlnLDlDpt5uo_x9kvg6qRdi_HI" tvg-id="Eurosport1.il" group-title="Sports - International" tvg-logo="https://hls.gd/images/chIcons/2496.png",Eurosport 1
+https://4.hls.gd/ch2496/mono.m3u8?token=olgasergej.v2_CTa0XVB2F3e3dYn20QaMlpuTG-AnAudRbj2JH_zETDn0L2HplafsUIlnLDlDpt5uo_x9kvg6qRdi_HI
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/sections/sep_little_kids.png" group-title="Kids",━━━━  Little Kids  ━━━━
+https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/separator.mp4?section=kids-little-kids
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1118/mono-${start}-${duration}.m3u8?token=olgasergej.v2_EcbW0dU4MhepTd1N5p0c9fKGUdQ1WFbvZ5vGWdZO4x2IYwvNsIuZS9PfFiCuCdMhg0KlYomGjrBdYFk" tvg-id="BabyTv.il" tvg-logo="https://i.imgur.com/4BDJ5FT.png" group-title="Kids" tvg-rec="3",Baby TV IL
+https://4.hls.gd/ch1118/mono.m3u8?token=olgasergej.v2_EcbW0dU4MhepTd1N5p0c9fKGUdQ1WFbvZ5vGWdZO4x2IYwvNsIuZS9PfFiCuCdMhg0KlYomGjrBdYFk
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1170/mono-${start}-${duration}.m3u8?token=olgasergej.v2_L3grLWTnv2b6zmv_Zd7xokffXGFgFDVScdtNE4auab23K9TBHw3-gnX8vijr0VFlRnAtJOQKyvheJSU" tvg-id="Luli.il" group-title="Kids" tvg-logo="http://epg.one/img2/2695.png" tvg-rec="3",Luli IL
+https://4.hls.gd/ch1170/mono.m3u8?token=olgasergej.v2_L3grLWTnv2b6zmv_Zd7xokffXGFgFDVScdtNE4auab23K9TBHw3-gnX8vijr0VFlRnAtJOQKyvheJSU
+#EXTINF:-1 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1154/mono-${start}-${duration}.m3u8?token=olgasergej.v2_enjmyt_A-o_5LoSBMX8cZZGGVrO56a69OQtUbAZjUyuOXt1unhuSOQcfP6ZoNSC7FlnzpsyvWzIMzH8" tvg-id="Hop.il" tvg-logo="https://i.imgur.com/bScuilD.png" group-title="Kids",Hop! HD IL
+https://4.hls.gd/ch1154/mono.m3u8?token=olgasergej.v2_enjmyt_A-o_5LoSBMX8cZZGGVrO56a69OQtUbAZjUyuOXt1unhuSOQcfP6ZoNSC7FlnzpsyvWzIMzH8
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2138/mono-${start}-${duration}.m3u8?token=olgasergej.v2_fAsfpacfd5qtbVdpNX21GoM_MbNaw0e1aR4lbDQaNSuf2NfbyGa9JNY0rxn7Zvhk2CbmkEzSQF-pfQc" tvg-id="HopIsraeliChildhood.il" group-title="Kids" tvg-logo="https://hls.gd/images/chIcons/2138.png",Hop! Israeli Childhood
+https://4.hls.gd/ch2138/mono.m3u8?token=olgasergej.v2_fAsfpacfd5qtbVdpNX21GoM_MbNaw0e1aR4lbDQaNSuf2NfbyGa9JNY0rxn7Zvhk2CbmkEzSQF-pfQc
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2003/mono-${start}-${duration}.m3u8?token=olgasergej.v2_MHrzj3y7MW5emljmHyQygCV8pW4FqsDOLm2xjGFPE4xfSeZq5sp6iuXGm6Ow_QgQt9QSU-1-RCWxlGI" tvg-id="HopPele.il" group-title="Kids" tvg-logo="https://hls.gd/images/chIcons/2003.png",Hop! Pele
+https://4.hls.gd/ch2003/mono.m3u8?token=olgasergej.v2_MHrzj3y7MW5emljmHyQygCV8pW4FqsDOLm2xjGFPE4xfSeZq5sp6iuXGm6Ow_QgQt9QSU-1-RCWxlGI
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1184/mono-${start}-${duration}.m3u8?token=olgasergej.v2_5ooWLuNoIR4GGdkBDl9uRH3R-M_UyP3BELoQvD7j92AImc8QzBI2nHCkFt-VNRX2xRO6oObtmHa9u38" tvg-id="Junior.il" group-title="Kids" tvg-logo="http://epg.one/img2/2697.png" tvg-rec="3",Junior HD IL
+https://4.hls.gd/ch1184/mono.m3u8?token=olgasergej.v2_5ooWLuNoIR4GGdkBDl9uRH3R-M_UyP3BELoQvD7j92AImc8QzBI2nHCkFt-VNRX2xRO6oObtmHa9u38
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2637/mono-${start}-${duration}.m3u8?token=olgasergej.v2_wA9TgPDLiqwzYxQ-yPiT_0RILPsTx9AatktnJTalwd4KMGnsajbNkzE_2QO-6VGId1wbNZIreowodMo" tvg-id="NickJr.il" group-title="Kids" tvg-logo="http://epg.one/img2/2678.png" tvg-rec="3",Nick Jr. IL
+https://4.hls.gd/ch2637/mono.m3u8?token=olgasergej.v2_wA9TgPDLiqwzYxQ-yPiT_0RILPsTx9AatktnJTalwd4KMGnsajbNkzE_2QO-6VGId1wbNZIreowodMo
+#EXTINF:-1 tvg-id="DisneyJr.il" group-title="Kids"  tvg-logo="http://odinson.me/storage/iptv/channels/fvQTv7fJ45.png"   catchup="default" catchup-source="http://66.90.110.10:8080/W2opRB4gDD/mpegts?token=CNVkbIWpdNQAUXGC&utc=${start}" catchup-days="1" timeshift="1",DISNEY JR. HD IL
+https://4.hls.gd/ch1162/mono.m3u8?token=olgasergej.v2_fJjQrx8vMssZPmQWNCnagzmA_i88BWTD_RIxqho7tJF040oUsXIyTRZJ-1K3CqRV0m2T-e0PLgc-NjQ
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2645/mono-${start}-${duration}.m3u8?token=olgasergej.v2_n1Ol-8J8IzMTaCDzGJTjKN6A9xdEH0sUZcW4vLZdklHD7aJ8S-zqv8KsDKwvgxkhjW6QKOUtPk0mr2Q" tvg-id="JimJam.il" group-title="Kids" tvg-logo="https://hls.gd/images/chIcons/2645.png",Jim Jam
+https://4.hls.gd/ch2645/mono.m3u8?token=olgasergej.v2_n1Ol-8J8IzMTaCDzGJTjKN6A9xdEH0sUZcW4vLZdklHD7aJ8S-zqv8KsDKwvgxkhjW6QKOUtPk0mr2Q
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2625/mono-${start}-${duration}.m3u8?token=olgasergej.v2_yekpWifsGh3zg_OHzHeXHEL8T0tUlF5nxHuVhnslWl-hXohcgmGR-6H8BZGh9mCeP5oPTRPGZfnq9JQ" tvg-id="Yoyo.il" group-title="Kids" tvg-logo="https://hls.gd/images/chIcons/2625.png",YoYo
+https://4.hls.gd/ch2625/mono.m3u8?token=olgasergej.v2_yekpWifsGh3zg_OHzHeXHEL8T0tUlF5nxHuVhnslWl-hXohcgmGR-6H8BZGh9mCeP5oPTRPGZfnq9JQ
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2646/mono-${start}-${duration}.m3u8?token=olgasergej.v2_6qROV-XjEcRWMBteZLwGzgCZ1ZOqwUupwrZueEP34ov3VBl-gZXe04gS6lByE5P-e2UAlgnDDKejKEA" tvg-id="Yalduti.il" group-title="Kids" tvg-logo="https://hls.gd/images/chIcons/2646.png",Yalduti
+https://4.hls.gd/ch2646/mono.m3u8?token=olgasergej.v2_6qROV-XjEcRWMBteZLwGzgCZ1ZOqwUupwrZueEP34ov3VBl-gZXe04gS6lByE5P-e2UAlgnDDKejKEA
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2626/mono-${start}-${duration}.m3u8?token=olgasergej.v2_T8NtER-Y34BxW4Cm-i0306LQgkmovuBB68vNtmJ5VKgaCqHRUR0ON4qA3lfLiULwkwKuATvrNEka8jo" tvg-id="Logi.il" group-title="Kids" tvg-logo="https://hls.gd/images/chIcons/2626.png",Logi
+https://4.hls.gd/ch2626/mono.m3u8?token=olgasergej.v2_T8NtER-Y34BxW4Cm-i0306LQgkmovuBB68vNtmJ5VKgaCqHRUR0ON4qA3lfLiULwkwKuATvrNEka8jo
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/sections/sep_kids_teens.png" group-title="Kids",━━━━  Kids & Teens  ━━━━
+https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/separator.mp4?section=kids-kids-teens
+#EXTINF:-1 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1121/mono-${start}-${duration}.m3u8?token=olgasergej.v2_jmfBs84Y-vwcB9kngNYWR-JZZq1zcszBOtUterKeoe2QGEEGkx8BT-mS-dArdgSF5ZHKAjtkK7eAGRM" tvg-id="DisneyChannel.il" group-title="Kids"  tvg-logo="http://odinson.me/storage/iptv/channels/OId7hQ9Meh.png" ,DISNEY CHANNEL HD IL
+https://4.hls.gd/ch1121/mono.m3u8?token=olgasergej.v2_jmfBs84Y-vwcB9kngNYWR-JZZq1zcszBOtUterKeoe2QGEEGkx8BT-mS-dArdgSF5ZHKAjtkK7eAGRM
+#EXTINF:-1 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1185/mono-${start}-${duration}.m3u8?token=olgasergej.v2_8JYdLA5rd7FGo2fbEqg7eJqNyO9wM3tlaQJ6Ah0ARC5_-7vLMP9uqqS__e4krfoMpHuLqmWKbC_GpRE" tvg-id="Nickelodeon.il" group-title="Kids"  tvg-logo="http://odinson.me/storage/iptv/channels/haOPRrVxOu.png" ,Nickelodeon HD IL
+https://4.hls.gd/ch1185/mono.m3u8?token=olgasergej.v2_8JYdLA5rd7FGo2fbEqg7eJqNyO9wM3tlaQJ6Ah0ARC5_-7vLMP9uqqS__e4krfoMpHuLqmWKbC_GpRE
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2500/mono-${start}-${duration}.m3u8?token=olgasergej.v2_Jn58xYnjwhkTsDwIWeTGuqLgX7Ml0lfRlOFh8fH0pLb7aWLJEInOfDU6pV3k0mJRPEFfsUu3rYjJ9Yo" tvg-id="Teennick.il" group-title="Kids" tvg-logo="https://hls.gd/images/chIcons/2500.png",TeenNick
+https://4.hls.gd/ch2500/mono.m3u8?token=olgasergej.v2_Jn58xYnjwhkTsDwIWeTGuqLgX7Ml0lfRlOFh8fH0pLb7aWLJEInOfDU6pV3k0mJRPEFfsUu3rYjJ9Yo
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2643/mono-${start}-${duration}.m3u8?token=olgasergej.v2_Fw4hr_rinosUdnik1r-Wy29_bxcvbpmomxolIARvdz2pm7inIGodsTnw6uj5i36MMfyJ5_jw9tLAm0E" tvg-id="Zoom.il" tvg-logo="https://iptv-epg.org/images/mWN_dOX_u5_vNmQEsvNoXrBwK8pvmA8tWYkxToe_uDEiHHoGfRo47ncMSyRZBW9lUeOY7Wi4MXfLdjQP7MmnpGUKIMQGVWdr7UFSFtg" group-title="Kids" tvg-rec="3",Zoom IL
+https://4.hls.gd/ch2643/mono.m3u8?token=olgasergej.v2_Fw4hr_rinosUdnik1r-Wy29_bxcvbpmomxolIARvdz2pm7inIGodsTnw6uj5i36MMfyJ5_jw9tLAm0E
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2644/mono-${start}-${duration}.m3u8?token=olgasergej.v2_5IJF93jprjIg5bmlBUnWdByty1JmeruKVLDMhU5ETJsthfF_6UyWbnrHMrXTnchmh48-zwx-wUGFIZA" tvg-id="ZoomToon.il" group-title="Kids" tvg-logo="https://hls.gd/images/chIcons/2644.png",Zoom Toon
+https://4.hls.gd/ch2644/mono.m3u8?token=olgasergej.v2_5IJF93jprjIg5bmlBUnWdByty1JmeruKVLDMhU5ETJsthfF_6UyWbnrHMrXTnchmh48-zwx-wUGFIZA
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2031/mono-${start}-${duration}.m3u8?token=olgasergej.v2_xpxFB7H7Gq2fzcTd2_UlKJH64mdFGT8BwKMH1LF0AtnNgkyLHAQ-kv1BZ_qvjv2tn1Zgs_F7tts0Z7M" tvg-id="Wiz.il" group-title="Kids" tvg-logo="http://epg.one/img2/5087.png" tvg-rec="0",WIZ HD IL
+https://4.hls.gd/ch2031/mono.m3u8?token=olgasergej.v2_xpxFB7H7Gq2fzcTd2_UlKJH64mdFGT8BwKMH1LF0AtnNgkyLHAQ-kv1BZ_qvjv2tn1Zgs_F7tts0Z7M
+#EXTINF:-1 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1171/mono-${start}-${duration}.m3u8?token=olgasergej.v2_KUO9KbjvWBlLPvVJaEpftckhplE2i0X8Vg6NoQqKrQoMUzYgnmrD2wx1YskHJsTT0ui112y_FMww4X4" tvg-id="KanEducational.il" tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/kan_educational.png" group-title="Kids",Kan Educational IL
+https://4.hls.gd/ch1171/mono.m3u8?token=olgasergej.v2_KUO9KbjvWBlLPvVJaEpftckhplE2i0X8Vg6NoQqKrQoMUzYgnmrD2wx1YskHJsTT0ui112y_FMww4X4
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/sections/sep_kids_movies.png" group-title="Kids",━━━━  Kids Movies  ━━━━
+https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/separator.mp4?section=kids-kids-movies
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1151/mono-${start}-${duration}.m3u8?token=olgasergej.v2_v2fUgDndKxS5Jsg6wZBG5XK0XS5qAUZhvGgBZAT-JC2LrQOEQVm3djeTqFYd1S5BVJo7RHwOVV44rbM" tvg-id="YesMoviesKids.il" group-title="Kids" tvg-logo="http://epg.one/img2/2967.png" tvg-rec="0",Yes Movies Kids FHD IL
+https://4.hls.gd/ch1151/mono.m3u8?token=olgasergej.v2_v2fUgDndKxS5Jsg6wZBG5XK0XS5qAUZhvGgBZAT-JC2LrQOEQVm3djeTqFYd1S5BVJo7RHwOVV44rbM
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1194/mono-${start}-${duration}.m3u8?token=olgasergej.v2_SBs2DK_u1ysxb4s5lSQXcjj27KFEjPq7ME66QdJE2nXZ7DDXy7K2afE4AlAjDyfllb2ATp2nUie0wfU" tvg-id="CellcomMoviesKids.il" group-title="Kids" tvg-logo="https://hls.gd/images/chIcons/1194.png",Cellcom Movies Kids
+https://4.hls.gd/ch1194/mono.m3u8?token=olgasergej.v2_SBs2DK_u1ysxb4s5lSQXcjj27KFEjPq7ME66QdJE2nXZ7DDXy7K2afE4AlAjDyfllb2ATp2nUie0wfU
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/sections/sep_hot.png" group-title="Movies",━━━━  HOT  ━━━━
+https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/separator.mp4?section=movies-hot
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1161/mono-${start}-${duration}.m3u8?token=olgasergej.v2_aHXkFxr1n_by7u2Jcc5s4R-yyr09flUK2QW8YNQCOEn81Qa2V5Tfgh_ROG-tH_lA3LK2OmkHR0HffI0" tvg-id="HotCinema1.il" tvg-logo="https://iptv-epg.org/images/dbtNllv6NHkt5AFBY4C4cyyv-WtkqP0Z3KhrDNiYCbwbIjAeNvDoOr5Od_t8GB6ZgqMJlbSy29bCwf7a6JJqCXl3Hs00prYGnjkJGlXu6GU0pB8" group-title="Movies" tvg-rec="3",HOT Cinema 1 FHD IL
+https://4.hls.gd/ch1161/mono.m3u8?token=olgasergej.v2_aHXkFxr1n_by7u2Jcc5s4R-yyr09flUK2QW8YNQCOEn81Qa2V5Tfgh_ROG-tH_lA3LK2OmkHR0HffI0
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1172/mono-${start}-${duration}.m3u8?token=olgasergej.v2_zVAZpECVCknlhLS-PqLcwR5N5LnJLD3_YLD3mNh_X6Ci0FdEsfASwiim0liwy-96upOSWZfrQstpNuw" tvg-id="HotCinema2.il" group-title="Movies" tvg-logo="http://epg.one/img2/2702.png" tvg-rec="0",HOT Cinema 2 HD IL
+https://4.hls.gd/ch1172/mono.m3u8?token=olgasergej.v2_zVAZpECVCknlhLS-PqLcwR5N5LnJLD3_YLD3mNh_X6Ci0FdEsfASwiim0liwy-96upOSWZfrQstpNuw
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1140/mono-${start}-${duration}.m3u8?token=olgasergej.v2_CeiczyK1rFGTjJ2PRKSNgdS2qORFbS9jaaoe5j7gAiBNFI6aT8s_zI4WXUyXw5yUwcYf79GLJXQcRzI" tvg-id="HotCinema3.il" group-title="Movies" tvg-logo="http://epg.one/img2/2703.png" tvg-rec="3",HOT Cinema 3 FHD IL
+https://4.hls.gd/ch1140/mono.m3u8?token=olgasergej.v2_CeiczyK1rFGTjJ2PRKSNgdS2qORFbS9jaaoe5j7gAiBNFI6aT8s_zI4WXUyXw5yUwcYf79GLJXQcRzI
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1192/mono-${start}-${duration}.m3u8?token=olgasergej.v2_eGif0uZ5eiGFhYh-oOZcUdws2bZt3nZTbstGX9TAmNHhH96sdhAfLWCCCrp2Li7qzCsrdA8fm41RfUs" tvg-id="HotCinema4.il" group-title="Movies" tvg-logo="http://epg.one/img2/2687.png" tvg-rec="3",HOT Cinema 4 HD IL
+https://4.hls.gd/ch1192/mono.m3u8?token=olgasergej.v2_eGif0uZ5eiGFhYh-oOZcUdws2bZt3nZTbstGX9TAmNHhH96sdhAfLWCCCrp2Li7qzCsrdA8fm41RfUs
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1153/mono-${start}-${duration}.m3u8?token=olgasergej.v2_EjENCu8EJKRMYts8p7eIY_S_U62tTd-HRX-3Hjt-b7FfJEnDzBsOnDjYMo0ntiJh33dAO9dRkZAyUfs" tvg-id="HotCinemaFamily.il" tvg-logo="https://cdn.epg.one/img2/9056.png" group-title="Movies" tvg-rec="3",HOT Cinema Family HD IL
+https://4.hls.gd/ch1153/mono.m3u8?token=olgasergej.v2_EjENCu8EJKRMYts8p7eIY_S_U62tTd-HRX-3Hjt-b7FfJEnDzBsOnDjYMo0ntiJh33dAO9dRkZAyUfs
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1133/mono-${start}-${duration}.m3u8?token=olgasergej.v2_hPMEJruJZ3ope8SL0amz20D_Y_YIrO4bREGa27Olz6ixMQPj_I3U7Gdg3hYouXDBhLfmIIMsBjQcdt0" tvg-id="HotCinemaIsraeli.il" group-title="Movies" tvg-logo="https://hls.gd/images/chIcons/1133.png",HOT Cinema Israeli
+https://4.hls.gd/ch1133/mono.m3u8?token=olgasergej.v2_hPMEJruJZ3ope8SL0amz20D_Y_YIrO4bREGa27Olz6ixMQPj_I3U7Gdg3hYouXDBhLfmIIMsBjQcdt0
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/sections/sep_yes.png" group-title="Movies",━━━━  yes  ━━━━
+https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/separator.mp4?section=movies-yes
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1148/mono-${start}-${duration}.m3u8?token=olgasergej.v2_Tx_Q2kl4PVD_xFnbG6AotmuwSq4YSJuTsml_UNsJ7vTQcGlCboissxQcHGmRPY6z4Vwh_stzmfMpfGs" tvg-id="YesMoviesAction.il" tvg-logo="https://iptv-epg.org/images/i00xp1xMX8MhsOp9BFoTLtxD_80oYjYJjOyHimIoHVRfppYdPx17qk_G0p5-Yiq_vy-lG4gCF4unfMZXJgmyW6wIs4y2eLS1EjGBEutbreawQJc0DUINDQ" group-title="Movies" tvg-rec="0",Yes Movies Action FHD IL
+https://4.hls.gd/ch1148/mono.m3u8?token=olgasergej.v2_Tx_Q2kl4PVD_xFnbG6AotmuwSq4YSJuTsml_UNsJ7vTQcGlCboissxQcHGmRPY6z4Vwh_stzmfMpfGs
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1149/mono-${start}-${duration}.m3u8?token=olgasergej.v2_-WBvNTCA8f2g_tNNpycrsujp5EAuukfTilA1qsUSiY3ndierCD-_huPxwo4q7cCSx6KSVYN3BW64mKU" tvg-id="YesMoviesComedy.il" tvg-logo="https://iptv-epg.org/images/HVyHU9_3xDJCa-2ossSPaUfnwEdI3xfwJGw4vGcfcb6bG8mxutUkIkknIOYUDcR5cX9mBev5fdK6khrBvbTquRxL3RMhgqVOkNug5fgUZqKaMfSZG2Ppow" group-title="Movies" tvg-rec="0",Yes Movies Comedy FHD IL
+https://4.hls.gd/ch1149/mono.m3u8?token=olgasergej.v2_-WBvNTCA8f2g_tNNpycrsujp5EAuukfTilA1qsUSiY3ndierCD-_huPxwo4q7cCSx6KSVYN3BW64mKU
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1150/mono-${start}-${duration}.m3u8?token=olgasergej.v2_oe1xu40zAGLkSzJxopraS4aTF_40l_n_xQQ4zgdcvbevbEhxLTCALxorO74rYICVhIHFRkXn15bMxdc" tvg-id="YesMoviesDrama.il" tvg-logo="https://iptv-epg.org/images/t90jgL1ReMIi8U1Go90yDAQy8Vq-W1daKKrFwG9jQkMH00ppdXrMQRB8LVWkCkHuvjVqpgNqCBYStpoO3AaXUfPHtqpyHaqFpJhCaiJVkd1w19oo_-pI" group-title="Movies" tvg-rec="0",Yes Movies Drama FHD IL
+https://4.hls.gd/ch1150/mono.m3u8?token=olgasergej.v2_oe1xu40zAGLkSzJxopraS4aTF_40l_n_xQQ4zgdcvbevbEhxLTCALxorO74rYICVhIHFRkXn15bMxdc
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1915/mono-${start}-${duration}.m3u8?token=olgasergej.v2_xdbinRC2GoU51yBnmqzzsFE08tfv_E4_DL5-QDQx7UcXQjvEgDiGEN1mqvO7r9qG7qPwcC7-B-CQ1ME" tvg-id="YesPlusCinema.il" group-title="Movies" tvg-logo="https://hls.gd/images/chIcons/1915.png",Yes+ Cinema
+https://4.hls.gd/ch1915/mono.m3u8?token=olgasergej.v2_xdbinRC2GoU51yBnmqzzsFE08tfv_E4_DL5-QDQx7UcXQjvEgDiGEN1mqvO7r9qG7qPwcC7-B-CQ1ME
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch3030/mono-${start}-${duration}.m3u8?token=olgasergej.v2_HNyjupi5YiLOgf-Wc3H5rvx618YfeGjXTmgawp7b4ZaQWk_Qdf2sCVLgzs3UPjmsm7TflRhjR9xwhI8" tvg-id="YesPlusDiamonds.il" group-title="Movies" tvg-logo="https://hls.gd/images/chIcons/3030.png",Yes+ Diamonds
+https://4.hls.gd/ch3030/mono.m3u8?token=olgasergej.v2_HNyjupi5YiLOgf-Wc3H5rvx618YfeGjXTmgawp7b4ZaQWk_Qdf2sCVLgzs3UPjmsm7TflRhjR9xwhI8
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch4033/mono-${start}-${duration}.m3u8?token=olgasergej.v2_MkMP3iE6WkAwhuewS3q2PyjAwCHghN0UD9IB-XW8hkL0NWmgl_H0gNO70ivcTOJTTojxFqqeHtw2MGo" tvg-id="YesPlusLove.il" group-title="Movies" tvg-logo="https://hls.gd/images/chIcons/4033.png",Yes+ Love
+https://4.hls.gd/ch4033/mono.m3u8?token=olgasergej.v2_MkMP3iE6WkAwhuewS3q2PyjAwCHghN0UD9IB-XW8hkL0NWmgl_H0gNO70ivcTOJTTojxFqqeHtw2MGo
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch4034/mono-${start}-${duration}.m3u8?token=olgasergej.v2_j9SxrCaq5-X9s9SvqOTNd2my1vBAx4U_agyQqR7b_s7rMCgpV4avdnJN2IlBulfFQSdQSmSwjX31gzE" tvg-id="YesPlusDark.il" group-title="Movies" tvg-logo="https://hls.gd/images/chIcons/4034.png",Yes+ Dark
+https://4.hls.gd/ch4034/mono.m3u8?token=olgasergej.v2_j9SxrCaq5-X9s9SvqOTNd2my1vBAx4U_agyQqR7b_s7rMCgpV4avdnJN2IlBulfFQSdQSmSwjX31gzE
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/sections/sep_free_tv.png" group-title="Movies",━━━━  Free TV  ━━━━
+https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/separator.mp4?section=movies-free-tv
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2537/mono-${start}-${duration}.m3u8?token=olgasergej.v2_hL7GwSaz1RY7zOtBUHbvwTW03ATEmPE6qrWDsC_NQ3Jn918qcQTHawYsGWhJKNeLA3zwRdWAa-xDKB4" tvg-id="FreeMoviesAction.il" group-title="Movies" tvg-logo="https://hls.gd/images/chIcons/2537.png",Free Movies Action
+https://4.hls.gd/ch2537/mono.m3u8?token=olgasergej.v2_hL7GwSaz1RY7zOtBUHbvwTW03ATEmPE6qrWDsC_NQ3Jn918qcQTHawYsGWhJKNeLA3zwRdWAa-xDKB4
+#EXTINF:-1 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1193/mono-${start}-${duration}.m3u8?token=olgasergej.v2_teflZ1dl4f-FTL5n2r-xVU5Wt9nKpKqKXuDqQ0zrTzB1lIgODStXrI_ZCUAYVWBjxWht9lyncw0zS7s" tvg-id="FreeTvMoviesComedy.il" group-title="Movies"  tvg-logo="http://odinson.me/storage/iptv/channels/Ri7GtE4fEN.png" ,FREE TV MOVIES COMEDY HD
+https://4.hls.gd/ch1193/mono.m3u8?token=olgasergej.v2_teflZ1dl4f-FTL5n2r-xVU5Wt9nKpKqKXuDqQ0zrTzB1lIgODStXrI_ZCUAYVWBjxWht9lyncw0zS7s
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2534/mono-${start}-${duration}.m3u8?token=olgasergej.v2_M7vzLuxfM77FbqQhsZy8PaMUr-R_hepgPgeRrsFAZqz9nFnY713_nqipt_lO5isKgUfrQT_qzpMf2YY" tvg-id="FreeMoviesDrama.il" group-title="Movies" tvg-logo="https://hls.gd/images/chIcons/2534.png",Free Movies Drama
+https://4.hls.gd/ch2534/mono.m3u8?token=olgasergej.v2_M7vzLuxfM77FbqQhsZy8PaMUr-R_hepgPgeRrsFAZqz9nFnY713_nqipt_lO5isKgUfrQT_qzpMf2YY
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2535/mono-${start}-${duration}.m3u8?token=olgasergej.v2_BaRH6-QZ1gKNOhpwvehA69nRzYjEQuNGEF80uLXbTcuvPKr3N0z9iaLRi-M9cJJv3FUQEB-EY0PW8X0" tvg-id="FreeMoviesHorror.il" group-title="Movies" tvg-logo="https://hls.gd/images/chIcons/2535.png",Free Movies Horror
+https://4.hls.gd/ch2535/mono.m3u8?token=olgasergej.v2_BaRH6-QZ1gKNOhpwvehA69nRzYjEQuNGEF80uLXbTcuvPKr3N0z9iaLRi-M9cJJv3FUQEB-EY0PW8X0
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2536/mono-${start}-${duration}.m3u8?token=olgasergej.v2_Uvgb-7o8eHAaYOzSymN3n8ebPQ3mEdtzkPGF585kino5OZZ3s_G8a129Gygda4BSI5GY8RVBCuEqFDk" tvg-id="FreeMoviesRomantic.il" group-title="Movies" tvg-logo="https://hls.gd/images/chIcons/2536.png",Free Movies Romantic
+https://4.hls.gd/ch2536/mono.m3u8?token=olgasergej.v2_Uvgb-7o8eHAaYOzSymN3n8ebPQ3mEdtzkPGF585kino5OZZ3s_G8a129Gygda4BSI5GY8RVBCuEqFDk
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2617/mono-${start}-${duration}.m3u8?token=olgasergej.v2_lCSAswk_McgMHn7Wknh1PkxfyV2FT3SR5FEU4nPSoljG6SZGBJEEodEbTUtm7aCgmKeekcKw0qg8I2c" tvg-id="FreeMoviesFamily.il" group-title="Movies" tvg-logo="https://hls.gd/images/chIcons/2617.png",Free Movies Family
+https://4.hls.gd/ch2617/mono.m3u8?token=olgasergej.v2_lCSAswk_McgMHn7Wknh1PkxfyV2FT3SR5FEU4nPSoljG6SZGBJEEodEbTUtm7aCgmKeekcKw0qg8I2c
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch3036/mono-${start}-${duration}.m3u8?token=olgasergej.v2_bint9H3q8FZ3zxcjvc_b3e7hRfHgMLjwrnaVLCshWzHvBavhtuAWuFEAl2aQqSzeYkGDWOWoIElb6x8" tvg-id="FreeTvFeelGood.il" group-title="Movies" tvg-logo="https://hls.gd/images/chIcons/3036.png",Free TV Feel Good
+https://4.hls.gd/ch3036/mono.m3u8?token=olgasergej.v2_bint9H3q8FZ3zxcjvc_b3e7hRfHgMLjwrnaVLCshWzHvBavhtuAWuFEAl2aQqSzeYkGDWOWoIElb6x8
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch3224/mono-${start}-${duration}.m3u8?token=olgasergej.v2_GB1fyT2Y-8pfbUx527n4vStkO7hN4gN9-E2TBOtl7sjbl-NJpcsWN4LBALhLjqyOKcXdPFv1EdLmt-8" tvg-id="FreeMovies10Stars.il" group-title="Movies" tvg-logo="https://hls.gd/images/chIcons/3224.png",Free Movies 10 Stars
+https://4.hls.gd/ch3224/mono.m3u8?token=olgasergej.v2_GB1fyT2Y-8pfbUx527n4vStkO7hN4gN9-E2TBOtl7sjbl-NJpcsWN4LBALhLjqyOKcXdPFv1EdLmt-8
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2538/mono-${start}-${duration}.m3u8?token=olgasergej.v2_DfDXZ-J0qzx_i_T8F8QNkBJ8VMIWx4tuArVx2tPUpL1WFV8mXjLhT1Y6Hj0pLfVV4tMMY3isQwHA2-Q" tvg-id="FreeIsraeliMovies.il" group-title="Movies" tvg-logo="https://hls.gd/images/chIcons/2538.png",Free Israeli Movies
+https://4.hls.gd/ch2538/mono.m3u8?token=olgasergej.v2_DfDXZ-J0qzx_i_T8F8QNkBJ8VMIWx4tuArVx2tPUpL1WFV8mXjLhT1Y6Hj0pLfVV4tMMY3isQwHA2-Q
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/sections/sep_other.png" group-title="Movies",━━━━  Other  ━━━━
+https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/separator.mp4?section=movies-other
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2495/mono-${start}-${duration}.m3u8?token=olgasergej.v2_maijYPm3xbPl1f6Xuhal_i7RpSiiePRfoSRFP3L8HS-59xQ1wVqmT9t7MXXTUNAQq69NFUKRFgCtaOo" tvg-id="CellcomMoviesAction.il" group-title="Movies" tvg-logo="https://hls.gd/images/chIcons/2495.png",Cellcom Movies Action
+https://4.hls.gd/ch2495/mono.m3u8?token=olgasergej.v2_maijYPm3xbPl1f6Xuhal_i7RpSiiePRfoSRFP3L8HS-59xQ1wVqmT9t7MXXTUNAQq69NFUKRFgCtaOo
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2616/mono-${start}-${duration}.m3u8?token=olgasergej.v2_4tXdGG2zD54EQd870N_Eb-fJur2MpJfwHHEG7mc4xydrAgXuN3n7g3eShJOvmvQkuLwYkQKJF0uVyks" tvg-id="BollywoodIndianFilms.il" group-title="Movies" tvg-logo="http://epg.one/img2/5071.png" tvg-rec="0",BollywooD Indian Films IL
+https://4.hls.gd/ch2616/mono.m3u8?token=olgasergej.v2_4tXdGG2zD54EQd870N_Eb-fJur2MpJfwHHEG7mc4xydrAgXuN3n7g3eShJOvmvQkuLwYkQKJF0uVyks
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/sections/sep_international.png" group-title="Documentary & Nature",━━━━  International  ━━━━
+https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/separator.mp4?section=documentary-nature-international
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1120/mono-${start}-${duration}.m3u8?token=olgasergej.v2_SzjI05MZSvYr_78VWF8dQK4WODQYvtH6hlPGxYk3LFmwWNl6H1duiVHox2dUnGnHSr4QQlpdDRBqlAo" tvg-id="DiscoveryChannel.il" tvg-logo="https://i.imgur.com/7pmvDqg.png" group-title="Documentary & Nature" tvg-rec="3",Discovery Channel FHD IL
+https://4.hls.gd/ch1120/mono.m3u8?token=olgasergej.v2_SzjI05MZSvYr_78VWF8dQK4WODQYvtH6hlPGxYk3LFmwWNl6H1duiVHox2dUnGnHSr4QQlpdDRBqlAo
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1126/mono-${start}-${duration}.m3u8?token=olgasergej.v2_32-I-I0MAU4ZSVwBShV9rviwHOqd_E3Ot1_8Yo-BADj86nGtzfanJoqZZJSFZzJX_r0DcibGgxIfmAc" tvg-id="NationalGeographic.il" group-title="Documentary & Nature" tvg-logo="http://epg.one/img2/2677.png" tvg-rec="0",National Geographic HD IL
+https://4.hls.gd/ch1126/mono.m3u8?token=olgasergej.v2_32-I-I0MAU4ZSVwBShV9rviwHOqd_E3Ot1_8Yo-BADj86nGtzfanJoqZZJSFZzJX_r0DcibGgxIfmAc
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1138/mono-${start}-${duration}.m3u8?token=olgasergej.v2_QsOY2EU0RQWex7HmABEZXqutrV2J0HfP_gYVXMJn5-yt0AWt84KTf3yz5jn731p0ejHBWZLdWba-3tU" tvg-id="NationalGeographicWild.il" tvg-logo="https://iptv-epg.org/images/0reDlhvueBOz84pNOYlhM_XZ6MNExKS-1hxARplk7nbLpZfmitg_0eFkqJiyZTf5xr20QaEQkygjzqErBXvaEUz-QQBkEkCymxIMjLEO6A" group-title="Documentary & Nature" tvg-rec="0",National Geographic Wild FHD
+https://4.hls.gd/ch1138/mono.m3u8?token=olgasergej.v2_QsOY2EU0RQWex7HmABEZXqutrV2J0HfP_gYVXMJn5-yt0AWt84KTf3yz5jn731p0ejHBWZLdWba-3tU
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1143/mono-${start}-${duration}.m3u8?token=olgasergej.v2_Mp6P-LFZoGRSxKIPdWNOI9lY5v8GCEvvbb9AUbbDhadyQ9IzhMtXob8s2sKBXJdaF73dbPAvHaG_wbA" tvg-id="History.il" tvg-logo="https://images.open-epg.com/18748449.png" group-title="Documentary & Nature" tvg-rec="0",History FHD IL
+https://4.hls.gd/ch1143/mono.m3u8?token=olgasergej.v2_Mp6P-LFZoGRSxKIPdWNOI9lY5v8GCEvvbb9AUbbDhadyQ9IzhMtXob8s2sKBXJdaF73dbPAvHaG_wbA
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2624/mono-${start}-${duration}.m3u8?token=olgasergej.v2_aZRyTq1VenuuIb-A_uR2orUQ_-9jIpbncxR-xPVBRoREzfiNXm4ZrMNYGLS_nSk9L25iMPuK_YeUCro" tvg-id="AnimalPlanet.il" group-title="Documentary & Nature" tvg-logo="https://hls.gd/images/chIcons/2624.png",Animal Planet
+https://4.hls.gd/ch2624/mono.m3u8?token=olgasergej.v2_aZRyTq1VenuuIb-A_uR2orUQ_-9jIpbncxR-xPVBRoREzfiNXm4ZrMNYGLS_nSk9L25iMPuK_YeUCro
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/sections/sep_israeli.png" group-title="Documentary & Nature",━━━━  Israeli  ━━━━
+https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/separator.mp4?section=documentary-nature-israeli
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1144/mono-${start}-${duration}.m3u8?token=olgasergej.v2_6BXyptJ1gJNmN6E-KlmEMcVLcVEShOHpXJ7LAO-ulRVHjie4NYIOAd3_AmYgzsRhIxoEphlq17hqp20" tvg-id="Hot8.il" group-title="Documentary & Nature" tvg-name="Hot 8 HD" tvg-logo="https://iptv.pm/images/ico/hot8.png" ,HOT 8 IL
+https://4.hls.gd/ch1144/mono.m3u8?token=olgasergej.v2_6BXyptJ1gJNmN6E-KlmEMcVLcVEShOHpXJ7LAO-ulRVHjie4NYIOAd3_AmYgzsRhIxoEphlq17hqp20
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1137/mono-${start}-${duration}.m3u8?token=olgasergej.v2_aWZTFQcMCEBBRcBrZpYaOHwTU9kPZ6HmghxOJc75GVgqCr-jR06l_l05LUfulx_xpEpX6vBhii2RSB4" tvg-id="YesDocu.il" tvg-logo="https://i.imgur.com/uzlBIQX.png" group-title="Documentary & Nature" tvg-rec="0",Yes Docu HD IL
+https://4.hls.gd/ch1137/mono.m3u8?token=olgasergej.v2_aWZTFQcMCEBBRcBrZpYaOHwTU9kPZ6HmghxOJc75GVgqCr-jR06l_l05LUfulx_xpEpX6vBhii2RSB4
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2640/mono-${start}-${duration}.m3u8?token=olgasergej.v2_cTgKK2pu05s2KMgOJuF8fOv8xTwAqzas3gY1p7otmvmjOL9Nt4sYieidJS5g2Wl4CEX1AWHRFqa31DU" tvg-id="CellcomDoco.il" group-title="Documentary & Nature" tvg-logo="https://hls.gd/images/chIcons/2640.png",Cellcom Doco
+https://4.hls.gd/ch2640/mono.m3u8?token=olgasergej.v2_cTgKK2pu05s2KMgOJuF8fOv8xTwAqzas3gY1p7otmvmjOL9Nt4sYieidJS5g2Wl4CEX1AWHRFqa31DU
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2543/mono-${start}-${duration}.m3u8?token=olgasergej.v2_DbZjzSFNmfP2M8TH_FAF_6GaL_B0ZW71OJ2OiyTlOgzBQowwMpTsFRVMNe_WyXUHO3oFzHXa6qN0ExU" tvg-id="FreeTvDoco.il" group-title="Documentary & Nature" tvg-logo="https://hls.gd/images/chIcons/2543.png",Free TV Doco
+https://4.hls.gd/ch2543/mono.m3u8?token=olgasergej.v2_DbZjzSFNmfP2M8TH_FAF_6GaL_B0ZW71OJ2OiyTlOgzBQowwMpTsFRVMNe_WyXUHO3oFzHXa6qN0ExU
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2087/mono-${start}-${duration}.m3u8?token=olgasergej.v2_LjrVkCfHE-TCRcMr9aSybX3uVM7an7M6JzzYzFUzNaHirK6K8sNNqcpIniWZIF_w6c_K4GZ4wN9jWGg" tvg-id="FreeTvTeva.il" group-title="Documentary & Nature" tvg-logo="https://hls.gd/images/chIcons/2087.png",Free TV Teva
+https://4.hls.gd/ch2087/mono.m3u8?token=olgasergej.v2_LjrVkCfHE-TCRcMr9aSybX3uVM7an7M6JzzYzFUzNaHirK6K8sNNqcpIniWZIF_w6c_K4GZ4wN9jWGg
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch4051/mono-${start}-${duration}.m3u8?token=olgasergej.v2_3YHxBkvT0GBKs4g2AFsVTBQVDbjHlc9HRd4Tbi1BIuBmLV8B3diPf-CqltU6dx3LbaKGR5RA8Lbyte0" group-title="Documentary & Nature" tvg-logo="https://hls.gd/images/chIcons/4051.png",Arutz Hagiborim
+https://4.hls.gd/ch4051/mono.m3u8?token=olgasergej.v2_3YHxBkvT0GBKs4g2AFsVTBQVDbjHlc9HRd4Tbi1BIuBmLV8B3diPf-CqltU6dx3LbaKGR5RA8Lbyte0
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch4054/mono-${start}-${duration}.m3u8?token=olgasergej.v2_T6vGbjIR-vrFRoYEXxd_7LC4iFVeC-PTqTvDZqGe3JfOvUhMVas0ioXHu24WogAZtJcCdm0ABN7GDAg" group-title="Documentary & Nature" tvg-logo="https://hls.gd/images/chIcons/4054.png",Arutz Pesha Amiti (True Crime)
+https://4.hls.gd/ch4054/mono.m3u8?token=olgasergej.v2_T6vGbjIR-vrFRoYEXxd_7LC4iFVeC-PTqTvDZqGe3JfOvUhMVas0ioXHu24WogAZtJcCdm0ABN7GDAg
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/sections/sep_food.png" group-title="Lifestyle",━━━━  Food  ━━━━
+https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/separator.mp4?section=lifestyle-food
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1124/mono-${start}-${duration}.m3u8?token=olgasergej.v2_Pr0g7kacDrby7Lsfen3tU08-66pbrUIoc2gCGr8Mka5dFDTrkTg73UY1fibapH0ddNmZLtnj1jFAdIE" tvg-id="FoodNetwork.il" group-title="Lifestyle" tvg-logo="http://epg.one/img2/2708.png" tvg-rec="0",Food Network HD IL
+https://4.hls.gd/ch1124/mono.m3u8?token=olgasergej.v2_Pr0g7kacDrby7Lsfen3tU08-66pbrUIoc2gCGr8Mka5dFDTrkTg73UY1fibapH0ddNmZLtnj1jFAdIE
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2630/mono-${start}-${duration}.m3u8?token=olgasergej.v2_Gs94VNDuBQnoOOWvr-j3PzfiGA6_UnDB-_0tVktG8suq5CaBi_6gVklm9XvM4a_pPK9JaPzD3VIEuq4" tvg-id="Foody.il" group-title="Lifestyle" tvg-logo="https://hls.gd/images/chIcons/2630.png",Foody
+https://4.hls.gd/ch2630/mono.m3u8?token=olgasergej.v2_Gs94VNDuBQnoOOWvr-j3PzfiGA6_UnDB-_0tVktG8suq5CaBi_6gVklm9XvM4a_pPK9JaPzD3VIEuq4
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2542/mono-${start}-${duration}.m3u8?token=olgasergej.v2_L2QJqwnzkwBnQtINWopSTuDG3bNEhQm9U4eg47q4hQv5Rie3TqIGgicxu5t180xA4m8Q2R0Nq5EXLys" tvg-id="FreeTvCooking.il" group-title="Lifestyle" tvg-logo="https://hls.gd/images/chIcons/2542.png",Free TV Cooking
+https://4.hls.gd/ch2542/mono.m3u8?token=olgasergej.v2_L2QJqwnzkwBnQtINWopSTuDG3bNEhQm9U4eg47q4hQv5Rie3TqIGgicxu5t180xA4m8Q2R0Nq5EXLys
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/sections/sep_home_travel_style.png" group-title="Lifestyle",━━━━  Home, Travel & Style  ━━━━
+https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/separator.mp4?section=lifestyle-travel-style
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1141/mono-${start}-${duration}.m3u8?token=olgasergej.v2_fnezVMSFVv20aiybd7jKTMM-mYL9Yp-oveZXiAW3PhFSCAcf4Tio4Xl8DX8z7qdszc1skgxfXXAwzSw" tvg-id="GoodLife.il" tvg-logo="https://cdn.epg.one/img2/2686.png" group-title="Lifestyle" tvg-rec="3",Good Life IL
+https://4.hls.gd/ch1141/mono.m3u8?token=olgasergej.v2_fnezVMSFVv20aiybd7jKTMM-mYL9Yp-oveZXiAW3PhFSCAcf4Tio4Xl8DX8z7qdszc1skgxfXXAwzSw
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2631/mono-${start}-${duration}.m3u8?token=olgasergej.v2_kkJdoJgpKMleyYsOYb0X3NzAOmF2VA8fwhXQDxlpsriXKgnJpOBfGXdRqHWqWEv6_3hXA7F1xmdbxaU" tvg-id="HomePlus.il" group-title="Lifestyle" tvg-logo="http://epg.one/img2/2680.png" tvg-rec="3",Home Plus IL
+https://4.hls.gd/ch2631/mono.m3u8?token=olgasergej.v2_kkJdoJgpKMleyYsOYb0X3NzAOmF2VA8fwhXQDxlpsriXKgnJpOBfGXdRqHWqWEv6_3hXA7F1xmdbxaU
+#EXTINF:-1 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1136/mono-${start}-${duration}.m3u8?token=olgasergej.v2_8j5mrmOO6T1qrLaybKVM-KdCZV3iuh3vWlTvEfb4Dk8igbx17I9AQ8SAbxFOlm-sr2f2ikarFnGWW7w" tvg-id="TravelChannel.il" group-title="Lifestyle"  tvg-logo="http://odinson.me/storage/iptv/channels/o8vWjvFhin.png" ,Travel Channel IL
+https://4.hls.gd/ch1136/mono.m3u8?token=olgasergej.v2_8j5mrmOO6T1qrLaybKVM-KdCZV3iuh3vWlTvEfb4Dk8igbx17I9AQ8SAbxFOlm-sr2f2ikarFnGWW7w
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2632/mono-${start}-${duration}.m3u8?token=olgasergej.v2_Ypk7RJeUPoaIXuMc4QsMVeHveqMEcAa2Jb-xEIJ22aQFRPATgWsIjKlzkSBwzXwHeRUHyHkd5dkng-8" tvg-id="Tlc.il" group-title="Lifestyle" tvg-logo="https://hls.gd/images/chIcons/2632.png",TLC
+https://4.hls.gd/ch2632/mono.m3u8?token=olgasergej.v2_Ypk7RJeUPoaIXuMc4QsMVeHveqMEcAa2Jb-xEIJ22aQFRPATgWsIjKlzkSBwzXwHeRUHyHkd5dkng-8
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1176/mono-${start}-${duration}.m3u8?token=olgasergej.v2_O3cUcLc_1z_cvnnXRylnJCOCt4dh8IyjT0VKWvIXzH6ALyfkJdmHCs8qsNIS_MYrNC7O5b35E7lCaAs" tvg-id="Health.il" group-title="Lifestyle" tvg-logo="http://epg.one/img2/2709.png" tvg-rec="3",Health IL
+https://4.hls.gd/ch1176/mono.m3u8?token=olgasergej.v2_O3cUcLc_1z_cvnnXRylnJCOCt4dh8IyjT0VKWvIXzH6ALyfkJdmHCs8qsNIS_MYrNC7O5b35E7lCaAs
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2541/mono-${start}-${duration}.m3u8?token=olgasergej.v2_uPVk0Q9JXTJLWwMIt930DobCNiLC4kM7heqM_OSJ54ekI5hh4fJznYfcFpxoRDXBgjXKjNZgRDy-CbE" tvg-id="FreeTvLifestyle.il" group-title="Lifestyle" tvg-logo="https://hls.gd/images/chIcons/2541.png",Free TV Lifestyle
+https://4.hls.gd/ch2541/mono.m3u8?token=olgasergej.v2_uPVk0Q9JXTJLWwMIt930DobCNiLC4kM7heqM_OSJ54ekI5hh4fJznYfcFpxoRDXBgjXKjNZgRDy-CbE
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2642/mono-${start}-${duration}.m3u8?token=olgasergej.v2_Ap1Jo_dFaaLaTZF3JYod57MflFTN91zofgDr7_kagtv5FYzMJXdYcS-eEwGdyg7rBFVegmBcdGXDP8M" tvg-id="IsraeliFashionChannel.il" group-title="Lifestyle" tvg-logo="https://hls.gd/images/chIcons/2642.png",Israeli Fashion Channel
+https://4.hls.gd/ch2642/mono.m3u8?token=olgasergej.v2_Ap1Jo_dFaaLaTZF3JYod57MflFTN91zofgDr7_kagtv5FYzMJXdYcS-eEwGdyg7rBFVegmBcdGXDP8M
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1142/mono-${start}-${duration}.m3u8?token=olgasergej.v2_8-i_4KUITYrCnYpZH2vZ7Nxk6yYJLV8XQVBecsKAKc52vkoVI3jpVLCwKWLIUhqQ92-gmzMgj4RCzdA" tvg-id="Channel24.il" tvg-logo="https://i.imgur.com/WLs67QI.png" group-title="Music" tvg-rec="0",Channel 24 HD IL
+https://4.hls.gd/ch1142/mono.m3u8?token=olgasergej.v2_8-i_4KUITYrCnYpZH2vZ7Nxk6yYJLV8XQVBecsKAKc52vkoVI3jpVLCwKWLIUhqQ92-gmzMgj4RCzdA
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch4036/mono-${start}-${duration}.m3u8?token=olgasergej.v2_eZGXtP5P_1Q97Bun6WC6HdiS3C_RKAhUpUno9WqbTNGR4GIZEJ1iXRYzFJ5MjuqjCESjzss4BfIgOGo" tvg-id="BamaIsraelit.il" group-title="Music" tvg-logo="https://hls.gd/images/chIcons/4036.png",Bama Israelit
+https://4.hls.gd/ch4036/mono.m3u8?token=olgasergej.v2_eZGXtP5P_1Q97Bun6WC6HdiS3C_RKAhUpUno9WqbTNGR4GIZEJ1iXRYzFJ5MjuqjCESjzss4BfIgOGo
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2086/mono-${start}-${duration}.m3u8?token=olgasergej.v2_pfka2K9Zf8M8ZtSw1wN1sxRBWyhUWRaJAwxzgfiEg4ys42cbS45Y7ZeOvuoDEJ92hJj-n8VW9RYySLc" tvg-id="FreeTvKaraoke.il" group-title="Music" tvg-logo="https://hls.gd/images/chIcons/2086.png",Free TV Karaoke
+https://4.hls.gd/ch2086/mono.m3u8?token=olgasergej.v2_pfka2K9Zf8M8ZtSw1wN1sxRBWyhUWRaJAwxzgfiEg4ys42cbS45Y7ZeOvuoDEJ92hJj-n8VW9RYySLc
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2618/mono-${start}-${duration}.m3u8?token=olgasergej.v2_0L-wlfH79zLTC-AQbIYMGIZpLszzFX4xPioKjtffrnDI1LRdT9HpBDh1EabDUpl_m14fNWRwF17LwGk" tvg-id="Mtv.il" group-title="Music" tvg-logo="https://hls.gd/images/chIcons/2618.png",MTV HD
+https://4.hls.gd/ch2618/mono.m3u8?token=olgasergej.v2_0L-wlfH79zLTC-AQbIYMGIZpLszzFX4xPioKjtffrnDI1LRdT9HpBDh1EabDUpl_m14fNWRwF17LwGk
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2619/mono-${start}-${duration}.m3u8?token=olgasergej.v2_RDBH0KJMoM11t5Tea9PjWO8IBgoGbr6DwAnltWOK5ShPRj8S2-Y-7TICiIkMmKl1VIEyYy9OS7_RlTg" tvg-id="Mtv00S.il" group-title="Music" tvg-logo="https://hls.gd/images/chIcons/2619.png",MTV 00s
+https://4.hls.gd/ch2619/mono.m3u8?token=olgasergej.v2_RDBH0KJMoM11t5Tea9PjWO8IBgoGbr6DwAnltWOK5ShPRj8S2-Y-7TICiIkMmKl1VIEyYy9OS7_RlTg
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/sections/sep_hot.png" group-title="Series & Entertainment",━━━━  HOT  ━━━━
+https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/separator.mp4?section=series-entertainment-hot
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1147/mono-${start}-${duration}.m3u8?token=olgasergej.v2_veM8HVYfiioh6ANaWaSirMTSBG19gCPJEzoXsPV8CmiNquidz1rtJ3n2NLfo6odBfx9qhbYWAMu_voU" tvg-id="Hot3.il" tvg-logo="https://iptv-epg.org/images/N_HD_EILtHsL97e-lmrIK6usa1f32VuhebpKvaAakWSzyZa4qoT463lg7rplrCAlW6k0vNoyOzPMCUxGYsGO0S9eQJC49aE4ioWoGts" group-title="Series & Entertainment" tvg-rec="3",HOT 3 FHD IL
+https://4.hls.gd/ch1147/mono.m3u8?token=olgasergej.v2_veM8HVYfiioh6ANaWaSirMTSBG19gCPJEzoXsPV8CmiNquidz1rtJ3n2NLfo6odBfx9qhbYWAMu_voU
+#EXTINF:-1 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1139/mono-${start}-${duration}.m3u8?token=olgasergej.v2_yN7vksxdz1j8_iq_xehNnZw6b0HJoBiLlIFbnTg8s7CYzhgLJqm1HwLY2aEFaOoH5y4qs2KhMHfdCE4" tvg-id="HotZone.il" tvg-logo="https://iptv-epg.org/images/DvHEtgTYYxj5f2UE1v-6e1E9AY4jaiZQZksm-hhl_pxHqGoHfszPpqv_TzZKEacHk6PmhHpCXHtHv1GDG98YZOf6udeCRCxpv2JOJIe6X2o" group-title="Series & Entertainment",HOT Zone HD IL
+https://4.hls.gd/ch1139/mono.m3u8?token=olgasergej.v2_yN7vksxdz1j8_iq_xehNnZw6b0HJoBiLlIFbnTg8s7CYzhgLJqm1HwLY2aEFaOoH5y4qs2KhMHfdCE4
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1175/mono-${start}-${duration}.m3u8?token=olgasergej.v2_KjLLXtfgMJM-24lEYc1DToVyZEbkCfJTE4g7GUDRS5V0rU1bQvu9EDBgxX32hx28pV6GNL6tl4R2dHA" tvg-id="HotHbo.il" group-title="Series & Entertainment" tvg-logo="http://epg.one/img2/2685.png" tvg-rec="3",HOT HBO HD IL
+https://4.hls.gd/ch1175/mono.m3u8?token=olgasergej.v2_KjLLXtfgMJM-24lEYc1DToVyZEbkCfJTE4g7GUDRS5V0rU1bQvu9EDBgxX32hx28pV6GNL6tl4R2dHA
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1174/mono-${start}-${duration}.m3u8?token=olgasergej.v2_4A9xo7nmFP_8A8avQQaCdAG9j9mK2BfP74PSCdq4cGrIqzR8o-JsHzZBQepyWdLk-cWj2ZygCEIDNwM" tvg-id="HotComedy.il" group-title="Series & Entertainment" tvg-logo="http://epg.one/img2/5024.png" tvg-rec="0",HOT Comedy HD IL
+https://4.hls.gd/ch1174/mono.m3u8?token=olgasergej.v2_4A9xo7nmFP_8A8avQQaCdAG9j9mK2BfP74PSCdq4cGrIqzR8o-JsHzZBQepyWdLk-cWj2ZygCEIDNwM
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1163/mono-${start}-${duration}.m3u8?token=olgasergej.v2_Siqe4tJsnChFRHjvRyB5FCK6cxYY3kMk7bSF-Sebu6rXB-cvihj6klCpfbr75OIvSb9ueLv82sAfPw0" tvg-id="HotBidur.il" tvg-logo="https://iptv-epg.org/images/RJ-mHB2j0pKvwVx2QwgFAsl5qz1FKwficBoZvl2Moq5abt06vwcZWS_3hk6apdNSFsxgR4LTIgcSmzq8uUoRd9Aa0O8sOqf6TGzoel8hWmA5k22EpxB8hPU" group-title="Series & Entertainment" tvg-rec="0",HOT Bidur HD IL
+https://4.hls.gd/ch1163/mono.m3u8?token=olgasergej.v2_Siqe4tJsnChFRHjvRyB5FCK6cxYY3kMk7bSF-Sebu6rXB-cvihj6klCpfbr75OIvSb9ueLv82sAfPw0
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1173/mono-${start}-${duration}.m3u8?token=olgasergej.v2_UNDdZ9mBeVxdBjthS_ru48HSLfmorD0tzMmQyf7Q1EavayBp9KQdcuwwTDMO5dv10xRuZxsYenbSKRA" tvg-id="HotReal.il" tvg-logo="https://www.hot.net.il/UploadedImages//03_2020/HOT_REAL_LOGO_510_147.png" group-title="Series & Entertainment" tvg-rec="0",HOT Real HD IL
+https://4.hls.gd/ch1173/mono.m3u8?token=olgasergej.v2_UNDdZ9mBeVxdBjthS_ru48HSLfmorD0tzMmQyf7Q1EavayBp9KQdcuwwTDMO5dv10xRuZxsYenbSKRA
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2613/mono-${start}-${duration}.m3u8?token=olgasergej.v2_XmrTiLzM1Yt4CigPaNDcqg0WEnStRB_0BzsHAd4WMJBVdGHGn0FrNjN3FMp0QOk3qHRDm2KojjX4FOw" tvg-id="HotSenior.il" group-title="Series & Entertainment" tvg-logo="https://hls.gd/images/chIcons/2613.png",HOT Senior
+https://4.hls.gd/ch2613/mono.m3u8?token=olgasergej.v2_XmrTiLzM1Yt4CigPaNDcqg0WEnStRB_0BzsHAd4WMJBVdGHGn0FrNjN3FMp0QOk3qHRDm2KojjX4FOw
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2614/mono-${start}-${duration}.m3u8?token=olgasergej.v2_SLvZh6XsGMHhfMB4n7lR4OmrYcGRflkyOiEgZC0aYn-QXPvj9uQswvLtefnq__vx2M-VTj8Ul5VmOOM" tvg-id="HotBuzz.il" group-title="Series & Entertainment" tvg-logo="https://hls.gd/images/chIcons/2614.png",HOT Buzz
+https://4.hls.gd/ch2614/mono.m3u8?token=olgasergej.v2_SLvZh6XsGMHhfMB4n7lR4OmrYcGRflkyOiEgZC0aYn-QXPvj9uQswvLtefnq__vx2M-VTj8Ul5VmOOM
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/sections/sep_yes.png" group-title="Series & Entertainment",━━━━  yes  ━━━━
+https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/separator.mp4?section=series-entertainment-yes
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1160/mono-${start}-${duration}.m3u8?token=olgasergej.v2_mnWLEZDSpv37tmLjFGrWxVbZHzveevQWw6bdCHrrYfBz8itzUNxLAVvN3KGQKSX1ac_oP5o6GmHcObk" tvg-id="YesTvDrama.il" group-title="Series & Entertainment" tvg-logo="http://epg.one/img2/4007.png" tvg-rec="3",Yes TV Drama HD IL
+https://4.hls.gd/ch1160/mono.m3u8?token=olgasergej.v2_mnWLEZDSpv37tmLjFGrWxVbZHzveevQWw6bdCHrrYfBz8itzUNxLAVvN3KGQKSX1ac_oP5o6GmHcObk
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1159/mono-${start}-${duration}.m3u8?token=olgasergej.v2_3l8C8MxfD-moYEphSRmitBHx-GeJkfelo-oyQMo_Ed4DYmScWU9P4LRF00ps8dhZgxfXuapAq3itDWs" tvg-id="YesTvComedy.il" tvg-logo="https://iptv-epg.org/images/5lzeQgUAvtZUHIKa8biPrL3IZCIXJV8AXODa2SWjoWMAdmLx0YlCCPLmuReyA4tiu9DoEd1wBLOzdJ61ltTnndNQuO2t5MxcnrBzXdiOySNCu0fE" group-title="Series & Entertainment" tvg-rec="3",Yes TV Comedy HD IL
+https://4.hls.gd/ch1159/mono.m3u8?token=olgasergej.v2_3l8C8MxfD-moYEphSRmitBHx-GeJkfelo-oyQMo_Ed4DYmScWU9P4LRF00ps8dhZgxfXuapAq3itDWs
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1158/mono-${start}-${duration}.m3u8?token=olgasergej.v2_7EzmIhiyamUJ9-LAW--ykkFw8NJ3bu--hPKnoUjuWMrRNja6Uy6PxgMC2gkZSXf2q2wsMfNKCM8g9Tc" tvg-id="YesTvAction.il" group-title="Series & Entertainment" tvg-logo="http://epg.one/img2/3999.png" tvg-rec="3",Yes TV Action HD IL
+https://4.hls.gd/ch1158/mono.m3u8?token=olgasergej.v2_7EzmIhiyamUJ9-LAW--ykkFw8NJ3bu--hPKnoUjuWMrRNja6Uy6PxgMC2gkZSXf2q2wsMfNKCM8g9Tc
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2030/mono-${start}-${duration}.m3u8?token=olgasergej.v2_DS9a3HiqrsWGPC7AHVY4e0QzayUObAf4rjjTnRM15wdFHhPTZlczZCD75Yg7Cep4bshf63aevvMKWUo" tvg-id="YesIsraeli.il" tvg-logo="https://i.imgur.com/e5OA6fA.png" group-title="Series & Entertainment" tvg-rec="3",Yes Israeli IL
+https://4.hls.gd/ch2030/mono.m3u8?token=olgasergej.v2_DS9a3HiqrsWGPC7AHVY4e0QzayUObAf4rjjTnRM15wdFHhPTZlczZCD75Yg7Cep4bshf63aevvMKWUo
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/sections/sep_free_tv.png" group-title="Series & Entertainment",━━━━  Free TV  ━━━━
+https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/separator.mp4?section=series-entertainment-free-tv
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2539/mono-${start}-${duration}.m3u8?token=olgasergej.v2_3RsYEFsu0g0cklSQ7ZG6gwyVeuKQq8b_0H3UsEOSiL-ne93jHjKkFJJZQxirhQnKyPpcNceZrMTio4Y" tvg-id="FreeTvDrama.il" group-title="Series & Entertainment" tvg-logo="https://hls.gd/images/chIcons/2539.png",Free TV Drama
+https://4.hls.gd/ch2539/mono.m3u8?token=olgasergej.v2_3RsYEFsu0g0cklSQ7ZG6gwyVeuKQq8b_0H3UsEOSiL-ne93jHjKkFJJZQxirhQnKyPpcNceZrMTio4Y
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2540/mono-${start}-${duration}.m3u8?token=olgasergej.v2_XNpLiQ6Py_RB2V8vXOUdL9XvHyhTh9klJC65-1Xdsz54mK8TslpAX3ZPjBUH2lLUQ0JFfqZsmC35P4o" tvg-id="FreeTvComedy.il" group-title="Series & Entertainment" tvg-logo="https://hls.gd/images/chIcons/2540.png",Free TV Comedy
+https://4.hls.gd/ch2540/mono.m3u8?token=olgasergej.v2_XNpLiQ6Py_RB2V8vXOUdL9XvHyhTh9klJC65-1Xdsz54mK8TslpAX3ZPjBUH2lLUQ0JFfqZsmC35P4o
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1183/mono-${start}-${duration}.m3u8?token=olgasergej.v2_v2ZxRUYXbWclBz-9YroOz-Z8joFZMaBF61xq8qZHBKTu-jfgyzcEgskf2Q465ziZyyHMWWQ0M-G07Mw" tvg-id="FreeTvComedy2.il" group-title="Series & Entertainment" tvg-logo="https://hls.gd/images/chIcons/1183.png",Free TV Comedy 2
+https://4.hls.gd/ch1183/mono.m3u8?token=olgasergej.v2_v2ZxRUYXbWclBz-9YroOz-Z8joFZMaBF61xq8qZHBKTu-jfgyzcEgskf2Q465ziZyyHMWWQ0M-G07Mw
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2533/mono-${start}-${duration}.m3u8?token=olgasergej.v2_N8xjikKhOaENSDBAaFYJ_S6WtEWEQTQ4k7O4c6gsWRtpzr8CTznl3KRijrZekwzrrbUDou5mvmxyn7I" tvg-id="FreeSeriesGlobal.il" group-title="Series & Entertainment" tvg-logo="https://hls.gd/images/chIcons/2533.png",Free Series Global
+https://4.hls.gd/ch2533/mono.m3u8?token=olgasergej.v2_N8xjikKhOaENSDBAaFYJ_S6WtEWEQTQ4k7O4c6gsWRtpzr8CTznl3KRijrZekwzrrbUDou5mvmxyn7I
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/sections/sep_israeli_entertainment.png" group-title="Series & Entertainment",━━━━  Israeli Entertainment  ━━━━
+https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/separator.mp4?section=series-entertainment-israeli-entertainment
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1178/mono-${start}-${duration}.m3u8?token=olgasergej.v2__kCLwU3x-pG7NUVrZ-GL4pLIp6PgSraFYH0msGgx174m2Ysvn-koiHtNjV3aml59lZLEt30dGC5koXw" tvg-id="HumorChannel.il" group-title="Series & Entertainment" tvg-logo="https://iptv.pm/images/ico/8401.png",Humor Channel HD
+https://4.hls.gd/ch1178/mono.m3u8?token=olgasergej.v2__kCLwU3x-pG7NUVrZ-GL4pLIp6PgSraFYH0msGgx174m2Ysvn-koiHtNjV3aml59lZLEt30dGC5koXw
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2544/mono-${start}-${duration}.m3u8?token=olgasergej.v2_vZ3oZwzplKE7K4lID_QvpT-qs1iDF0pusOBbWjGdagNymMh6M8D9J6JgNzApSyCI7xE-8DXHsz3RskA" tvg-id="EretzNehederet.il" group-title="Series & Entertainment" tvg-logo="https://hls.gd/images/chIcons/2544.png",Eretz Nehederet
+https://4.hls.gd/ch2544/mono.m3u8?token=olgasergej.v2_vZ3oZwzplKE7K4lID_QvpT-qs1iDF0pusOBbWjGdagNymMh6M8D9J6JgNzApSyCI7xE-8DXHsz3RskA
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2545/mono-${start}-${duration}.m3u8?token=olgasergej.v2_SFMdizc0Jkbmk57SWvhWq0OT97a1qqc8_anQLk-Z0eIwnyLGR5FzrNOrfGVpFJqGous_F0CdBR1kILs" tvg-id="Savri.il" group-title="Series & Entertainment" tvg-logo="https://hls.gd/images/chIcons/2545.png",Savri
+https://4.hls.gd/ch2545/mono.m3u8?token=olgasergej.v2_SFMdizc0Jkbmk57SWvhWq0OT97a1qqc8_anQLk-Z0eIwnyLGR5FzrNOrfGVpFJqGous_F0CdBR1kILs
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2494/mono-${start}-${duration}.m3u8?token=olgasergej.v2_O81ub9jaeZ29duj5omcgQvZMB43kFB_KKd_F9ABONvD8LbcpIdLilHI0qBBOasi6dvfEkj6kxQGA38Y" tvg-id="Channel16.il" group-title="Series & Entertainment" tvg-logo="https://hls.gd/images/chIcons/2494.png",Channel 16
+https://4.hls.gd/ch2494/mono.m3u8?token=olgasergej.v2_O81ub9jaeZ29duj5omcgQvZMB43kFB_KKd_F9ABONvD8LbcpIdLilHI0qBBOasi6dvfEkj6kxQGA38Y
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1182/mono-${start}-${duration}.m3u8?token=olgasergej.v2_bYiFxwAqgTMf4Mv3zVQyyInyS3q01512u32p8cZi6UmBYLlS85gPo4oAaDa2BIC6-C9AGVM9e_OxlN0" tvg-id="RealityChannel.il" group-title="Series & Entertainment" tvg-logo="https://hls.gd/images/chIcons/1182.png",Reality Channel
+https://4.hls.gd/ch1182/mono.m3u8?token=olgasergej.v2_bYiFxwAqgTMf4Mv3zVQyyInyS3q01512u32p8cZi6UmBYLlS85gPo4oAaDa2BIC6-C9AGVM9e_OxlN0
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2498/mono-${start}-${duration}.m3u8?token=olgasergej.v2_rgH6bHvj3RD-iEkw8Qp7jP4VapZa7ZB9l2QZ6eqUDKIyqjv8vq0j5tRhegag4bn9zy2ZkgC9Jn2k_Zc" tvg-id="EgoTotal.il" group-title="Series & Entertainment" tvg-logo="https://hls.gd/images/chIcons/2498.png",Ego Total
+https://4.hls.gd/ch2498/mono.m3u8?token=olgasergej.v2_rgH6bHvj3RD-iEkw8Qp7jP4VapZa7ZB9l2QZ6eqUDKIyqjv8vq0j5tRhegag4bn9zy2ZkgC9Jn2k_Zc
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2627/mono-${start}-${duration}.m3u8?token=olgasergej.v2_qDOxoJ4VTJRyA5Kv7ovbiC5zTCBpB9CjEBvJtPFhe9o6Ahhk79Rld04Lv03NI0wKdC890UpqyzNTtZY" tvg-id="Fomo.il" group-title="Series & Entertainment" tvg-logo="https://hls.gd/images/chIcons/2627.png",FOMO
+https://4.hls.gd/ch2627/mono.m3u8?token=olgasergej.v2_qDOxoJ4VTJRyA5Kv7ovbiC5zTCBpB9CjEBvJtPFhe9o6Ahhk79Rld04Lv03NI0wKdC890UpqyzNTtZY
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1122/mono-${start}-${duration}.m3u8?token=olgasergej.v2_f3LCi-7kiUbEDHVpn4OsRw-9ioU66AeCKEIzsQWPG81kV5qE43fHM6jYmsM5jOIZbRwtMmQbMk_vDZI" tvg-id="E.il" group-title="Series & Entertainment" tvg-logo="http://epg.one/img2/4005.png" tvg-rec="0",E! HD IL
+https://4.hls.gd/ch1122/mono.m3u8?token=olgasergej.v2_f3LCi-7kiUbEDHVpn4OsRw-9ioU66AeCKEIzsQWPG81kV5qE43fHM6jYmsM5jOIZbRwtMmQbMk_vDZI
+#EXTINF:-1 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1167/mono-${start}-${duration}.m3u8?token=olgasergej.v2_NyDM1oT5_EKqLKi61A5vHo4DSVsN6mOpBkegVRCEtZ-xV-M93CfptGiTY8UdywhM7nYvTc2cWckhHT8" tvg-id="StarChannel.il" group-title="Series & Entertainment"  tvg-logo="http://odinson.me/storage/iptv/channels/D83pxgW1PZ.png" ,STAR Channel IL
+https://4.hls.gd/ch1167/mono.m3u8?token=olgasergej.v2_NyDM1oT5_EKqLKi61A5vHo4DSVsN6mOpBkegVRCEtZ-xV-M93CfptGiTY8UdywhM7nYvTc2cWckhHT8
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2639/mono-${start}-${duration}.m3u8?token=olgasergej.v2__EDL23xTxMBQN5bA7IsOXTGHAeUG1TOH0zpUx9_N07ZIZzPFgu2YZZQw5hN9P7I_GhszvnPJsJjAf2M" tvg-id="CellcomTvShows.il" group-title="Series & Entertainment" tvg-logo="https://hls.gd/images/chIcons/2639.png",Cellcom TV Shows
+https://4.hls.gd/ch2639/mono.m3u8?token=olgasergej.v2__EDL23xTxMBQN5bA7IsOXTGHAeUG1TOH0zpUx9_N07ZIZzPFgu2YZZQw5hN9P7I_GhszvnPJsJjAf2M
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2499/mono-${start}-${duration}.m3u8?token=olgasergej.v2_UVlLCCsqCxFlkGvR5ZDsPU5QYjfyl8HOpl_U3Q-lybmFKEISKRB6Q19V21v9stiRSrxi9NKGVfQTJGg" group-title="Series & Entertainment" tvg-logo="https://hls.gd/images/chIcons/2499.png",Cellcom Israel
+https://4.hls.gd/ch2499/mono.m3u8?token=olgasergej.v2_UVlLCCsqCxFlkGvR5ZDsPU5QYjfyl8HOpl_U3Q-lybmFKEISKRB6Q19V21v9stiRSrxi9NKGVfQTJGg
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/sections/sep_world_dramas.png" group-title="Series & Entertainment",━━━━  World Dramas  ━━━━
+https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/separator.mp4?section=series-entertainment-world-dramas
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2028/mono-${start}-${duration}.m3u8?token=olgasergej.v2_W8-Cs6JkPOOumRyS7CHzn3zhCnEZwzC2qC9Fq6MtPBzINyq_YyaZKbIPU_CmCy9XW17Cs-oGcq7UQSA" tvg-id="TurkishDramasPlus.il" group-title="Series & Entertainment" tvg-logo="http://epg.one/img2/9076.png" tvg-rec="0",Turkish Dramas Plus FHD IL
+https://4.hls.gd/ch2028/mono.m3u8?token=olgasergej.v2_W8-Cs6JkPOOumRyS7CHzn3zhCnEZwzC2qC9Fq6MtPBzINyq_YyaZKbIPU_CmCy9XW17Cs-oGcq7UQSA
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2029/mono-${start}-${duration}.m3u8?token=olgasergej.v2_i1Sca7oncMUvYuy6GOvH3VoNN7SMEu5u7Qkf4g2XOcVFwYYFH3E9f63RkFii1776N2nrUGuxpqbYe98" tvg-id="TurkishDramas2.il" tvg-logo="https://cdn.epg.one/img2/9075.png" group-title="Series & Entertainment" tvg-rec="0",Turkish Dramas 2 FHD IL
+https://4.hls.gd/ch2029/mono.m3u8?token=olgasergej.v2_i1Sca7oncMUvYuy6GOvH3VoNN7SMEu5u7Qkf4g2XOcVFwYYFH3E9f63RkFii1776N2nrUGuxpqbYe98
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2611/mono-${start}-${duration}.m3u8?token=olgasergej.v2_GGeqcpC-Xu83G-xWYYreEBabZMUuG_jMFpUtv7j2lozT2QrFPPsh4mdHr3_QMWRTNpTcA3RvCokmL4U" tvg-id="TurkishDramas3.il" tvg-logo="https://cdn.epg.one/img2/4031.png" group-title="Series & Entertainment" tvg-rec="0",Turkish Dramas 3 FHD IL
+https://4.hls.gd/ch2611/mono.m3u8?token=olgasergej.v2_GGeqcpC-Xu83G-xWYYreEBabZMUuG_jMFpUtv7j2lozT2QrFPPsh4mdHr3_QMWRTNpTcA3RvCokmL4U
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1190/mono-${start}-${duration}.m3u8?token=olgasergej.v2_DXfAiMkC85a_s7VpMhYkwHKKVbO_elrCd1pnTHc_wqn6_rk8JIC1tQ_L2XLLjBOGaXh7xbvpyDsFl64" tvg-id="VivaIstanbul.il" group-title="Series & Entertainment" tvg-logo="http://epg.one/img2/88006.png" tvg-rec="0",Viva Istanbul IL
+https://4.hls.gd/ch1190/mono.m3u8?token=olgasergej.v2_DXfAiMkC85a_s7VpMhYkwHKKVbO_elrCd1pnTHc_wqn6_rk8JIC1tQ_L2XLLjBOGaXh7xbvpyDsFl64
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1188/mono-${start}-${duration}.m3u8?token=olgasergej.v2_vdmh0Tn5omXsINk-6gMTpmG68LYItLhtpjOiSRizWV6k-CMNr2nFaRP1gmD-MaiKouiyFTxUmmW1SfA" tvg-id="VivaPremium.il" tvg-logo="https://iptv-epg.org/images/Q8zPK3C0Yp_N4NI5Bf2f9NTFwyM5SDruB-emyIFoxTT3QbO7nYxxwGYq89a_nAo2o_LzBTsc8UdOfIr4CEwD15OFJWie7ZqobgNz5vcJnYnxuWsM" group-title="Series & Entertainment" tvg-rec="0",Viva Premium HD IL
+https://4.hls.gd/ch1188/mono.m3u8?token=olgasergej.v2_vdmh0Tn5omXsINk-6gMTpmG68LYItLhtpjOiSRizWV6k-CMNr2nFaRP1gmD-MaiKouiyFTxUmmW1SfA
+#EXTINF:0 tvg-id="VivaVintage.il" group-title="Series & Entertainment" tvg-logo="https://iptv.pm/images/ico/10491.png",Viva Vintage
+http://ronaldo.tvfor.pro/F9zT3nx4kuhV/tht6v98456np1k198n81n2t8
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1189/mono-${start}-${duration}.m3u8?token=olgasergej.v2_yjrxO7CTpOxLn3KSiz0vm-o1LL_663a1Bm-za4nMLO73zG2Me0t1_9RjifmSibHMKrsFYRgsNDxolYk" tvg-id="VivaTelenovelas.il" group-title="Series & Entertainment" tvg-logo="https://hls.gd/images/chIcons/1189.png",Viva Telenovelas
+https://4.hls.gd/ch1189/mono.m3u8?token=olgasergej.v2_yjrxO7CTpOxLn3KSiz0vm-o1LL_663a1Bm-za4nMLO73zG2Me0t1_9RjifmSibHMKrsFYRgsNDxolYk
+#EXTINF:-1 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1191/mono-${start}-${duration}.m3u8?token=olgasergej.v2_6FtgHM7Gi4vDM3F9UsiwqubBqsZunsY7DDGlQNmEmZe8F2yv0fh44qZXu5SEXjUjZusuTJBjAI2G3ck" tvg-id="YamTichoni.il" tvg-logo="https://upload.wikimedia.org/wikipedia/he/thumb/5/58/YamTichoniChannel.svg/1280px-YamTichoniChannel.svg.png" group-title="Series & Entertainment",Yam Tichoni (1080p)
+https://4.hls.gd/ch1191/mono.m3u8?token=olgasergej.v2_6FtgHM7Gi4vDM3F9UsiwqubBqsZunsY7DDGlQNmEmZe8F2yv0fh44qZXu5SEXjUjZusuTJBjAI2G3ck
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1152/mono-${start}-${duration}.m3u8?token=olgasergej.v2_64x_jKmZfdniMFZEnqsDQjKZ4UpMYfVfterrgDCPQEh6mLaN7ltCmymdg9rCwT57F9YYGbX5N_370TY" tvg-id="YamTichoniPlus.il" group-title="Series & Entertainment" tvg-logo="http://epg.one/img2/4029.png" tvg-rec="0",Yam Tichoni+ HD IL
+https://4.hls.gd/ch1152/mono.m3u8?token=olgasergej.v2_64x_jKmZfdniMFZEnqsDQjKZ4UpMYfVfterrgDCPQEh6mLaN7ltCmymdg9rCwT57F9YYGbX5N_370TY
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch1164/mono-${start}-${duration}.m3u8?token=olgasergej.v2_j5I0enbIHzpFrODrKC__CESo9Jk3Jufic8RKm0wnoewp8rLweIOYlVfjB1kajO8uRNqJnFGh8jEI05g" tvg-id="YamTichoni2.il" group-title="Series & Entertainment" tvg-logo="https://hls.gd/images/chIcons/1164.png",Yam Tichoni 2
+https://4.hls.gd/ch1164/mono.m3u8?token=olgasergej.v2_j5I0enbIHzpFrODrKC__CESo9Jk3Jufic8RKm0wnoewp8rLweIOYlVfjB1kajO8uRNqJnFGh8jEI05g
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2934/mono-${start}-${duration}.m3u8?token=olgasergej.v2_xGQUFJ8NaOndKLaxyvnJ-EpA5GIiy_X-jwCDmFo1WUp__ylLQ7iYdMW5Uq7weKhlWIRHQKGvudDsD1A" tvg-id="IndianDramas1.il" group-title="Series & Entertainment" tvg-logo="https://hls.gd/images/chIcons/2934.png",Indian Dramas 1
+https://4.hls.gd/ch2934/mono.m3u8?token=olgasergej.v2_xGQUFJ8NaOndKLaxyvnJ-EpA5GIiy_X-jwCDmFo1WUp__ylLQ7iYdMW5Uq7weKhlWIRHQKGvudDsD1A
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2935/mono-${start}-${duration}.m3u8?token=olgasergej.v2_C-QbLZ7CObxziu6--i0HPzfuQ7fGghhcWTDDk9XSAGTiy-3S1SZjEfbg3PgRu0pGwb1lUV6OlKx8OGY" tvg-id="IndianDramas2.il" group-title="Series & Entertainment" tvg-logo="https://hls.gd/images/chIcons/2935.png",Indian Dramas 2
+https://4.hls.gd/ch2935/mono.m3u8?token=olgasergej.v2_C-QbLZ7CObxziu6--i0HPzfuQ7fGghhcWTDDk9XSAGTiy-3S1SZjEfbg3PgRu0pGwb1lUV6OlKx8OGY
+#EXTINF:0 tvg-id="Bollywood.il" tvg-logo="https://i.imgur.com/scDKOLS.png" group-title="Series & Entertainment" tvg-rec="0",Bollywood HD IL
+http://aeaa1103.amazzin.pw/iptv/ZRHYWX3HESY8SCRYGTGD685D/12267/index.m3u8
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2641/mono-${start}-${duration}.m3u8?token=olgasergej.v2_01QldUiDzMLHGPYwDr5SU98u_ZVLaAnq8rPzmMsmoZ3wlOyXZZo7fcEaJH0fOrNkPnmbeH62HZjGbaQ" tvg-id="SpanishDramas1.il" group-title="Series & Entertainment" tvg-logo="https://hls.gd/images/chIcons/2641.png",Spanish Dramas 1
+https://4.hls.gd/ch2641/mono.m3u8?token=olgasergej.v2_01QldUiDzMLHGPYwDr5SU98u_ZVLaAnq8rPzmMsmoZ3wlOyXZZo7fcEaJH0fOrNkPnmbeH62HZjGbaQ
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch3133/mono-${start}-${duration}.m3u8?token=olgasergej.v2_mZBuXR08Rv8DNjYPSHz-ntFbvXE5vWC-P31No5wWpcYll-2rmYzqC2pcrHgt90cEM7n_zndL-Z9kPUg" tvg-id="SpanishDramas2.il" group-title="Series & Entertainment" tvg-logo="https://hls.gd/images/chIcons/3133.png",Spanish Dramas 2
+https://4.hls.gd/ch3133/mono.m3u8?token=olgasergej.v2_mZBuXR08Rv8DNjYPSHz-ntFbvXE5vWC-P31No5wWpcYll-2rmYzqC2pcrHgt90cEM7n_zndL-Z9kPUg
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch3174/mono-${start}-${duration}.m3u8?token=olgasergej.v2_9wVV8CB9h0ejZbrRB9OG_gtqBvkHz7OAq0X3D0QiShvXxSQF6RAWb1caLWvFRjdwsSGfup5mlKvAa84" tvg-id="WorldAction1.il" group-title="Series & Entertainment" tvg-logo="https://hls.gd/images/chIcons/3174.png",World Action 1
+https://4.hls.gd/ch3174/mono.m3u8?token=olgasergej.v2_9wVV8CB9h0ejZbrRB9OG_gtqBvkHz7OAq0X3D0QiShvXxSQF6RAWb1caLWvFRjdwsSGfup5mlKvAa84
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch3175/mono-${start}-${duration}.m3u8?token=olgasergej.v2_W9c9t7hbCLmvmUg-5LRCgrtWjDTl8TDf-NSHSI4yraKt3TOWJ8EstCpkP6-9TfQdQ-MaelKwqd6rr0U" tvg-id="WorldAction2.il" group-title="Series & Entertainment" tvg-logo="https://hls.gd/images/chIcons/3175.png",World Action 2
+https://4.hls.gd/ch3175/mono.m3u8?token=olgasergej.v2_W9c9t7hbCLmvmUg-5LRCgrtWjDTl8TDf-NSHSI4yraKt3TOWJ8EstCpkP6-9TfQdQ-MaelKwqd6rr0U
+#EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch3908/mono-${start}-${duration}.m3u8?token=olgasergej.v2_Ov-2ONoGk80dMAKQJt5CJWCfdTHR0b0sCvPb-eQTu4fXvLdni12rrAf8CR2Jurl3kz1qQ_rJntHHQmo" tvg-id="DramotYomiyot.il" group-title="Series & Entertainment" tvg-logo="https://hls.gd/images/chIcons/3908.png",Dramot Yomiyot
+https://4.hls.gd/ch3908/mono.m3u8?token=olgasergej.v2_Ov-2ONoGk80dMAKQJt5CJWCfdTHR0b0sCvPb-eQTu4fXvLdni12rrAf8CR2Jurl3kz1qQ_rJntHHQmo
+#EXTINF:0 tvg-id="5Sport4K.il" tvg-logo="https://iptv-epg.org/images/oifhoMGddxpGAzNHtyOX3PpLHvP_fkolnntWDoNQ1FCXs3-VxdzvQSvhqfGbkGGaB88IWvtKLivWTUoYiq9tP45p-ew0J4Ycg9fN7STqNa4a" group-title="Backups" tvg-rec="0",5Sport 4K IL (backup)
+http://aeaa1103.amazzin.pw/iptv/ZRHYWX3HESY8SCRYGTGD685D/16019/index.m3u8
+#EXTINF:0 tvg-id="5Sport.il" group-title="Backups" tvg-logo="http://epg.one/img2/2682.png" tvg-rec="3",5Sport FHD IL (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/2341/index.m3u8
+#EXTINF:0 tvg-id="5SportGold.il" group-title="Backups" tvg-logo="http://epg.one/img2/3992.png" tvg-rec="0",5Sport Gold HD IL (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12254/index.m3u8
+#EXTINF:0 tvg-id="5SportLive.il" group-title="Backups" tvg-logo="http://epg.one/img2/3993.png" tvg-rec="3",5Sport Live FHD IL (backup)
+http://ronaldo.tvfor.pro/LjZXDRiRS6tD/tht6v98456np1k198n81n2t8
+#EXTINF:0 tvg-id="5SportLive.il" group-title="Backups" tvg-logo="http://epg.one/img2/3993.png" tvg-rec="3",5Sport Live FHD IL (backup 2)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/2362/index.m3u8
+#EXTINF:0 tvg-id="5SportStars.il" group-title="Backups" tvg-logo="http://epg.one/img2/3994.png" tvg-rec="0",5Sport Stars FHD IL (backup)
+http://ronaldo.tvfor.pro/e0Nm6WLHvzHF/tht6v98456np1k198n81n2t8
+#EXTINF:0 tvg-id="5SportStars.il" group-title="Backups" tvg-logo="http://epg.one/img2/3994.png" tvg-rec="0",5Sport Stars FHD IL (backup 2)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12278/index.m3u8
+#EXTINF:0 tvg-id="BabyTv.il" tvg-logo="https://i.imgur.com/4BDJ5FT.png" group-title="Backups" tvg-rec="3",Baby TV IL (backup)
+http://ronaldo.tvfor.pro/FZAhfN4NACRk/tht6v98456np1k198n81n2t8
+#EXTINF:0 tvg-id="BabyTv.il" tvg-logo="https://i.imgur.com/4BDJ5FT.png" group-title="Backups" tvg-rec="3",Baby TV IL (backup 2)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/2370/index.m3u8
+#EXTINF:0 tvg-id="BollywoodIndianFilms.il" group-title="Backups" tvg-logo="http://epg.one/img2/5071.png" tvg-rec="0",BollywooD Indian Films IL (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12267/index.m3u8
+#EXTINF:0 tvg-id="Channel24.il" tvg-logo="https://i.imgur.com/WLs67QI.png" group-title="Backups" tvg-rec="0",Channel 24 HD IL (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12237/index.m3u8
+#EXTINF:-1 tvg-id="Channel9.il" tvg-logo="https://i.imgur.com/pttM3KQ.png" group-title="Backups",Channel 9 (1080p) (backup)
+https://contact.gostreaming.tv/Con-11/index.m3u8
+#EXTINF:0 tvg-id="DiscoveryChannel.il" tvg-logo="https://i.imgur.com/7pmvDqg.png" group-title="Backups" tvg-rec="3",Discovery Channel FHD IL (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/2358/index.m3u8
+#EXTINF:-1 tvg-id="DisneyChannel.il" group-title="Backups"  tvg-logo="http://odinson.me/storage/iptv/channels/OId7hQ9Meh.png" ,DISNEY CHANNEL HD IL (backup)
+http://66.90.110.10:8080/DpcOQ6Pn7R/index.m3u8?token=CNVkbIWpdNQAUXGC
+#EXTINF:0 tvg-id="E.il" group-title="Backups" tvg-logo="http://epg.one/img2/4005.png" tvg-rec="0",E! HD IL (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12243/index.m3u8
+#EXTINF:-1 tvg-id="Eurosport2.il" tvg-logo="https://iptv-epg.org/images/eXlhT1dJmDQjgPMrR30V6BHOzmpfcQfJ9wWM3jQwVSkMuF3e8g1By5_ZoNbGUR1ioj5OfxrvVjEje-EPayGAaXvDTb0erRB5bj8vITcqhhGIpRs" group-title="Backups",Eurosport 2 HD (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/7203/index.m3u8
+#EXTINF:0 tvg-id="FoodNetwork.il" group-title="Backups" tvg-logo="http://epg.one/img2/2708.png" tvg-rec="0",Food Network HD IL (backup)
+http://ronaldo.tvfor.pro/H9LMDlg4qzQ3/tht6v98456np1k198n81n2t8
+#EXTINF:0 tvg-id="FoodNetwork.il" group-title="Backups" tvg-logo="http://epg.one/img2/2708.png" tvg-rec="0",Food Network HD IL (backup 2)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12209/index.m3u8
+#EXTINF:-1 tvg-id="FreeTvMoviesComedy.il" group-title="Backups"  tvg-logo="http://odinson.me/storage/iptv/channels/Ri7GtE4fEN.png" ,FREE TV MOVIES COMEDY HD (backup)
+http://66.90.110.10:8080/Atm6n0ORgW/index.m3u8?token=CNVkbIWpdNQAUXGC
+#EXTINF:0 tvg-id="GoodLife.il" tvg-logo="https://cdn.epg.one/img2/2686.png" group-title="Backups" tvg-rec="3",Good Life IL (backup)
+http://ronaldo.tvfor.pro/tO2AtQfIGC8H/tht6v98456np1k198n81n2t8
+#EXTINF:0 tvg-id="GoodLife.il" tvg-logo="https://cdn.epg.one/img2/2686.png" group-title="Backups" tvg-rec="3",Good Life IL (backup 2)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/2355/index.m3u8
+#EXTINF:0 tvg-id="Health.il" group-title="Backups" tvg-logo="http://epg.one/img2/2709.png" tvg-rec="3",Health IL (backup)
+http://ronaldo.tvfor.pro/4lbH8DGALDa9/tht6v98456np1k198n81n2t8
+#EXTINF:0 tvg-id="Health.il" group-title="Backups" tvg-logo="http://epg.one/img2/2709.png" tvg-rec="3",Health IL (backup 2)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/2378/index.m3u8
+#EXTINF:0 tvg-id="History.il" tvg-logo="https://images.open-epg.com/18748449.png" group-title="Backups" tvg-rec="0",History FHD IL (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12265/index.m3u8
+#EXTINF:0 tvg-id="HomePlus.il" group-title="Backups" tvg-logo="http://epg.one/img2/2680.png" tvg-rec="3",Home Plus IL (backup)
+http://ronaldo.tvfor.pro/sl1Sx0gNyF6t/tht6v98456np1k198n81n2t8
+#EXTINF:0 tvg-id="HomePlus.il" group-title="Backups" tvg-logo="http://epg.one/img2/2680.png" tvg-rec="3",Home Plus IL (backup 2)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/2339/index.m3u8
+#EXTINF:-1 tvg-id="Hop.il" tvg-logo="https://i.imgur.com/bScuilD.png" group-title="Backups",Hop! HD IL (backup)
+http://ronaldo.tvfor.pro/9SJITXL5fNcx/tht6v98456np1k198n81n2t8
+#EXTINF:-1 tvg-id="Hop.il" tvg-logo="https://i.imgur.com/bScuilD.png" group-title="Backups",Hop! HD IL (backup 2)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12244/index.m3u8
+#EXTINF:0 tvg-id="Hot3.il" tvg-logo="https://iptv-epg.org/images/N_HD_EILtHsL97e-lmrIK6usa1f32VuhebpKvaAakWSzyZa4qoT463lg7rplrCAlW6k0vNoyOzPMCUxGYsGO0S9eQJC49aE4ioWoGts" group-title="Backups" tvg-rec="3",HOT 3 FHD IL (backup)
+http://ronaldo.tvfor.pro/1bHNn62cCL1h/tht6v98456np1k198n81n2t8
+#EXTINF:0 tvg-id="Hot3.il" tvg-logo="https://iptv-epg.org/images/N_HD_EILtHsL97e-lmrIK6usa1f32VuhebpKvaAakWSzyZa4qoT463lg7rplrCAlW6k0vNoyOzPMCUxGYsGO0S9eQJC49aE4ioWoGts" group-title="Backups" tvg-rec="3",HOT 3 FHD IL (backup 2)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/2367/index.m3u8
+#EXTINF:0 tvg-id="Hot8.il" group-title="Backups" tvg-name="Hot 8 HD" tvg-logo="https://iptv.pm/images/ico/hot8.png" ,HOT 8 IL (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12216/index.m3u8
+#EXTINF:0 tvg-id="HotBidur.il" tvg-logo="https://iptv-epg.org/images/RJ-mHB2j0pKvwVx2QwgFAsl5qz1FKwficBoZvl2Moq5abt06vwcZWS_3hk6apdNSFsxgR4LTIgcSmzq8uUoRd9Aa0O8sOqf6TGzoel8hWmA5k22EpxB8hPU" group-title="Backups" tvg-rec="0",HOT Bidur HD IL (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12219/index.m3u8
+#EXTINF:0 tvg-id="HotCinema1.il" tvg-logo="https://iptv-epg.org/images/dbtNllv6NHkt5AFBY4C4cyyv-WtkqP0Z3KhrDNiYCbwbIjAeNvDoOr5Od_t8GB6ZgqMJlbSy29bCwf7a6JJqCXl3Hs00prYGnjkJGlXu6GU0pB8" group-title="Backups" tvg-rec="3",HOT Cinema 1 FHD IL (backup)
+http://aeaa1103.amazzin.pw/iptv/ZRHYWX3HESY8SCRYGTGD685D/2357/index.m3u8
+#EXTINF:0 tvg-id="HotCinema2.il" group-title="Backups" tvg-logo="http://epg.one/img2/2702.png" tvg-rec="0",HOT Cinema 2 HD IL (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12215/index.m3u8
+#EXTINF:0 tvg-id="HotCinema3.il" group-title="Backups" tvg-logo="http://epg.one/img2/2703.png" tvg-rec="3",HOT Cinema 3 FHD IL (backup)
+http://ronaldo.tvfor.pro/9icA3O2M8DQ9/tht6v98456np1k198n81n2t8
+#EXTINF:0 tvg-id="HotCinema3.il" group-title="Backups" tvg-logo="http://epg.one/img2/2703.png" tvg-rec="3",HOT Cinema 3 FHD IL (backup 2)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/2372/index.m3u8
+#EXTINF:0 tvg-id="HotCinema4.il" group-title="Backups" tvg-logo="http://epg.one/img2/2687.png" tvg-rec="3",HOT Cinema 4 HD IL (backup)
+http://ronaldo.tvfor.pro/zKLYbRvAMgj4/tht6v98456np1k198n81n2t8
+#EXTINF:0 tvg-id="HotCinema4.il" group-title="Backups" tvg-logo="http://epg.one/img2/2687.png" tvg-rec="3",HOT Cinema 4 HD IL (backup 2)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/2356/index.m3u8
+#EXTINF:0 tvg-id="HotCinemaFamily.il" tvg-logo="https://cdn.epg.one/img2/9056.png" group-title="Backups" tvg-rec="3",HOT Cinema Family HD IL (backup)
+http://aeaa1103.amazzin.pw/iptv/ZRHYWX3HESY8SCRYGTGD685D/2151/index.m3u8
+#EXTINF:0 tvg-id="HotComedy.il" group-title="Backups" tvg-logo="http://epg.one/img2/5024.png" tvg-rec="0",HOT Comedy HD IL (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12217/index.m3u8
+#EXTINF:0 tvg-id="HotHbo.il" group-title="Backups" tvg-logo="http://epg.one/img2/2685.png" tvg-rec="3",HOT HBO HD IL (backup)
+http://ronaldo.tvfor.pro/aJiFKajk047t/tht6v98456np1k198n81n2t8
+#EXTINF:0 tvg-id="HotHbo.il" group-title="Backups" tvg-logo="http://epg.one/img2/2685.png" tvg-rec="3",HOT HBO HD IL (backup 2)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/2354/index.m3u8
+#EXTINF:0 tvg-id="HotReal.il" tvg-logo="https://www.hot.net.il/UploadedImages//03_2020/HOT_REAL_LOGO_510_147.png" group-title="Backups" tvg-rec="0",HOT Real HD IL (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12274/index.m3u8
+#EXTINF:-1 tvg-id="HotZone.il" tvg-logo="https://iptv-epg.org/images/DvHEtgTYYxj5f2UE1v-6e1E9AY4jaiZQZksm-hhl_pxHqGoHfszPpqv_TzZKEacHk6PmhHpCXHtHv1GDG98YZOf6udeCRCxpv2JOJIe6X2o" group-title="Backups",HOT Zone HD IL (backup)
+http://ronaldo.tvfor.pro/JdNDb7vvkTCO/tht6v98456np1k198n81n2t8
+#EXTINF:-1 tvg-id="HotZone.il" tvg-logo="https://iptv-epg.org/images/DvHEtgTYYxj5f2UE1v-6e1E9AY4jaiZQZksm-hhl_pxHqGoHfszPpqv_TzZKEacHk6PmhHpCXHtHv1GDG98YZOf6udeCRCxpv2JOJIe6X2o" group-title="Backups",HOT Zone HD IL (backup 2)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/2360/index.m3u8
+#EXTINF:0 tvg-id="HumorChannel.il" group-title="Backups" tvg-logo="https://iptv.pm/images/ico/8401.png",Humor Channel HD (backup)
+http://ronaldo.tvfor.pro/f0fqegZ3FQ2S/tht6v98456np1k198n81n2t8
+#EXTINF:0 tvg-id="I24News.il" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/LOGO_i24NEWS.png/960px-LOGO_i24NEWS.png" group-title="Backups" tvg-rec="3",i24 News IL (backup)
+http://ronaldo.tvfor.pro/zHn4GRPPF0Hq/tht6v98456np1k198n81n2t8
+#EXTINF:0 tvg-id="I24News.il" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/LOGO_i24NEWS.png/960px-LOGO_i24NEWS.png" group-title="Backups" tvg-rec="3",i24 News IL (backup 2)
+http://aeaa1103.amazzin.pw/iptv/ZRHYWX3HESY8SCRYGTGD685D/2386/index.m3u8
+#EXTINF:0 tvg-id="Junior.il" group-title="Backups" tvg-logo="http://epg.one/img2/2697.png" tvg-rec="3",Junior HD IL (backup)
+http://ronaldo.tvfor.pro/o7GQcwx2Fsuw/tht6v98456np1k198n81n2t8
+#EXTINF:0 tvg-id="Junior.il" group-title="Backups" tvg-logo="http://epg.one/img2/2697.png" tvg-rec="3",Junior HD IL (backup 2)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/2366/index.m3u8
+#EXTINF:-1 tvg-id="Kan11.il" tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/kan11.png" group-title="Backups",Kan 11 (1080p) (backup)
+https://kancdn.medonecdn.net/livehls/oil/kancdn-live/live/kan11/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="KanEducational.il" tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/kan_educational.png" group-title="Backups",Kan Educational IL (backup)
+http://ronaldo.tvfor.pro/2tEy8PrzY7OZ/tht6v98456np1k198n81n2t8
+#EXTINF:-1 tvg-id="KanEducational.il" tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/kan_educational.png" group-title="Backups",Kan Educational IL (backup 2)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/2380/index.m3u8
+#EXTINF:0 tvg-id="Keshet12.il" tvg-logo="https://i.imgur.com/fY3eakc.png" group-title="Backups" tvg-rec="3",Keshet 12 FHD IL (backup)
+http://ronaldo.tvfor.pro/Zxvcimy6qtdl/tht6v98456np1k198n81n2t8
+#EXTINF:0 tvg-id="Keshet12.il" tvg-logo="https://i.imgur.com/fY3eakc.png" group-title="Backups" tvg-rec="3",Keshet 12 FHD IL (backup 2)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/2349/index.m3u8
+#EXTINF:0 tvg-id="Luli.il" group-title="Backups" tvg-logo="http://epg.one/img2/2695.png" tvg-rec="3",Luli IL (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/2364/index.m3u8
+#EXTINF:0 tvg-id="NationalGeographic.il" group-title="Backups" tvg-logo="http://epg.one/img2/2677.png" tvg-rec="0",National Geographic HD IL (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12247/index.m3u8
+#EXTINF:0 tvg-id="NickJr.il" group-title="Backups" tvg-logo="http://epg.one/img2/2678.png" tvg-rec="3",Nick Jr. IL (backup)
+http://ronaldo.tvfor.pro/KJkGr4Zzo4X6/tht6v98456np1k198n81n2t8
+#EXTINF:0 tvg-id="NickJr.il" group-title="Backups" tvg-logo="http://epg.one/img2/2678.png" tvg-rec="3",Nick Jr. IL (backup 2)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/2337/index.m3u8
+#EXTINF:-1 tvg-id="Now14.il" tvg-logo="https://i.imgur.com/Iq2Kb69.png" group-title="Backups",Now 14 (1080p) (backup)
+https://r.il.cdn-redge.media/livehls/oil/ch14/live/ch14/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="One1Doco.il" group-title="Backups"  tvg-logo="http://odinson.me/storage/iptv/channels/5GLJrlclTi.png" ,ONE 1 DOCO HD IL (backup)
+http://66.90.110.10:8080/JIvNvgq2cm/index.m3u8?token=CNVkbIWpdNQAUXGC
+#EXTINF:0 tvg-id="One2.il" group-title="Backups" tvg-logo="http://epg.one/img2/2704.png" tvg-rec="0",One 2 HD IL (backup)
+http://ronaldo.tvfor.pro/pWkns1hDccpK/tht6v98456np1k198n81n2t8
+#EXTINF:0 tvg-id="One2.il" group-title="Backups" tvg-logo="http://epg.one/img2/2704.png" tvg-rec="0",One 2 HD IL (backup 2)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12231/index.m3u8
+#EXTINF:0 tvg-id="One.il" group-title="Backups" tvg-logo="http://epg.one/img2/2681.png" tvg-rec="3",One HD IL (backup)
+http://ronaldo.tvfor.pro/SuaMDJPq2keD/tht6v98456np1k198n81n2t8
+#EXTINF:0 tvg-id="One.il" group-title="Backups" tvg-logo="http://epg.one/img2/2681.png" tvg-rec="3",One HD IL (backup 2)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/2340/index.m3u8
+#EXTINF:-1 tvg-id="Reshet13.il" tvg-logo="https://i.imgur.com/eFM3bTq.png" group-title="Backups",Reshet 13 HD IL (backup)
+http://ronaldo.tvfor.pro/TlcWvT1hU9S7/tht6v98456np1k198n81n2t8
+#EXTINF:-1 tvg-id="Reshet13.il" tvg-logo="https://i.imgur.com/eFM3bTq.png" group-title="Backups",Reshet 13 HD IL (backup 2)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/2330/index.m3u8
+#EXTINF:0 tvg-id="Sport1.il" tvg-logo="https://i.imgur.com/DqE1143.png" group-title="Backups" tvg-rec="0",Sport 1 HD IL (backup)
+http://ronaldo.tvfor.pro/LluK1jMFlWWP/tht6v98456np1k198n81n2t8
+#EXTINF:0 tvg-id="Sport1.il" tvg-logo="https://i.imgur.com/DqE1143.png" group-title="Backups" tvg-rec="0",Sport 1 HD IL (backup 2)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12249/index.m3u8
+#EXTINF:0 tvg-id="Sport2.il" tvg-logo="https://i.imgur.com/Headxmx.png" group-title="Backups" tvg-rec="0",SPORT 2 HD IL (backup)
+http://ronaldo.tvfor.pro/DeqchzE3gPZ1/tht6v98456np1k198n81n2t8
+#EXTINF:0 tvg-id="Sport2.il" tvg-logo="https://i.imgur.com/Headxmx.png" group-title="Backups" tvg-rec="0",SPORT 2 HD IL (backup 2)
+http://66.90.110.10:8080/RRVNaA6b2z/index.m3u8?token=CNVkbIWpdNQAUXGC
+#EXTINF:0 tvg-id="Sport3.il" tvg-logo="https://i.imgur.com/stSrBBh.png" group-title="Backups" tvg-rec="0",Sport 3 HD IL (backup)
+http://ronaldo.tvfor.pro/EvuowSt8FuKX/tht6v98456np1k198n81n2t8
+#EXTINF:0 tvg-id="Sport3.il" tvg-logo="https://i.imgur.com/stSrBBh.png" group-title="Backups" tvg-rec="0",Sport 3 HD IL (backup 2)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12251/index.m3u8
+#EXTINF:0 tvg-id="Sport4.il" tvg-logo="https://i.imgur.com/wFXzzYs.png" group-title="Backups" tvg-rec="0",Sport 4 FHD IL (backup)
+http://ronaldo.tvfor.pro/zXEQFI4E4Urg/tht6v98456np1k198n81n2t8
+#EXTINF:0 tvg-id="Sport4.il" tvg-logo="https://i.imgur.com/wFXzzYs.png" group-title="Backups" tvg-rec="0",Sport 4 FHD IL (backup 2)
+http://aeaa1103.amazzin.pw/iptv/ZRHYWX3HESY8SCRYGTGD685D/12252/index.m3u8
+#EXTINF:-1 tvg-id="StarChannel.il" group-title="Backups"  tvg-logo="http://odinson.me/storage/iptv/channels/D83pxgW1PZ.png" ,STAR Channel IL (backup)
+http://66.90.110.10:8080/nNUc8qZYFy/index.m3u8?token=CNVkbIWpdNQAUXGC
+#EXTINF:-1 tvg-id="TravelChannel.il" group-title="Backups"  tvg-logo="http://odinson.me/storage/iptv/channels/o8vWjvFhin.png" ,Travel Channel IL (backup)
+http://66.90.110.10:8080/TPEoge0dYF/index.m3u8?token=CNVkbIWpdNQAUXGC
+#EXTINF:0 tvg-id="TurkishDramas2.il" tvg-logo="https://cdn.epg.one/img2/9075.png" group-title="Backups" tvg-rec="0",Turkish Dramas 2 FHD IL (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12262/index.m3u8
+#EXTINF:0 tvg-id="TurkishDramas3.il" tvg-logo="https://cdn.epg.one/img2/4031.png" group-title="Backups" tvg-rec="0",Turkish Dramas 3 FHD IL (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12264/index.m3u8
+#EXTINF:0 tvg-id="TurkishDramasPlus.il" group-title="Backups" tvg-logo="http://epg.one/img2/9076.png" tvg-rec="0",Turkish Dramas Plus FHD IL (backup)
+http://ronaldo.tvfor.pro/2EwJTiIthgwn/tht6v98456np1k198n81n2t8
+#EXTINF:0 tvg-id="TurkishDramasPlus.il" group-title="Backups" tvg-logo="http://epg.one/img2/9076.png" tvg-rec="0",Turkish Dramas Plus FHD IL (backup 2)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12257/index.m3u8
+#EXTINF:0 tvg-id="VivaIstanbul.il" group-title="Backups" tvg-logo="http://epg.one/img2/88006.png" tvg-rec="0",Viva Istanbul IL (backup)
+http://ronaldo.tvfor.pro/3gx2yezybM3h/tht6v98456np1k198n81n2t8
+#EXTINF:0 tvg-id="VivaIstanbul.il" group-title="Backups" tvg-logo="http://epg.one/img2/88006.png" tvg-rec="0",Viva Istanbul IL (backup 2)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12208/index.m3u8
+#EXTINF:0 tvg-id="VivaPremium.il" tvg-logo="https://iptv-epg.org/images/Q8zPK3C0Yp_N4NI5Bf2f9NTFwyM5SDruB-emyIFoxTT3QbO7nYxxwGYq89a_nAo2o_LzBTsc8UdOfIr4CEwD15OFJWie7ZqobgNz5vcJnYnxuWsM" group-title="Backups" tvg-rec="0",Viva Premium HD IL (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12226/index.m3u8
+#EXTINF:0 tvg-id="Wiz.il" group-title="Backups" tvg-logo="http://epg.one/img2/5087.png" tvg-rec="0",WIZ HD IL (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12283/index.m3u8
+#EXTINF:0 tvg-id="YamTichoniPlus.il" group-title="Backups" tvg-logo="http://epg.one/img2/4029.png" tvg-rec="0",Yam Tichoni+ HD IL (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12224/index.m3u8
+#EXTINF:0 tvg-id="YesDocu.il" tvg-logo="https://i.imgur.com/uzlBIQX.png" group-title="Backups" tvg-rec="0",Yes Docu HD IL (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12258/index.m3u8
+#EXTINF:0 tvg-id="YesIsraeli.il" tvg-logo="https://i.imgur.com/e5OA6fA.png" group-title="Backups" tvg-rec="3",Yes Israeli IL (backup)
+http://ronaldo.tvfor.pro/x6h81LtQqwTY/tht6v98456np1k198n81n2t8
+#EXTINF:0 tvg-id="YesIsraeli.il" tvg-logo="https://i.imgur.com/e5OA6fA.png" group-title="Backups" tvg-rec="3",Yes Israeli IL (backup 2)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/2342/index.m3u8
+#EXTINF:0 tvg-id="YesMoviesAction.il" tvg-logo="https://iptv-epg.org/images/i00xp1xMX8MhsOp9BFoTLtxD_80oYjYJjOyHimIoHVRfppYdPx17qk_G0p5-Yiq_vy-lG4gCF4unfMZXJgmyW6wIs4y2eLS1EjGBEutbreawQJc0DUINDQ" group-title="Backups" tvg-rec="0",Yes Movies Action FHD IL (backup)
+http://ronaldo.tvfor.pro/7cnRrhBQrLWi/tht6v98456np1k198n81n2t8
+#EXTINF:0 tvg-id="YesMoviesAction.il" tvg-logo="https://iptv-epg.org/images/i00xp1xMX8MhsOp9BFoTLtxD_80oYjYJjOyHimIoHVRfppYdPx17qk_G0p5-Yiq_vy-lG4gCF4unfMZXJgmyW6wIs4y2eLS1EjGBEutbreawQJc0DUINDQ" group-title="Backups" tvg-rec="0",Yes Movies Action FHD IL (backup 2)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12270/index.m3u8
+#EXTINF:0 tvg-id="YesMoviesComedy.il" tvg-logo="https://iptv-epg.org/images/HVyHU9_3xDJCa-2ossSPaUfnwEdI3xfwJGw4vGcfcb6bG8mxutUkIkknIOYUDcR5cX9mBev5fdK6khrBvbTquRxL3RMhgqVOkNug5fgUZqKaMfSZG2Ppow" group-title="Backups" tvg-rec="0",Yes Movies Comedy FHD IL (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12271/index.m3u8
+#EXTINF:0 tvg-id="YesMoviesDrama.il" tvg-logo="https://iptv-epg.org/images/t90jgL1ReMIi8U1Go90yDAQy8Vq-W1daKKrFwG9jQkMH00ppdXrMQRB8LVWkCkHuvjVqpgNqCBYStpoO3AaXUfPHtqpyHaqFpJhCaiJVkd1w19oo_-pI" group-title="Backups" tvg-rec="0",Yes Movies Drama FHD IL (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12272/index.m3u8
+#EXTINF:0 tvg-id="YesMoviesKids.il" group-title="Backups" tvg-logo="http://epg.one/img2/2967.png" tvg-rec="0",Yes Movies Kids FHD IL (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/12273/index.m3u8
+#EXTINF:0 tvg-id="YesTvAction.il" group-title="Backups" tvg-logo="http://epg.one/img2/3999.png" tvg-rec="3",Yes TV Action HD IL (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/2346/index.m3u8
+#EXTINF:0 tvg-id="YesTvComedy.il" tvg-logo="https://iptv-epg.org/images/5lzeQgUAvtZUHIKa8biPrL3IZCIXJV8AXODa2SWjoWMAdmLx0YlCCPLmuReyA4tiu9DoEd1wBLOzdJ61ltTnndNQuO2t5MxcnrBzXdiOySNCu0fE" group-title="Backups" tvg-rec="3",Yes TV Comedy HD IL (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/2345/index.m3u8
+#EXTINF:0 tvg-id="YesTvDrama.il" group-title="Backups" tvg-logo="http://epg.one/img2/4007.png" tvg-rec="3",Yes TV Drama HD IL (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/2343/index.m3u8
+#EXTINF:0 tvg-id="Zoom.il" tvg-logo="https://iptv-epg.org/images/mWN_dOX_u5_vNmQEsvNoXrBwK8pvmA8tWYkxToe_uDEiHHoGfRo47ncMSyRZBW9lUeOY7Wi4MXfLdjQP7MmnpGUKIMQGVWdr7UFSFtg" group-title="Backups" tvg-rec="3",Zoom IL (backup)
+http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/FHKC2D3GGKYK3Q/2359/index.m3u8
