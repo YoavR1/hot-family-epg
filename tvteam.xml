@@ -1,9 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<tv generator-info-name="tvteam_epg.py" generator-info-url="https://epg.team/3.1.xml"><channel id="TVTeamHotCinemaFamily.il"><display-name>HOT Cinema Family HD IL</display-name></channel><channel id="TVTeamHotSenior.il"><display-name>HOT Senior</display-name></channel><channel id="TVTeamHotBuzz.il"><display-name>HOT Buzz</display-name></channel><channel id="TVTeamCellcomIsrael.il"><display-name>Cellcom Israel</display-name></channel><channel id="TVTeamArutzHagiborim.il"><display-name>Arutz Hagiborim</display-name></channel><channel id="TVTeamArutzPeshaAmiti.il"><display-name>Arutz Pesha Amiti (True Crime)</display-name></channel><programme channel="TVTeamHotCinemaFamily.il" start="20261121123200 +0000" stop="20261121135100 +0000">
-  <title>לאו דה וינצ'י שודדי האוצר - מדובב</title>
-  <desc>אנימציה, הרפתקאות. באיטליה של ימי הביניים לאו דה וינצי' הוא אומן צעיר הממציא מכונות מתוחכמות ומשתמש בהם יחד עם חברו למצוא אוצר חבוי. קולות עומר שטיינברג, עדי בר לב. בימוי סרג'ו מנפיו (איטליה, 2018). (שח)</desc>
-  <category />
-</programme><programme channel="TVTeamHotCinemaFamily.il" start="20261121135100 +0000" stop="20261121150800 +0000">
+<tv generator-info-name="tvteam_epg.py" generator-info-url="https://epg.team/3.1.xml"><channel id="TVTeamHotCinemaFamily.il"><display-name>HOT Cinema Family HD IL</display-name></channel><channel id="TVTeamHotSenior.il"><display-name>HOT Senior</display-name></channel><channel id="TVTeamHotBuzz.il"><display-name>HOT Buzz</display-name></channel><channel id="TVTeamCellcomIsrael.il"><display-name>Cellcom Israel</display-name></channel><channel id="TVTeamArutzHagiborim.il"><display-name>Arutz Hagiborim</display-name></channel><channel id="TVTeamArutzPeshaAmiti.il"><display-name>Arutz Pesha Amiti (True Crime)</display-name></channel><programme channel="TVTeamHotCinemaFamily.il" start="20261121135100 +0000" stop="20261121150800 +0000">
   <title>חבורת הבלאגן המושלם - מדובב</title>
   <desc>אנימציה. בממלכת חיות יפהפייה, אדוארד המדען פוגש ילדה שחולמת לפענח את תעלומת מוצאה האנושי. יחד עם צב גאון, השלושה יוצאים לחפש אי נסתר. דיבוב גליה קורקט, עמית שושני. בימוי לאו לואיס ליאו (ארה''ב, 2024) (שח)</desc>
   <category />
@@ -263,13 +259,13 @@
   <title>הקרודים משפחה חדשה - פרק 11</title>
   <desc>גיא תמיד מפתיע את איפ במחוות רומנטיות, ואיפ רוצה להחזיר לו הפתעה. אבל כשגיא מוכיח שאי אפשר להפתיע אותו, איפ צריכה להתאמץ קצת יותר. (שח)</desc>
   <category />
-</programme><programme channel="TVTeamHotSenior.il" start="20261121120900 +0000" stop="20261121125600 +0000">
-  <title>שורשים של יצירה - פרק 4</title>
-  <desc>אשת התקשורת לאה שקלאר מארחת אומנים, יוצרים, אנשי תרבות על הבית שבו גדלו, על מקורות ההשראה, ועל הקריירה האומנותית שלהם. והפעם הצייר והיוצר מיכאל קובנר על מקורות ההשראה ותחנות מרכזיות בקריירה. כ' עב'. (שח)</desc>
+</programme><programme channel="TVTeamHotCinemaFamily.il" start="20261125112900 +0000" stop="20261125115200 +0000">
+  <title>הקרודים משפחה חדשה - פרק 12</title>
+  <desc>הורי משפחת הקרודים והאחיטובים מתקשים להסתדר בגלל השוני הרב ביניהם. שני הזוגות מבינים שהם צריכים קצת זמן בנפרד ומחליטים להתרחק מהחווה וזה מזה. (שח)</desc>
   <category />
-</programme><programme channel="TVTeamHotSenior.il" start="20261121125600 +0000" stop="20261121134200 +0000">
-  <title>הנה ימים באים - משירי נורית הירש</title>
-  <desc>תכנית חגיגית שהוקלטה ב-2001 המוקדשת לשיריה של נורית הירש. משתתפים אילנית, דקלון, בני ברדה, דורית ראובני, דורית פרקש, חבורת הזמר ''שירון'' הוד השרון. מנחה ורד גולדברגר. כ' עב'. (שח)</desc>
+</programme><programme channel="TVTeamHotCinemaFamily.il" start="20261125115200 +0000" stop="20261125132400 +0000">
+  <title>פדינגטון - מדובב</title>
+  <desc>ילדים. דב צעיר מהג'ונגל מגיע ללונדון בחיפוש אחר בית. במהרה הוא אובד בתחנת הרכבת פדינגטון, ושם הוא פוגש את משפחת בראון הנחמדה שאוספת אותו אל ביתה. דיבוב מיכאל אלוני. בימוי פול קינג (בריטניה, 2014). (שח)</desc>
   <category />
 </programme><programme channel="TVTeamHotSenior.il" start="20261121134200 +0000" stop="20261121151600 +0000">
   <title>חברים שרים אדם</title>
@@ -547,29 +543,13 @@
   <title>אפרים סידון חוגג 80</title>
   <desc>אפרים סידון - סופר, עיתונאי, תסריטאי, מחזאי ופזמונאי ישראלי העוסק בעיקר בסאטירה, חוגג 80. רבקה מיכאלי, טוביה צפיר, דובי גל, מיקי קם, זיו קירה, בנות שירת העצבים. מנהל מוזיקלי רוני וייס. כ' עב'. (שח)</desc>
   <category />
-</programme><programme channel="TVTeamHotBuzz.il" start="20261121112000 +0000" stop="20261121114000 +0000">
-  <title>אינאזומה 11 גו - פרק 42</title>
-  <desc>מצויר. משחק הגמר ממשיך, ולאחר שוויון במחצית הראשונה, קבוצת ''הר אולימפוס'' מתכננת הפתעה ל''ריימון''. הסגל של ''ריימון'' נחשף בראשונה ל''דרגון לינק''. ד' עב. (שח)</desc>
+</programme><programme channel="TVTeamHotSenior.il" start="20261125114000 +0000" stop="20261125121800 +0000">
+  <title>פסקול אישי - פרק 3</title>
+  <desc>לכבוד שנת ה-90 של אקו''ם, נפגש יואב גינאי עם יוצרות ויוצרי המוסיקה הישראלית לדורותיה, לשיחה על מקורות ההשראה, ועל משמעותה של יצירה ישראלית, והפעם המשוררת, המחזאית והפזמונאית חמוטל בן זאב. כ' עב'. (שח)</desc>
   <category />
-</programme><programme channel="TVTeamHotBuzz.il" start="20261121114000 +0000" stop="20261121120000 +0000">
-  <title>אינאזומה 11 גו - פרק 43</title>
-  <desc>מצויר. שחקני ''ריימון'' משתתפים במשחק הקשה ביותר ששיחקו אי פעם. אריון מתקשה למצוא דרך להשתוות לרמתה של הקבוצה היריבה. ד' עב. (שח)</desc>
-  <category />
-</programme><programme channel="TVTeamHotBuzz.il" start="20261121120000 +0000" stop="20261121122500 +0000">
-  <title>אינאזומה 11 גו - פרק 44</title>
-  <desc>מצויר. האינטנסיביות של הגמר גוברת, ושחקני הקבוצה מותשים. ריקרדו עוזר לאריון להבין כיצד יוכל להוביל את הקבוצה לניצחון בגמר. בסוף המשחק נקבעים אלופי טורניר ''דרך הקדושים''. ד' עב. (שח)</desc>
-  <category />
-</programme><programme channel="TVTeamHotBuzz.il" start="20261121122500 +0000" stop="20261121124500 +0000">
-  <title>פוקימון אופקים 3 - פרק 118</title>
-  <desc>ליקו חוששת שמא האטרם עוצרת את עצמה למען אחרים. (שח)</desc>
-  <category />
-</programme><programme channel="TVTeamHotBuzz.il" start="20261121124500 +0000" stop="20261121130500 +0000">
-  <title>פוקימון אופקים 3 - פרק 119</title>
-  <desc>רוי, קרוקאלור וקילווואטרל מתמודדים מול דרייטון בקרב חוזר נמרץ. (שח)</desc>
-  <category />
-</programme><programme channel="TVTeamHotBuzz.il" start="20261121130500 +0000" stop="20261121132500 +0000">
-  <title>פוקימון אופקים 3 - פרק 120</title>
-  <desc>דוט ופני פולשות אל חדר השרתים של אקסיד, אבל מכשולים מחכים. (שח)</desc>
+</programme><programme channel="TVTeamHotSenior.il" start="20261125121800 +0000" stop="20261125135200 +0000">
+  <title>מחווה - חמוטל בן זאב</title>
+  <desc>מופע השקה חגיגי לרגל צאתו לאור של הספר ''לתת מהנשמה ומהלב'' על ציוני הדרך שעברה המשוררת חמוטל בן זאב במהלך חייה. משתתפים דורי בן זאב, אורנה ומשה דץ, טל סונדק, אלינור אהרון, רוני גינוסר ועוד. כ' עב'. (שח)</desc>
   <category />
 </programme><programme channel="TVTeamHotBuzz.il" start="20261121132500 +0000" stop="20261121134000 +0000">
   <title>קפטן ג'ים - פרק 44</title>
@@ -1723,17 +1703,29 @@
   <title>מבצע קיפוד 2 - פרק 17</title>
   <desc>האגדה אודי, שחר הבת ושחר הבן ממשיכים בהרפתקאות חדשות ומסעירות, הפעם במרכז להצלת צבי ים. יחד עם אלה, הם מגיעים למרכז לסייע בטיפול בצבי הים, אך במהרה מגלים שהם עומדים מול צרה סבוכה בהרבה. (שח)</desc>
   <category />
-</programme><programme channel="TVTeamCellcomIsrael.il" start="20261121121500 +0000" stop="20261121122900 +0000">
-  <title>מאחורי הקלעים</title>
-  <desc>אחרי הצלחת הסרט הראשון, הג׳מעה של יפו חוזרת והיא באה לעשות בלאגן ושמח גם יחד! מאחורי הקלעים של הסרט ״תמונות יפואיות 2״ קבלו הצצה לסט הצילומים, ראיונות עם היוצרים וכמובן עם הג'מעה האהובה של יפו. כ' עב'</desc>
+</programme><programme channel="TVTeamHotBuzz.il" start="20261125112000 +0000" stop="20261125114500 +0000">
+  <title>סמטת המסתורין - פרק 22</title>
+  <desc>תוך כדי הפסקת חשמל בלתי רגילה ברובע לקסינגטון בלונדון, כל המכשור והתאורה החשמלית נכבים בבת אחת. קלוור חוקרת זירת שוד בחנות תכשיטים שגם היא מעוררת תהיות. (שח)</desc>
   <category />
-</programme><programme channel="TVTeamCellcomIsrael.il" start="20261121122900 +0000" stop="20261121124900 +0000">
-  <title>העולם מצחיק אז צוחקים</title>
-  <desc>לקט מערכונים ושירים של ״שלישיית הגשש החיוור״ מכל שנות פעילותם. כ' עב'. ש.ח.</desc>
+</programme><programme channel="TVTeamHotBuzz.il" start="20261125114500 +0000" stop="20261125120500 +0000">
+  <title>אינאזומה 11 - פרק 29</title>
+  <desc>מפילים את בלאק 11 ראש הממשלה נחטף על ידי החייזרים ומארק וחבריו נחושים לעזור לשחרר אותו. קרוואן אינזומה נוסע לפארק שבו הוא נחטף והם מתכוננים להביס את החייזרים, אבל הם נתקלים באויבים חדשים. ד' עב. (שח)</desc>
   <category />
-</programme><programme channel="TVTeamCellcomIsrael.il" start="20261121124900 +0000" stop="20261121132100 +0000">
-  <title>העולם מצחיק אז צוחקים</title>
-  <desc>תכנית מערכונים ושירים של הגשש החיוור מכל שנות פעילותם. והפעם: המצילים של ש״ס, שחקן כדורסל, חכם מימון רוכב שנית ושירים ומערכונים נוספים. כ' עב'.</desc>
+</programme><programme channel="TVTeamHotBuzz.il" start="20261125120500 +0000" stop="20261125123000 +0000">
+  <title>פוקימון 21 שמש וירח - הרפתקאות אולטרה - פרק 27</title>
+  <desc>יש המון פוקמונים מעניינים לגלות במחוז אלולה, והפעם גיבורינו פוגשים דופידר שעזב את הקן ומחפש אגם שיהפוך לטריטוריה שלו. (שח)</desc>
+  <category />
+</programme><programme channel="TVTeamHotBuzz.il" start="20261125123000 +0000" stop="20261125123500 +0000">
+  <title>לוקה והליופירוס - פרק 3</title>
+  <desc>לוקה סוחפת את ג'ונתן ומשכנעת אותו לבלות במקום לעבוד, אבל אז הבית יוצא מאיזון, והכול מדרדר לבלגן גדול שמעמיד את המשפחה במבחן. (שח)</desc>
+  <category />
+</programme><programme channel="TVTeamHotBuzz.il" start="20261125123500 +0000" stop="20261125130000 +0000">
+  <title>אינאזומה 11 גו אבני כרונו</title>
+  <desc>מצויר. אריון חוזר לבית הספר, אחרי שאימן ילדים ברחבי המדינה, ומגלה שחבריו לקבוצה בכלל לא זוכרים אותו, ולא זוכרים את הכדורגל. מסע חדש מתחיל, עם אנשים מהעתיד שרוצים להרוס את כל עולם הכדורגל. ד' עב. (שח)</desc>
+  <category />
+</programme><programme channel="TVTeamHotBuzz.il" start="20261125130000 +0000" stop="20261125132000 +0000">
+  <title>פוקימון אופקים 3 - פרק 124</title>
+  <desc>אמתיו מצטרף לליקו וחבריה כדי לפלוש אל המפקדה של החוקרים. (שח)</desc>
   <category />
 </programme><programme channel="TVTeamCellcomIsrael.il" start="20261121132100 +0000" stop="20261121144900 +0000">
   <title>הקרב על הוועד</title>
@@ -2046,5 +2038,13 @@
 </programme><programme channel="TVTeamCellcomIsrael.il" start="20261125105000 +0000" stop="20261125121300 +0000">
   <title>אמי הגנרלית</title>
   <desc>זלדה היא אם דואגת שמאמינה כי בעלה נמצא במילואים בבסיס במרכז הארץ, ואילו בנה הוא מפקד בבסיס בסיני. אולם בעלה משרת בכלל כטבח באותו בסיס של בנם. הגעתה של האם לבסיס בסיני יוצרת קומדיה של טעויות. כ' עב'.</desc>
+  <category />
+</programme><programme channel="TVTeamCellcomIsrael.il" start="20261125121300 +0000" stop="20261125123000 +0000">
+  <title>מאחורי הקלעים</title>
+  <desc>אחרי הצלחת הסרט הראשון, הג׳מעה של יפו חוזרת והיא באה לעשות בלאגן ושמח גם יחד! מאחורי הקלעים של הסרט ״תמונות יפואיות 2״ קבלו הצצה לסט הצילומים, ראיונות עם היוצרים וכמובן עם הג'מעה האהובה של יפו. כ' עב'</desc>
+  <category />
+</programme><programme channel="TVTeamCellcomIsrael.il" start="20261125123000 +0000" stop="20261125135700 +0000">
+  <title>חמש חמש</title>
+  <desc>קבוצת חיילים הנשלחת לחופשה במושב מגוייסת מיד לעבודות משק. או אז מארגנים החיילים למושבניקים לקח שלא יישכח במהרה. עם: זהרירה חריפאי, יעקב בודו, שולה חן. בימוי: שמואל אימברמן, 1980 כ' עב'.</desc>
   <category />
 </programme></tv>
