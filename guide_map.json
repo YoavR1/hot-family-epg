@@ -1926,12 +1926,6 @@
   "src_id": "TVTeamArutzHagiborim.il"
  },
  {
-  "id": "ArutzHagiborim.il",
-  "name": "Arutz Hagiborim",
-  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/partner.xml",
-  "src_id": "TVTeamArutzHagiborim.il"
- },
- {
   "id": "ArutzPeshaAmiti.il",
   "name": "Arutz Pesha Amiti (True Crime)",
   "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",

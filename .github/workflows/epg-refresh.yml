@@ -44,12 +44,6 @@ jobs:
           SAMPLE_MINUTES: '20'
         run: python dvr_ocr.py
 
-      - name: Refresh Arutz Hagiborim schedule from Partner TV
-        env:
-          PARTNER_AUTH_KEY: ${{ secrets.PARTNER_AUTH_KEY }}
-          PARTNER_USER_UNIQUE_ID: ${{ secrets.PARTNER_USER_UNIQUE_ID }}
-        run: python partner_epg.py
-
       - name: Build combined guide
         run: python build_guide.py guide.xml.gz
 
@@ -57,7 +51,7 @@ jobs:
         run: |
           git config user.name "EPG Bot"
           git config user.email "epg-bot@users.noreply.github.com"
-          git add dvr_schedule.json dvr.xml partner.xml guide.xml.gz tvteam.xml extra.xml hot_family.xml
+          git add dvr_schedule.json dvr.xml guide.xml.gz tvteam.xml extra.xml hot_family.xml
           if git diff --cached --quiet; then
             echo "No guide changes"
           else
