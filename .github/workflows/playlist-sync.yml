@@ -14,7 +14,7 @@ jobs:
       - name: Refresh the HLS healer worker
         run: |
           for i in 1 2 3; do
-            curl -fsS https://hls-healer.rivkinyoav.workers.dev/refresh && exit 0
+            curl -fsS "https://hls-healer.rivkinyoav.workers.dev/refresh?sha=${{ github.sha }}" && exit 0
             sleep 5
           done
           exit 1
