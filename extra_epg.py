@@ -26,6 +26,7 @@ FREETV = {  # FreeTV live id -> (our id, name)
 }
 HOT = {     # hot.net.il channelID -> (our id, name). HOT's site only answers from Israel.
     '676': ('HOTBuzz.il.extra', 'HOT Buzz'),
+    '803': ('PeshaAmiti.il.hot', 'Arutz Pesha Amiti (True Crime)'),
 }
 BIG = {     # large XMLTV guides: channel id -> (our id, name)
     'http://epg.one/epg.xml.gz': {'11375': ('HOTSenior.il.extra', 'HOT Senior')},

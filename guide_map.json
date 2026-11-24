@@ -326,8 +326,8 @@
  {
   "id": "HotCinemaFamily.il",
   "name": "HOT Cinema Family HD IL",
-  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/hot_family.xml",
-  "src_id": "HOTFamily.il"
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/tvteam.xml",
+  "src_id": "TVTeamHotCinemaFamily.il"
  },
  {
   "id": "YesMoviesAction.il",
@@ -788,14 +788,14 @@
  {
   "id": "HotSenior.il",
   "name": "HOT Senior",
-  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
-  "src_id": "hot_575.il"
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/tvteam.xml",
+  "src_id": "TVTeamHotSenior.il"
  },
  {
   "id": "HotBuzz.il",
   "name": "HOT Buzz",
-  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
-  "src_id": "HOTBuzz.il.extra"
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/tvteam.xml",
+  "src_id": "TVTeamHotBuzz.il"
  },
  {
   "id": "RealityChannel.il",
@@ -1912,5 +1912,23 @@
   "name": "FreeTV דוקו",
   "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
   "src_id": "ftv_3611642.il"
+ },
+ {
+  "id": "CellcomIsrael.il",
+  "name": "Cellcom Israel",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/tvteam.xml",
+  "src_id": "TVTeamCellcomIsrael.il"
+ },
+ {
+  "id": "ArutzHagiborim.il",
+  "name": "Arutz Hagiborim",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/tvteam.xml",
+  "src_id": "TVTeamArutzHagiborim.il"
+ },
+ {
+  "id": "ArutzPeshaAmiti.il",
+  "name": "Arutz Pesha Amiti (True Crime)",
+  "src": "https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/extra.xml",
+  "src_id": "PeshaAmiti.il.hot"
  }
 ]
