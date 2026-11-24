@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: epg-refresh
@@ -58,3 +59,8 @@ jobs:
             git pull --rebase origin main
             git push
           fi
+
+      - name: Keep the schedule from being paused after 60 days
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X PUT "repos/${{ github.repository }}/actions/workflows/epg-refresh.yml/enable"
