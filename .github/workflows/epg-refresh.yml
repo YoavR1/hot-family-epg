@@ -40,7 +40,7 @@ jobs:
 
       - name: Recover Arutz Hagiborim schedule from DVR
         env:
-          SAMPLE_MINUTES: '10'
+          SAMPLE_MINUTES: '20'
         run: python dvr_ocr.py
 
       - name: Build combined guide

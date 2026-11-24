@@ -25,7 +25,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 PLAYLIST = os.path.join(HERE, 'playlist.m3u8')
 SCHEDULE = os.path.join(HERE, 'dvr_schedule.json')
 UA = {'User-Agent': 'Mozilla/5.0'}
-SAMPLE_MINUTES = int(os.getenv('SAMPLE_MINUTES', '10'))
+SAMPLE_MINUTES = int(os.getenv('SAMPLE_MINUTES', '20'))
 CHANNEL_ID = 'TVTeamArutzHagiborim.il'
 
 TITLES = {
@@ -72,15 +72,16 @@ def daily_entries(day, token):
 
 
 def get_segment(url):
-    for attempt in range(5):
+    for attempt in range(3):
         try:
-            r = SESSION.get(url, timeout=120)
+            r = SESSION.get(url, timeout=60)
             r.raise_for_status()
             if len(r.content) > 1000:
                 return r.content
         except Exception:
             pass
-        time.sleep(1.0 + attempt)
+        if attempt < 2:
+            time.sleep(0.5 + attempt)
     raise RuntimeError(f'could not fetch segment {url.split("?")[0]}')
 
 
@@ -147,6 +148,8 @@ def sample_day(day, token, tmp_dir):
     rows = []
     samples = {}
     when = day
+    total = int((end - day).total_seconds() // (SAMPLE_MINUTES * 60))
+    done = 0
     while when < end:
         name = f'{when:%Y%m%d_%H%M}'
         path = os.path.join(tmp_dir, name + '.png')
@@ -158,6 +161,9 @@ def sample_day(day, token, tmp_dir):
                 rows.append((when, label))
         except Exception as e:
             samples[name] = ['X', repr(e)[:120]]
+        done += 1
+        if done % 12 == 0 or done == total:
+            print(f'{day:%Y-%m-%d}: sampled {done}/{total}, recognised {len(rows)}', flush=True)
         when += dt.timedelta(minutes=SAMPLE_MINUTES)
     return rows, samples
 
@@ -230,13 +236,25 @@ def main():
             with open(sample_log, 'w', encoding='utf-8', newline='\n') as f:
                 json.dump({k: old_log[k] for k in sorted(old_log)[-5000:]}, f, ensure_ascii=False, indent=1)
                 f.write('\n')
+    fresh_ranges = []
+    for item in fresh:
+        fresh_ranges.append((
+            dt.datetime.fromisoformat(item['start'].replace('Z', '+00:00')),
+            dt.datetime.fromisoformat(item['end'].replace('Z', '+00:00')),
+        ))
+
+    def overlaps(start, end):
+        return any(start < b_end and end > b_start for b_start, b_end in fresh_ranges)
+
     kept = []
     for item in current:
         start = dt.datetime.fromisoformat(item['start'].replace('Z', '+00:00'))
         if start < cutoff:
             continue
         if start.date().isoformat() in sampled_ok:
-            continue
+            end = dt.datetime.fromisoformat(item['end'].replace('Z', '+00:00'))
+            if overlaps(start, end):
+                continue
         kept.append(item)
     save_schedule(kept + fresh)
     print(f'dvr_schedule.json: {len(kept) + len(fresh)} programmes', flush=True)
