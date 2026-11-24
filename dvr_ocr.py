@@ -27,6 +27,9 @@ SCHEDULE = os.path.join(HERE, 'dvr_schedule.json')
 UA = {'User-Agent': 'Mozilla/5.0'}
 SAMPLE_MINUTES = int(os.getenv('SAMPLE_MINUTES', '20'))
 CHANNEL_ID = 'TVTeamArutzHagiborim.il'
+ORIGIN = 'https://4.hls.gd'
+# GitHub Actions reaches the DVR host through the Worker; local runs stay direct.
+DVR_BASE = os.getenv('DVR_BASE', '').rstrip('/')
 
 TITLES = {
     'A': 'גיבורי חרבות ברזל',
@@ -49,6 +52,11 @@ def token_from_playlist():
     return m.group(1)
 
 
+def dvr_url(rel, token):
+    base = DVR_BASE or ORIGIN
+    return f'{base}/ch4051/{rel}?token={token}'
+
+
 def parse_manifest(url, text):
     entries = []
     cur = None
@@ -65,17 +73,31 @@ def parse_manifest(url, text):
 
 def hourly_entries(day, token):
     entries = []
+    failures = {}
+    stubs = 0
     for hour in range(24):
         when = day + dt.timedelta(hours=hour)
-        url = f'https://4.hls.gd/ch4051/mono-{int(when.timestamp())}-3600.m3u8?token={token}'
+        rel = f'mono-{int(when.timestamp())}-3600.m3u8'
+        url = dvr_url(rel, token)
         try:
             r = SESSION.get(url, timeout=120)
-            r.raise_for_status()
-            if len(r.content) > 1000:
-                entries.extend(parse_manifest(url, r.text))
-        except Exception:
-            continue
+            if r.status_code != 200:
+                key = f'http {r.status_code}'
+                failures[key] = failures.get(key, 0) + 1
+                continue
+            if len(r.content) <= 1000:
+                stubs += 1
+                continue
+            entries.extend(parse_manifest(url, r.text))
+        except Exception as e:
+            key = type(e).__name__
+            failures[key] = failures.get(key, 0) + 1
     entries.sort(key=lambda e: e[0])
+    print(
+        f'{day:%Y-%m-%d}: hourly manifests: {len(entries)} segments, '
+        f'{stubs} stubbed, {failures}',
+        flush=True,
+    )
     if len(entries) < 100:
         raise RuntimeError(f'too few hourly segments for {day:%Y-%m-%d}: {len(entries)}')
     return entries
@@ -83,13 +105,17 @@ def hourly_entries(day, token):
 
 def daily_entries(day, token):
     start = int(day.timestamp())
-    url = f'https://4.hls.gd/ch4051/mono-{start}-86400.m3u8?token={token}'
+    url = dvr_url(f'mono-{start}-86400.m3u8', token)
     r = SESSION.get(url, timeout=240)
     if r.status_code == 200 and len(r.content) > 100000:
         entries = parse_manifest(url, r.text)
         if len(entries) >= 100:
             return entries
-    print(f'{day:%Y-%m-%d}: daily manifest stubbed ({len(r.content)} bytes), using hourly manifests', flush=True)
+    print(
+        f'{day:%Y-%m-%d}: daily manifest stubbed (http {r.status_code}, '
+        f'{len(r.content)} bytes), using hourly manifests',
+        flush=True,
+    )
     return hourly_entries(day, token)
 
 

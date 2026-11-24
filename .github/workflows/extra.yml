@@ -1,9 +1,6 @@
 name: Update extra Israeli guides
 
 on:
-  schedule:
-    - cron: '40 3 * * *'
-    - cron: '40 15 * * *'
   workflow_dispatch:
 
 permissions:
@@ -28,7 +25,3 @@ jobs:
           git diff --cached --quiet || git commit -m "Update extra guides"
           git pull --rebase -q
           git push
-      - name: Keep the schedule from being paused after 60 days
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh api -X PUT "repos/${{ github.repository }}/actions/workflows/extra.yml/enable"

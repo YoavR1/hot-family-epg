@@ -66,7 +66,19 @@ for m in MAP:
     if not fresh: empty.append(m['name'] + (' (kept old)' if old.get(m['id']) else ''))
     # past listings from earlier runs + everything the sources give now; fresh data wins where they overlap
     first_fresh = min((utc14(p.get('start')) for p in fresh), default='99999999999999')
-    lst = [p for p in old.get(m['id'], []) if utc14(p.get('start')) < first_fresh] + fresh
+    fresh_ranges = [(utc14(p.get('start')), utc14(p.get('stop'))) for p in fresh]
+
+    def keep_old(p):
+        try:
+            start = utc14(p.get('start'))
+            stop = utc14(p.get('stop'))
+        except Exception:
+            return False
+        if start >= first_fresh:
+            return False
+        return not any(start < f_stop and stop > f_start for f_start, f_stop in fresh_ranges)
+
+    lst = [p for p in old.get(m['id'], []) if keep_old(p)] + fresh
     seen = set()
     for p in sorted(lst, key=lambda p: utc14(p.get('start'))):
         k = utc14(p.get('start'))
