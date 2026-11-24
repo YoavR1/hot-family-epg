@@ -1,0 +1,59 @@
+name: Refresh hosted EPG
+
+on:
+  schedule:
+    - cron: '0 7,19 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: epg-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install OCR and Python dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr tesseract-ocr-heb
+          python -m pip install --upgrade pip
+          python -m pip install requests imageio-ffmpeg pytesseract pillow
+
+      - name: Refresh public XMLTV sources
+        run: |
+          python hot_family_epg.py hot_family.xml || true
+          python tvteam_epg.py tvteam.xml || true
+          python extra_epg.py || true
+
+      - name: Recover Arutz Hagiborim schedule from DVR
+        env:
+          SAMPLE_MINUTES: '10'
+        run: python dvr_ocr.py
+
+      - name: Build combined guide
+        run: python build_guide.py guide.xml.gz
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "EPG Bot"
+          git config user.email "epg-bot@users.noreply.github.com"
+          git add dvr_schedule.json dvr.xml guide.xml.gz tvteam.xml extra.xml hot_family.xml
+          if git diff --cached --quiet; then
+            echo "No guide changes"
+          else
+            git commit -m "Daily EPG refresh $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
