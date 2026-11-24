@@ -41,6 +41,7 @@ TITLES = {
     'C': '"בשבילם" עם הדסה בן ארי',
     'D': 'גיבורי מערכות ישראל',
     'E': 'מנגינות של געגוע',
+    'F': 'עוז 77',
 }
 
 SESSION = requests.Session()
@@ -164,14 +165,16 @@ def classify(raw):
     s = (raw or '').replace('\n', ' ')
     if re.search(r'(חרבו|ברזל)', s):
         return 'A'
-    if re.search(r'(נזכור|נזכיר)', s) and re.search(r'כולם', s):
+    if re.search(r'(נזכו|נזכוה|נזכיר|נזכור)', s) and re.search(r'(כולם|כולב|כולו|כולה|כול)', s):
         return 'B'
-    if re.search(r'(בשבילם|הדסה|בן ארי)', s):
+    if re.search(r'(בשבילם|הדסה|בן ארי|בן ארו)', s):
         return 'C'
-    if re.search(r'גיבור.*(מערכ|מעבכ|ישראל|נשראל)', s) or re.search(r'מערכות ישראל', s):
+    if re.search(r'גיבור.*(מערכ|מעבכ|ישראל|נשראל)', s) or re.search(r'(מערכות ישראל|מערכות ושראל)', s):
         return 'D'
-    if re.search(r'(מנגינות|געגוע)', s):
+    if re.search(r'(מנגינות|מנגומות|געגוע|ועגוע)', s):
         return 'E'
+    if re.search(r'עוז\s*77', s):
+        return 'F'
     return None
 
 
