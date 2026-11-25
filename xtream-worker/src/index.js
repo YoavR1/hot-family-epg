@@ -30,12 +30,15 @@ function json(obj, status = 200) {
 }
 
 function userinfo(url) {
+  const user = url.searchParams.get("username") || "freetv";
+  const pass = url.searchParams.get("password") || "freetv";
   return {
-    username: url.searchParams.get("username") || "freetv",
-    password: url.searchParams.get("password") || "freetv",
+    username: user,
+    password: pass,
     message: "",
     auth: "1",
     status: "Active",
+    "exp-date": "4102444800",
     exp_date: "4102444800",
     is_trial: "0",
     active_cons: "0",
@@ -60,7 +63,10 @@ function serverinfo(url) {
 
 async function handlePlayerApi(url) {
   const action = url.searchParams.get("action");
-  if (!action) return json({ userinfo: userinfo(url), server_info: serverinfo(url) });
+  if (!action) {
+    const u = userinfo(url);
+    return json({ userinfo: u, user_info: u, server_info: serverinfo(url) });
+  }
 
   if (FILES[action]) {
     try {
