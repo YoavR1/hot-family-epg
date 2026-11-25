@@ -104,6 +104,22 @@ async function handlePlayerApi(url) {
   return json({ error: "unsupported action", action });
 }
 
+async function proxyStream(request, target) {
+  const h = new Headers();
+  for (const key of ["range", "if-range", "user-agent"]) {
+    const v = request.headers.get(key);
+    if (v) h.set(key, v);
+  }
+  h.set("accept-encoding", "identity");
+  const up = await fetch(target, { headers: h, cf: { cacheEverything: false } });
+  const out = new Headers(CORS);
+  for (const key of ["content-type", "content-length", "content-range", "accept-ranges", "etag", "last-modified", "cache-control"]) {
+    const v = up.headers.get(key);
+    if (v) out.set(key, v);
+  }
+  return new Response(up.body, { status: up.status, headers: out });
+}
+
 async function handleGet(url) {
   const type = (url.searchParams.get("type") || "").toLowerCase();
   if (type.includes("m3u")) {
@@ -135,7 +151,7 @@ export default {
         const all = await load("vod_streams.json");
         const item = all.find((x) => String(x.vod_id) === movie[1] || String(x.id) === movie[1]);
         if (!item) return new Response("not found", { status: 404, headers: CORS });
-        return Response.redirect(item.direct_source, 302);
+        return proxyStream(request, item.direct_source);
       } catch (e) {
         return json({ error: String(e) }, 502);
       }
@@ -147,7 +163,7 @@ export default {
         const all = await load("live_streams.json");
         const item = all.find((x) => String(x.stream_id) === live[1] || String(x.id) === live[1]);
         if (!item) return new Response("not found", { status: 404, headers: CORS });
-        return Response.redirect(item.direct_source, 302);
+        return proxyStream(request, item.direct_source);
       } catch (e) {
         return json({ error: String(e) }, 502);
       }
@@ -161,7 +177,7 @@ export default {
         const season = seasons.find((s) => Number(s.season_number) === Number(episode[2]));
         const ep = (season ? season.episodes : []).find((e) => Number(e.episode_num) === Number(episode[3]));
         if (!ep) return new Response("not found", { status: 404, headers: CORS });
-        return Response.redirect(ep.url, 302);
+        return proxyStream(request, ep.url);
       } catch (e) {
         return json({ error: String(e) }, 502);
       }
