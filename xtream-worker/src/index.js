@@ -128,6 +128,45 @@ export default {
     if (request.method === "OPTIONS") return new Response(null, { headers: CORS });
     const path = url.pathname.replace(/\/+$/, "") || "/";
 
+    // Televizo builds playback URLs itself instead of using direct_source.
+    const movie = path.match(/^\/movie\/[^/]+\/[^/]+\/(\d+)\.[a-z0-9]+$/i);
+    if (movie) {
+      try {
+        const all = await load("vod_streams.json");
+        const item = all.find((x) => String(x.vod_id) === movie[1] || String(x.id) === movie[1]);
+        if (!item) return new Response("not found", { status: 404, headers: CORS });
+        return Response.redirect(item.direct_source, 302);
+      } catch (e) {
+        return json({ error: String(e) }, 502);
+      }
+    }
+
+    const live = path.match(/^\/live\/[^/]+\/[^/]+\/(\d+)\.[a-z0-9]+$/i);
+    if (live) {
+      try {
+        const all = await load("live_streams.json");
+        const item = all.find((x) => String(x.stream_id) === live[1] || String(x.id) === live[1]);
+        if (!item) return new Response("not found", { status: 404, headers: CORS });
+        return Response.redirect(item.direct_source, 302);
+      } catch (e) {
+        return json({ error: String(e) }, 502);
+      }
+    }
+
+    const episode = path.match(/^\/series\/[^/]+\/[^/]+\/(\d+)\/(\d+)\/(\d+)\.[a-z0-9]+$/i);
+    if (episode) {
+      try {
+        const all = await load("series_episodes.json");
+        const seasons = (all[episode[1]] || {}).seasons || [];
+        const season = seasons.find((s) => Number(s.season_number) === Number(episode[2]));
+        const ep = (season ? season.episodes : []).find((e) => Number(e.episode_num) === Number(episode[3]));
+        if (!ep) return new Response("not found", { status: 404, headers: CORS });
+        return Response.redirect(ep.url, 302);
+      } catch (e) {
+        return json({ error: String(e) }, 502);
+      }
+    }
+
     if (path.endsWith("player_api.php")) return handlePlayerApi(url);
     if (path.endsWith("get.php")) return handleGet(url);
     if (path.endsWith("xmltv.php")) {
