@@ -17,7 +17,7 @@ const CORS = {
 };
 
 async function load(name) {
-  const r = await fetch(BASE + name + "?v=6", { cf: { cacheTtl: 1800, cacheEverything: true } });
+  const r = await fetch(BASE + name + "?v=7", { cf: { cacheTtl: 1800, cacheEverything: true } });
   if (!r.ok) throw new Error("upstream " + r.status);
   return r.json();
 }
@@ -95,8 +95,10 @@ async function handlePlayerApi(url) {
       const info = {
     name: item.title, title: item.title, year: item.year,
     cover: item.cover, stream_icon: item.cover, icon: item.cover,
-    plot: item.plot, category_id: item.category_id,
+    plot: item.plot || "", category_id: item.category_id,
     rating: item.rating || "0", duration: item.duration || 0,
+    releasedate: item.releasedate || "", genre: item.genre || "",
+    director: item.director || "", actors: item.actors || "",
       };
       return json({ info, movie_data: item });
     } catch (e) {
