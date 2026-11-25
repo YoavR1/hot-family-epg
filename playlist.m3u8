@@ -327,58 +327,6 @@ https://4.hls.gd/ch2086/mono.m3u8?token=olgasergej.v2_pfka2K9Zf8M8ZtSw1wN1sxRBWy
 https://4.hls.gd/ch2618/mono.m3u8?token=olgasergej.v2_0L-wlfH79zLTC-AQbIYMGIZpLszzFX4xPioKjtffrnDI1LRdT9HpBDh1EabDUpl_m14fNWRwF17LwGk
 #EXTINF:0 catchup="default" catchup-days="7" catchup-source="https://4.hls.gd/ch2619/mono-${start}-${duration}.m3u8?token=olgasergej.v2_RDBH0KJMoM11t5Tea9PjWO8IBgoGbr6DwAnltWOK5ShPRj8S2-Y-7TICiIkMmKl1VIEyYy9OS7_RlTg" tvg-id="Mtv00S.il" group-title="Music" tvg-logo="https://hls.gd/images/chIcons/2619.png",MTV 00s
 https://4.hls.gd/ch2619/mono.m3u8?token=olgasergej.v2_RDBH0KJMoM11t5Tea9PjWO8IBgoGbr6DwAnltWOK5ShPRj8S2-Y-7TICiIkMmKl1VIEyYy9OS7_RlTg
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/prov/cellcom.png" group-title="Extra Movies & Series",━━━━  Extra Movies & Series  ━━━━
-https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/separator.mp4?section=cellcom-extras
-#EXTINF:-1 tvg-name="Cellcom Movies Comedy" group-title="Movies",Cellcom Movies Comedy
-http://stm-hpc-ory-1a.cellcomtvcdn.tv/_cat/eyJhbGciOiJIUzI1NiIsImtpZCI6ImJyb2FkcGVhayIsInR5cCI6IkpXVCJ9.eyJjdGkiOiI1MDYyOTMwMGU5ODcyZDBhNmM5NGE0ODA4OWEwNzc2MyIsImV4cCI6MjAwMDAwMDAwMC4wfQ.KbL48wg_ftaTC2yNK_aO5uOTvbrUPemh21a6kD3fFCQ/ngx/56/playout04/index.m3u8?smil_profile=mobile
-#EXTINF:-1 tvg-name="Cellcom Movies Drama" group-title="Movies",Cellcom Movies Drama
-http://stm-hpc-ory-1a.cellcomtvcdn.tv/_cat/eyJhbGciOiJIUzI1NiIsImtpZCI6ImJyb2FkcGVhayIsInR5cCI6IkpXVCJ9.eyJjdGkiOiI1MDYyOTMwMGU5ODcyZDBhNmM5NGE0ODA4OWEwNzc2MyIsImV4cCI6MjAwMDAwMDAwMC4wfQ.KbL48wg_ftaTC2yNK_aO5uOTvbrUPemh21a6kD3fFCQ/ngx/56/playout08/index.m3u8?smil_profile=mobile
-#EXTINF:-1 tvg-name="Cellcom Movies Family" group-title="Movies",Cellcom Movies Family
-http://stm-hpc-ory-1a.cellcomtvcdn.tv/_cat/eyJhbGciOiJIUzI1NiIsImtpZCI6ImJyb2FkcGVhayIsInR5cCI6IkpXVCJ9.eyJjdGkiOiI1MDYyOTMwMGU5ODcyZDBhNmM5NGE0ODA4OWEwNzc2MyIsImV4cCI6MjAwMDAwMDAwMC4wfQ.KbL48wg_ftaTC2yNK_aO5uOTvbrUPemh21a6kD3fFCQ/ngx/56/playout06/index.m3u8?smil_profile=mobile
-#EXTINF:-1 tvg-name="Cellcom Series" group-title="Israeli Entertainment",Cellcom Series
-http://stm-hpc-ory-1a.cellcomtvcdn.tv/_cat/eyJhbGciOiJIUzI1NiIsImtpZCI6ImJyb2FkcGVhayIsInR5cCI6IkpXVCJ9.eyJjdGkiOiI1MDYyOTMwMGU5ODcyZDBhNmM5NGE0ODA4OWEwNzc2MyIsImV4cCI6MjAwMDAwMDAwMC4wfQ.KbL48wg_ftaTC2yNK_aO5uOTvbrUPemh21a6kD3fFCQ/ngx/56/playout03/index.m3u8?smil_profile=mobile
-#EXTINF:-1 tvg-name="Yam Tichoni Movies 2" group-title="World Dramas",Yam Tichoni Movies 2
-http://stm-hpc-ory-1a.cellcomtvcdn.tv/_cat/eyJhbGciOiJIUzI1NiIsImtpZCI6ImJyb2FkcGVhayIsInR5cCI6IkpXVCJ9.eyJjdGkiOiI1MDYyOTMwMGU5ODcyZDBhNmM5NGE0ODA4OWEwNzc2MyIsImV4cCI6MjAwMDAwMDAwMC4wfQ.KbL48wg_ftaTC2yNK_aO5uOTvbrUPemh21a6kD3fFCQ/ngx/78/mob/srt_yamtichoniemovies2/index.m3u8?smil_profile=default
-#EXTINF:-1 tvg-name="Classic Comedies" group-title="Israeli Entertainment",Classic Comedies
-http://stm-hpc-ory-1a.cellcomtvcdn.tv/_cat/eyJhbGciOiJIUzI1NiIsImtpZCI6ImJyb2FkcGVhayIsInR5cCI6IkpXVCJ9.eyJjdGkiOiI1MDYyOTMwMGU5ODcyZDBhNmM5NGE0ODA4OWEwNzc2MyIsImV4cCI6MjAwMDAwMDAwMC4wfQ.KbL48wg_ftaTC2yNK_aO5uOTvbrUPemh21a6kD3fFCQ/ngx/910/mob/hrr_comedy/index.m3u8?smil_profile=default
-#EXTINF:-1 tvg-name="Vamos" group-title="Israeli Entertainment",Vamos
-https://d1zqtf09wb8nt5.cloudfront.net/livehls/oil/freetv/live/vamos/live.livx/playlist.m3u8?fmp4&renditions
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/prov/partner.png" group-title="Partner Extra Channels",━━━━  Partner Extra Channels  ━━━━
-https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/separator.mp4?section=partner-extras
-#EXTINF:-1 tvg-name="Gameshow Channel" group-title="Israeli Entertainment",Gameshow Channel
-http://stm-hpc-ory-1a.cellcomtvcdn.tv/_cat/eyJhbGciOiJIUzI1NiIsImtpZCI6ImJyb2FkcGVhayIsInR5cCI6IkpXVCJ9.eyJjdGkiOiI1MDYyOTMwMGU5ODcyZDBhNmM5NGE0ODA4OWEwNzc2MyIsImV4cCI6MjAwMDAwMDAwMC4wfQ.KbL48wg_ftaTC2yNK_aO5uOTvbrUPemh21a6kD3fFCQ/ngx/910/mob/srt_gameshow/index.m3u8
-#EXTINF:-1 tvg-name="Vacation Channel" group-title="Travel & Lifestyle",Vacation Channel
-http://stm-hpc-ory-1a.cellcomtvcdn.tv/_cat/eyJhbGciOiJIUzI1NiIsImtpZCI6ImJyb2FkcGVhayIsInR5cCI6IkpXVCJ9.eyJjdGkiOiI1MDYyOTMwMGU5ODcyZDBhNmM5NGE0ODA4OWEwNzc2MyIsImV4cCI6MjAwMDAwMDAwMC4wfQ.KbL48wg_ftaTC2yNK_aO5uOTvbrUPemh21a6kD3fFCQ/ngx/910/mob/srt_nofesh/index.m3u8
-#EXTINF:-1 tvg-name="Home Design" group-title="Travel & Lifestyle",Home Design
-http://stm-hpc-ory-1a.cellcomtvcdn.tv/_cat/eyJhbGciOiJIUzI1NiIsImtpZCI6ImJyb2FkcGVhayIsInR5cCI6IkpXVCJ9.eyJjdGkiOiI1MDYyOTMwMGU5ODcyZDBhNmM5NGE0ODA4OWEwNzc2MyIsImV4cCI6MjAwMDAwMDAwMC4wfQ.KbL48wg_ftaTC2yNK_aO5uOTvbrUPemh21a6kD3fFCQ/ngx/910/mob/hrr_bait/index.m3u8?smil_profile=default
-#EXTINF:-1 tvg-name="Makan 33" group-title="Israeli Entertainment",Makan 33
-http://stm-hpc-ory-1a.cellcomtvcdn.tv/_cat/eyJhbGciOiJIUzI1NiIsImtpZCI6ImJyb2FkcGVhayIsInR5cCI6IkpXVCJ9.eyJjdGkiOiI1MDYyOTMwMGU5ODcyZDBhNmM5NGE0ODA4OWEwNzc2MyIsImV4cCI6MjAwMDAwMDAwMC4wfQ.KbL48wg_ftaTC2yNK_aO5uOTvbrUPemh21a6kD3fFCQ/ngx/56/mob/hrr_mkan33/index.m3u8?smil_profile=default
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/sections/sep_kids_teens.png" group-title="Extra Kids",━━━━  Extra Kids  ━━━━
-https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/separator.mp4?section=kids-extras
-#EXTINF:-1 tvg-name="Junior Plus" group-title="Kids & Teens",Junior Plus
-http://stm-hpc-ory-1a.cellcomtvcdn.tv/_cat/eyJhbGciOiJIUzI1NiIsImtpZCI6ImJyb2FkcGVhayIsInR5cCI6IkpXVCJ9.eyJjdGkiOiI1MDYyOTMwMGU5ODcyZDBhNmM5NGE0ODA4OWEwNzc2MyIsImV4cCI6MjAwMDAwMDAwMC4wfQ.KbL48wg_ftaTC2yNK_aO5uOTvbrUPemh21a6kD3fFCQ/ngx/56/mob/hrr_juniornew/index.m3u8?smil_profile=default
-#EXTINF:-1 tvg-name="Stars+" group-title="Kids & Teens",Stars+
-http://stm-hpc-ory-1a.cellcomtvcdn.tv/_cat/eyJhbGciOiJIUzI1NiIsImtpZCI6ImJyb2FkcGVhayIsInR5cCI6IkpXVCJ9.eyJjdGkiOiI1MDYyOTMwMGU5ODcyZDBhNmM5NGE0ODA4OWEwNzc2MyIsImV4cCI6MjAwMDAwMDAwMC4wfQ.KbL48wg_ftaTC2yNK_aO5uOTvbrUPemh21a6kD3fFCQ/ngx/910/mob/hrr_starsnew/index.m3u8?smil_profile=default
-#EXTINF:-1 tvg-name="Shirei Yalduti" group-title="Kids & Teens",Shirei Yalduti
-http://stm-hpc-ory-1a.cellcomtvcdn.tv/_cat/eyJhbGciOiJIUzI1NiIsImtpZCI6ImJyb2FkcGVhayIsInR5cCI6IkpXVCJ9.eyJjdGkiOiI1MDYyOTMwMGU5ODcyZDBhNmM5NGE0ODA4OWEwNzc2MyIsImV4cCI6MjAwMDAwMDAwMC4wfQ.KbL48wg_ftaTC2yNK_aO5uOTvbrUPemh21a6kD3fFCQ/ngx/910/mob/hrr_shireiyalduti/index.m3u8?smil_profile=default
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/logos/prov/cat_music.png" group-title="Extra Music & World",━━━━  Extra Music & World  ━━━━
-https://raw.githubusercontent.com/YoavR1/hot-family-epg/main/separator.mp4?section=music-world-extras
-#EXTINF:-1 tvg-name="Music 24" group-title="Music",Music 24
-http://stm-hpc-ory-1a.cellcomtvcdn.tv/_cat/eyJhbGciOiJIUzI1NiIsImtpZCI6ImJyb2FkcGVhayIsInR5cCI6IkpXVCJ9.eyJjdGkiOiI1MDYyOTMwMGU5ODcyZDBhNmM5NGE0ODA4OWEwNzc2MyIsImV4cCI6MjAwMDAwMDAwMC4wfQ.KbL48wg_ftaTC2yNK_aO5uOTvbrUPemh21a6kD3fFCQ/ngx/56/mob/hrr_24hd/index.m3u8?smil_profile=default
-#EXTINF:-1 tvg-name="Music IL" group-title="Music",Music IL
-http://stm-hpc-ory-1a.cellcomtvcdn.tv/_cat/eyJhbGciOiJIUzI1NiIsImtpZCI6ImJyb2FkcGVhayIsInR5cCI6IkpXVCJ9.eyJjdGkiOiI1MDYyOTMwMGU5ODcyZDBhNmM5NGE0ODA4OWEwNzc2MyIsImV4cCI6MjAwMDAwMDAwMC4wfQ.KbL48wg_ftaTC2yNK_aO5uOTvbrUPemh21a6kD3fFCQ/ngx/56/mob/hrr_musicil/index.m3u8?smil_profile=default
-#EXTINF:-1 tvg-name="Hidabroot" group-title="Religious",Hidabroot
-http://stm-hpc-ory-1a.cellcomtvcdn.tv/_cat/eyJhbGciOiJIUzI1NiIsImtpZCI6ImJyb2FkcGVhayIsInR5cCI6IkpXVCJ9.eyJjdGkiOiI1MDYyOTMwMGU5ODcyZDBhNmM5NGE0ODA4OWEwNzc2MyIsImV4cCI6MjAwMDAwMDAwMC4wfQ.KbL48wg_ftaTC2yNK_aO5uOTvbrUPemh21a6kD3fFCQ/ngx/56/mob/hrr_hidabrutHD/index.m3u8?smil_profile=default
-#EXTINF:-1 tvg-name="DAYSTAR" group-title="Religious",DAYSTAR
-http://stm-hpc-ory-1a.cellcomtvcdn.tv/_cat/eyJhbGciOiJIUzI1NiIsImtpZCI6ImJyb2FkcGVhayIsInR5cCI6IkpXVCJ9.eyJjdGkiOiI1MDYyOTMwMGU5ODcyZDBhNmM5NGE0ODA4OWEwNzc2MyIsImV4cCI6MjAwMDAwMDAwMC4wfQ.KbL48wg_ftaTC2yNK_aO5uOTvbrUPemh21a6kD3fFCQ/ngx/56/mob/hrr_daystar/index.m3u8
-#EXTINF:-1 tvg-name="NTV MIR" group-title="International",NTV MIR
-http://stm-hpc-ory-1a.cellcomtvcdn.tv/_cat/eyJhbGciOiJIUzI1NiIsImtpZCI6ImJyb2FkcGVhayIsInR5cCI6IkpXVCJ9.eyJjdGkiOiI1MDYyOTMwMGU5ODcyZDBhNmM5NGE0ODA4OWEwNzc2MyIsImV4cCI6MjAwMDAwMDAwMC4wfQ.KbL48wg_ftaTC2yNK_aO5uOTvbrUPemh21a6kD3fFCQ/ngx/910/mob/ru_ntv_mir/index.m3u8?smil_profile=default
-#EXTINF:-1 tvg-name="BeautyZ" group-title="Travel & Lifestyle",BeautyZ
-https://d1zqtf09wb8nt5.cloudfront.net/livehls/oil/freetv/live/beautyz/live.livx/playlist.m3u8?fmp4&renditions
-#EXTINF:-1 tvg-name="A Plus" group-title="Travel & Lifestyle",A Plus
-https://d1zqtf09wb8nt5.cloudfront.net/livehls/oil/freetv/live/a_plus/live.livx/playlist.m3u8?fmp4&renditions
-#EXTINF:-1 tvg-name="Viva Plus" group-title="World Dramas",Viva Plus
-https://d1zqtf09wb8nt5.cloudfront.net/livehls/oil/freetv/live/viva_plus/live.livx/playlist.m3u8?fmp4&renditions
 #EXTINF:0 tvg-id="5Sport4K.il" tvg-logo="https://iptv-epg.org/images/oifhoMGddxpGAzNHtyOX3PpLHvP_fkolnntWDoNQ1FCXs3-VxdzvQSvhqfGbkGGaB88IWvtKLivWTUoYiq9tP45p-ew0J4Ycg9fN7STqNa4a" group-title="Backups" tvg-rec="0",5Sport 4K IL (backup)
 http://aeaa1103.amazzin.pw/iptv/ZRHYWX3HESY8SCRYGTGD685D/16019/index.m3u8
 #EXTINF:0 tvg-id="5Sport.il" group-title="Backups" tvg-logo="http://epg.one/img2/2682.png" tvg-rec="3",5Sport FHD IL (backup)
