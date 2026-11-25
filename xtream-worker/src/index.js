@@ -86,12 +86,19 @@ async function handlePlayerApi(url) {
     }
   }
 
-  if (action === "get_info" || action === "get_info_vod") {
+  if (action === "get_info" || action === "get_info_vod" || action === "get_vod_info") {
     const id = String(url.searchParams.get("vod_id") || "");
     try {
       const all = await load("vod_streams.json");
-      const item = all.find((x) => String(x.vod_id) === id);
-      return json(item ? { info: item, movie_data: item } : { info: {}, movie_data: {} });
+      const item = all.find((x) => String(x.vod_id) === id || String(x.id) === id);
+      if (!item) return json({ info: {}, movie_data: {} });
+      const info = {
+    name: item.title, title: item.title, year: item.year,
+    cover: item.cover, stream_icon: item.cover, icon: item.cover,
+    plot: item.plot, category_id: item.category_id,
+    rating: item.rating || "0", duration: item.duration || 0,
+      };
+      return json({ info, movie_data: item });
     } catch (e) {
       return json({ error: String(e) }, 502);
     }
