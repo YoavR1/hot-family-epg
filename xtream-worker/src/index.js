@@ -17,7 +17,7 @@ const CORS = {
 };
 
 async function load(name) {
-  const r = await fetch(BASE + name + "?v=7", { cf: { cacheTtl: 1800, cacheEverything: true } });
+  const r = await fetch(BASE + name + "?v=8", { cf: { cacheTtl: 1800, cacheEverything: true } });
   if (!r.ok) throw new Error("upstream " + r.status);
   return r.json();
 }
