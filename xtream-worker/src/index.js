@@ -1,6 +1,6 @@
 const BASE = "https://raw.githubusercontent.com/YoavR1/hot-family-epg/HEAD/xtream/";
 const EPG = "https://raw.githubusercontent.com/YoavR1/hot-family-epg/HEAD/freetv_epg.xml.gz";
-const CACHE_KEY = "?v=40";
+const CACHE_KEY = "?v=41";
 
 const FILES = {
   get_live_categories: "live_categories.json",
@@ -146,13 +146,14 @@ async function handlePlayerApi(url) {
         epg_listings: items.map((it) => ({
           title: it.title,
           description: "",
-          start: Math.floor(it.start_unix / 1000),
-          end: Math.floor(it.stop_unix / 1000),
-          start_timestamp: it.start_unix,
-          stop_timestamp: it.stop_unix,
+          start: xDate(it.start_unix),
+          end: xDate(it.stop_unix),
+          start_timestamp: Math.floor(it.start_unix / 1000),
+          stop_timestamp: Math.floor(it.stop_unix / 1000),
           channel_id: id,
           id: it.id,
-          has_archive: 1,
+          has_archive: "1",
+          archive_duration: String(Math.max(1, Math.round((it.stop_unix - it.start_unix) / 60000))),
         })),
       });
     } catch (e) {
@@ -228,6 +229,15 @@ function findEpisode(series, seasonNum, epNum) {
   const seasons = (series && series.episodes) || {};
   const list = seasons[String(Number(seasonNum))] || seasons[seasonNum] || [];
   return list.find((e) => Number(e.episode_num) === Number(epNum));
+}
+
+function xDate(ms) {
+  if (!ms) return "";
+  return new Date(ms).toLocaleString("sv-SE", {
+    timeZone: "Asia/Jerusalem",
+    year: "numeric", month: "2-digit", day: "2-digit",
+    hour: "2-digit", minute: "2-digit", second: "2-digit",
+  });
 }
 
 function parseXStart(raw) {
