@@ -269,6 +269,20 @@ async function catchupUrl(streamId, rawStart) {
   }
   const channel = all[String(streamId)];
   if (!channel || !channel.items) return "";
+  // Televizo encodes "time back from now" as 1970-01-01:HH-MM in timeshift URLs.
+  if (target < 86400000) {
+    const minutesBack = Math.floor(target / 60000);
+    const wanted = Date.now() - minutesBack * 60000;
+    let covering = null;
+    let nearest = null;
+    for (const item of channel.items) {
+      if (item.start_unix > wanted) continue;
+      if (!nearest || item.start_unix > nearest.start_unix) nearest = item;
+      if (item.stop_unix >= wanted && (!covering || item.start_unix > covering.start_unix)) covering = item;
+    }
+    const pick = covering || nearest;
+    return pick ? pick.url : "";
+  }
   let best = null;
   let bestDist = Infinity;
   for (const candidate of [target, target - 2 * 3600000, target - 3 * 3600000]) {
