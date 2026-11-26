@@ -278,24 +278,23 @@ async function catchupUrl(streamId, rawStart) {
   }
   const channel = all[String(streamId)];
   if (!channel || !channel.items) return "";
-  // Televizo encodes a signed HH:MM offset from now against the 1970 epoch.
+  // Televizo encodes the programme's time-of-day minus 11:59 against the 1970 epoch.
   if (target < 86400000) {
-    const minutes = target / 60000;
-    const now = Date.now();
-    const candidates = [now - minutes * 60000, now + minutes * 60000];
+    const minutesOfDay = ((target / 60000 + 719) % 1440 + 1440) % 1440;
+    const fmt = new Intl.DateTimeFormat("en-GB", { timeZone: "Asia/Jerusalem", hour: "2-digit", minute: "2-digit", hour12: false });
     let best = null;
     let bestDist = Infinity;
     for (const item of channel.items) {
-      for (const wanted of candidates) {
-        const d = wanted < item.start_unix ? item.start_unix - wanted
-          : wanted > item.stop_unix ? wanted - item.stop_unix : 0;
-        if (d < bestDist) {
-          bestDist = d;
-          best = item;
-        }
+      const parts = fmt.format(new Date(item.start_unix)).split(":").map(Number);
+      const mod = (parts[0] * 60 + parts[1]) % 1440;
+      const raw = Math.abs(mod - minutesOfDay);
+      const d = Math.min(raw, 1440 - raw);
+      if (d < bestDist) {
+        bestDist = d;
+        best = item;
       }
     }
-    return best && bestDist <= 6 * 3600000 ? clampCatchupUrl(best.url) : "";
+    return best && bestDist <= 15 ? clampCatchupUrl(best.url) : "";
   }
   let best = null;
   let bestDist = Infinity;
