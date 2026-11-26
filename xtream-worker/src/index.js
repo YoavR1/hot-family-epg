@@ -173,7 +173,7 @@ export default {
         const all = await load("live_streams.json");
         const item = all.find((x) => String(x.stream_id) === live[1] || String(x.id) === live[1]);
         if (!item) return new Response("not found", { status: 404, headers: CORS });
-        return proxyStream(request, item.direct_source);
+        return Response.redirect(item.direct_source, 302);
       } catch (e) {
         return json({ error: String(e) }, 502);
       }
