@@ -1,6 +1,6 @@
 const BASE = "https://raw.githubusercontent.com/YoavR1/hot-family-epg/HEAD/xtream/";
 const EPG = "https://raw.githubusercontent.com/YoavR1/hot-family-epg/HEAD/freetv_epg.xml.gz";
-const CACHE_KEY = "?v=43";
+const CACHE_KEY = "?v=44";
 
 const FILES = {
   get_live_categories: "live_categories.json",
@@ -136,7 +136,7 @@ async function handlePlayerApi(url) {
     }
   }
 
-  if (action === "get_short_epg" || action === "get_simple_data_table") {
+  if (action === "get_short_epg" || action === "get_simple_data_table" || action === "get_epg") {
     const id = String(url.searchParams.get("stream_id") || url.searchParams.get("id") || "");
     try {
       const all = await load("catchup.json");
