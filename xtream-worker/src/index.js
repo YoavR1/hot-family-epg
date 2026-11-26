@@ -1,6 +1,6 @@
 const BASE = "https://raw.githubusercontent.com/YoavR1/hot-family-epg/HEAD/xtream/";
 const EPG = "https://raw.githubusercontent.com/YoavR1/hot-family-epg/HEAD/freetv_epg.xml.gz";
-const CACHE_KEY = "?v=45";
+const CACHE_KEY = "?v=46";
 
 const FILES = {
   get_live_categories: "live_categories.json",
@@ -449,7 +449,11 @@ export default {
       const r = await fetch(EPG, { cf: { cacheTtl: 3600 } });
       return new Response(r.body, {
         status: r.status,
-        headers: { "Content-Type": "application/gzip", ...CORS },
+        headers: {
+          "Content-Type": "application/xml; charset=utf-8",
+          "Content-Encoding": "gzip",
+          ...CORS,
+        },
       });
     }
     if (path === "/") {
