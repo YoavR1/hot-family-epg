@@ -278,23 +278,29 @@ async function catchupUrl(streamId, rawStart) {
   }
   const channel = all[String(streamId)];
   if (!channel || !channel.items) return "";
-  // Televizo encodes the programme's time-of-day minus 11:59 against the 1970 epoch.
+  // Televizo uses a 1970 date with an HH:MM offset. It appears both as
+  // time-of-day minus 11:59 (show taps) and as minutes relative to now (scrubbing).
   if (target < 86400000) {
-    const minutesOfDay = ((target / 60000 + 719) % 1440 + 1440) % 1440;
+    const offset = target / 60000;
+    const minutesOfDay = ((offset + 719) % 1440 + 1440) % 1440;
+    const nowRelative = Date.now() - offset * 60000;
     const fmt = new Intl.DateTimeFormat("en-GB", { timeZone: "Asia/Jerusalem", hour: "2-digit", minute: "2-digit", hour12: false });
     let best = null;
-    let bestDist = Infinity;
+    let bestScore = Infinity;
     for (const item of channel.items) {
       const parts = fmt.format(new Date(item.start_unix)).split(":").map(Number);
       const mod = (parts[0] * 60 + parts[1]) % 1440;
       const raw = Math.abs(mod - minutesOfDay);
-      const d = Math.min(raw, 1440 - raw);
-      if (d < bestDist) {
-        bestDist = d;
+      const byClock = Math.min(raw, 1440 - raw);
+      const byNow = nowRelative < item.start_unix ? (item.start_unix - nowRelative) / 60000
+        : nowRelative > item.stop_unix ? (nowRelative - item.stop_unix) / 60000 : 0;
+      const score = byClock <= 30 ? byClock : 100 + byNow;
+      if (score < bestScore || (score === bestScore && best && item.start_unix > best.start_unix)) {
+        bestScore = score;
         best = item;
       }
     }
-    return best && bestDist <= 15 ? clampCatchupUrl(best.url) : "";
+    return best && bestScore <= 30 ? clampCatchupUrl(best.url) : "";
   }
   let best = null;
   let bestDist = Infinity;
