@@ -285,8 +285,27 @@ async function catchupUrl(streamId, rawStart, rawDuration) {
     }).format(new Date());
     const parts = dateText.split("-").map(Number);
     const nowMs = Date.now();
-    let startMs = Date.UTC(parts[0], parts[1] - 1, parts[2], 0, 0, 0) + minutesOfDay * 60000;
-    if (startMs > nowMs - 60000) startMs = nowMs - 60000;
+    const midnight = Date.UTC(parts[0], parts[1] - 1, parts[2], 0, 0, 0);
+    // Clients differ: some send UTC clock time, some send the panel's local
+    // clock time. Pick the interpretation that lands in the past and nearest now.
+    const candidates = [minutesOfDay * 60000, (minutesOfDay - 120) * 60000, (minutesOfDay + 120) * 60000];
+    const wantedMinutes = Number(rawDuration) || 0;
+    let startMs = midnight + candidates[0];
+    let bestScore = Infinity;
+    for (const c of candidates) {
+      const d = midnight + c;
+      if (d > nowMs - 60000) continue;
+      let score = 1000;
+      for (const item of channel.items) {
+        if (d < item.start_unix || d > item.stop_unix) continue;
+        const len = (item.stop_unix - item.start_unix) / 60000;
+        score = Math.min(score, Math.abs(len - wantedMinutes));
+      }
+      if (score < bestScore) {
+        bestScore = score;
+        startMs = d;
+      }
+    }
     const durationMs = Math.max(60000, Math.min(Number(rawDuration) || 30, 600) * 60000);
     const stopMs = Math.min(startMs + durationMs, nowMs);
     const shiftedStart = startMs - 978307200000;
