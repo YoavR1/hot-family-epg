@@ -274,50 +274,44 @@ async function catchupUrl(streamId, rawStart, rawDuration) {
   }
   const channel = all[String(streamId)];
   if (!channel || !channel.items) return "";
-  // Televizo encodes a relative offset against 1970-01-01 as HH:MM = seconds,
-  // and sends the requested window length in seconds as the first segment.
-  // Observed while scrubbing: 01:52, 01:53, 01:54 with windows of 17, 16, 15s.
-  if (target < 86400000) {
+  // Televizo encodes a relative request against 1970-01-01 as HH:MM =
+  // hours:minutes back from now. A 1969 date is a 24-hour wrap of that value.
+  // The first path segment is the window length in minutes. When that length
+  // and the time-back both agree with a guide programme, play that programme;
+  // otherwise serve the exact requested window.
+  if (target < 8 * 86400000) {
     const nowMs = Date.now();
-    // A whole programme tap sends its length in minutes as the first segment.
-    // Match that length against today's guide — it identifies the show exactly,
-    // regardless of how the player garbles the 1970 timestamp.
-    const wanted = Number(rawDuration) || 0;
-    // Whole-programme taps carry the length in minutes in the first segment,
-    // and the 1970/1969 value is an absolute "minutes back from now" count.
-    // Use both to pick the right day among programmes of equal length.
-    if (wanted >= 40) {
-      let rawMinutes = target / 60000;
-      if (rawMinutes < 0) rawMinutes += 1440;
-      let best = null;
-      let bestDist = Infinity;
-      for (const item of channel.items) {
-        if (item.start_unix > nowMs) continue;
-        const len = Math.round((item.stop_unix - item.start_unix) / 60000);
-        if (Math.abs(len - wanted) > 2) continue;
-        const back = (nowMs - item.start_unix) / 60000;
-        const d = Math.abs(back - rawMinutes);
-        if (d < bestDist) {
-          bestDist = d;
-          best = item;
-        }
-      }
-      if (best) return clampCatchupUrl(best.url);
-    }
-    // Short windows are seek previews; their offset is seconds from now.
-    // A 1969 date is a 24-hour wrap of that offset.
     const wrap = String(rawStart).match(/^1969-12-31:(\d{2})-(\d{2})/);
-    const offsetMs = wrap ? (1440 - (Number(wrap[1]) * 60 + Number(wrap[2]))) * 60000 : target / 60;
-    let startMs = nowMs - offsetMs;
+    let rawMinutes = wrap
+      ? 1440 - (Number(wrap[1]) * 60 + Number(wrap[2]))
+      : target / 60000;
+    if (rawMinutes < 0) rawMinutes += 1440;
+    const wanted = Number(rawDuration) || 0;
+    let best = null;
+    let bestDist = Infinity;
+    for (const item of channel.items) {
+      if (item.start_unix > nowMs) continue;
+      const len = Math.round((item.stop_unix - item.start_unix) / 60000);
+      if (wanted && Math.abs(len - wanted) > 2) continue;
+      const back = (nowMs - item.start_unix) / 60000;
+      const d = Math.abs(back - rawMinutes);
+      if (d < bestDist - 1 || (Math.abs(d - bestDist) <= 1 && best && item.start_unix > best.start_unix)) {
+        bestDist = d;
+        best = item;
+      }
+    }
+    if (best && bestDist <= 30) return clampCatchupUrl(best.url);
+
+    let startMs = nowMs - rawMinutes * 60000;
     const earliest = nowMs - 8 * 86400000;
     if (startMs < earliest) startMs = earliest;
-    const durationMs = Math.max(1000, Math.min(Number(rawDuration) || 30, 8 * 3600) * 1000);
+    const durationMs = Math.max(60000, Math.min(wanted || 30, 8 * 60) * 60000);
     const stopMs = Math.min(startMs + durationMs, nowMs);
     const matched = channel.items.find((it) => startMs >= it.start_unix && startMs <= it.stop_unix);
     console.log("CATCHUP", JSON.stringify({
       raw: rawStart, duration: rawDuration, streamId,
-      backSec: Math.round((nowMs - startMs) / 1000),
-      windowSec: Math.round((stopMs - startMs) / 1000),
+      backMin: Math.round((nowMs - startMs) / 60000),
+      windowMin: Math.round((stopMs - startMs) / 60000),
       at: new Date(startMs).toISOString(),
       programme: matched ? matched.title : "(none)",
       programmeStart: matched ? new Date(matched.start_unix).toISOString() : "",
