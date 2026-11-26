@@ -1,6 +1,6 @@
-const BASE = "https://cdn.jsdelivr.net/gh/YoavR1/hot-family-epg@main/xtream/";
-const EPG = "https://cdn.jsdelivr.net/gh/YoavR1/hot-family-epg@main/freetv_epg.xml.gz";
-const CACHE_KEY = "?v=17";
+const BASE = "https://raw.githubusercontent.com/YoavR1/hot-family-epg/master/xtream/";
+const EPG = "https://raw.githubusercontent.com/YoavR1/hot-family-epg/master/freetv_epg.xml.gz";
+const CACHE_KEY = "?v=18";
 
 const FILES = {
   get_live_categories: "live_categories.json",
