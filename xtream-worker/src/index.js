@@ -17,7 +17,7 @@ const CORS = {
 };
 
 async function load(name) {
-  const r = await fetch(BASE + name + "?v=10", { cf: { cacheTtl: 1800, cacheEverything: true } });
+  const r = await fetch(BASE + name + "?v=11", { cf: { cacheTtl: 1800, cacheEverything: true } });
   if (!r.ok) throw new Error("upstream " + r.status);
   return r.json();
 }
@@ -95,6 +95,7 @@ async function handlePlayerApi(url) {
       const info = {
     name: item.title, title: item.title, year: item.year,
     cover: item.cover, stream_icon: item.cover, icon: item.cover,
+    backdrop: item.backdrop || "", backdrop_path: item.backdrop_path || "",
     plot: item.plot || "", category_id: item.category_id,
     rating: item.rating || "0", duration: item.duration || 0,
     releasedate: item.releasedate || "", genre: item.genre || "",
