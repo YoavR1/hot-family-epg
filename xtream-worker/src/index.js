@@ -1,6 +1,6 @@
 const BASE = "https://raw.githubusercontent.com/YoavR1/hot-family-epg/HEAD/xtream/";
 const EPG = "https://raw.githubusercontent.com/YoavR1/hot-family-epg/HEAD/freetv_epg.xml.gz";
-const CACHE_KEY = "?v=44";
+const CACHE_KEY = "?v=45";
 
 const FILES = {
   get_live_categories: "live_categories.json",
@@ -287,8 +287,9 @@ async function catchupUrl(streamId, rawStart, rawDuration) {
     if (isWrapped && wanted >= 5) {
       let best = null;
       for (const item of channel.items) {
+        if (item.start_unix > nowMs) continue;
         const len = Math.round((item.stop_unix - item.start_unix) / 60000);
-        if (Math.abs(len - wanted) <= 3 && (!best || item.start_unix > best.start_unix)) best = item;
+        if (Math.abs(len - wanted) <= 2 && (!best || item.start_unix > best.start_unix)) best = item;
       }
       if (best) return clampCatchupUrl(best.url);
     }
