@@ -1,6 +1,6 @@
 const BASE = "https://raw.githubusercontent.com/YoavR1/hot-family-epg/HEAD/xtream/";
 const EPG = "https://raw.githubusercontent.com/YoavR1/hot-family-epg/HEAD/freetv_epg.xml.gz";
-const CACHE_KEY = "?v=47";
+const CACHE_KEY = "?v=48";
 
 const FILES = {
   get_live_categories: "live_categories.json",
@@ -140,8 +140,9 @@ async function handlePlayerApi(url) {
     const id = String(url.searchParams.get("stream_id") || url.searchParams.get("id") || "");
     try {
       const all = await load("catchup/" + id + ".json");
-      const channel = all[id];
-      const items = ((channel && channel.items) || []).slice(-30);
+      const items = ((all && all.items) || []).filter((it) =>
+        it.stop_unix > Date.now() - 7 * 86400000 && it.start_unix < Date.now() + 86400000
+      ).slice(-30);
       return json({
         epg_listings: items.map((it) => ({
           title: it.title,
@@ -272,7 +273,7 @@ async function catchupUrl(streamId, rawStart, rawDuration) {
   } catch (e) {
     return "";
   }
-  const channel = all[String(streamId)];
+  const channel = all;
   if (!channel || !channel.items) return "";
   // Televizo encodes a relative request against 1970-01-01 as HH:MM =
   // hours:minutes back from now. A 1969 date is a 24-hour wrap of that value.
