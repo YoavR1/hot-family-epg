@@ -233,11 +233,7 @@ function findEpisode(series, seasonNum, epNum) {
 
 function xDate(ms) {
   if (!ms) return "";
-  return new Date(ms).toLocaleString("sv-SE", {
-    timeZone: "Asia/Jerusalem",
-    year: "numeric", month: "2-digit", day: "2-digit",
-    hour: "2-digit", minute: "2-digit", second: "2-digit",
-  });
+  return new Date(ms).toISOString().slice(0, 19).replace("T", " ");
 }
 
 function parseXStart(raw) {
@@ -278,7 +274,7 @@ async function catchupUrl(streamId, rawStart, rawDuration) {
   }
   const channel = all[String(streamId)];
   if (!channel || !channel.items) return "";
-  // Televizo encodes the exact target clock time as 1970-01-01:HH-MM,
+  // Televizo encodes the exact target UTC clock time as 1970-01-01:HH-MM,
   // where HH:MM = target time-of-day minus 11:59. The first path segment is
   // the window length in minutes. Build the stream at that exact moment.
   if (target < 86400000) {
@@ -289,7 +285,7 @@ async function catchupUrl(streamId, rawStart, rawDuration) {
     }).format(new Date());
     const parts = dateText.split("-").map(Number);
     const nowMs = Date.now();
-    let startMs = Date.UTC(parts[0], parts[1] - 1, parts[2], 0, 0, 0) + minutesOfDay * 60000 - 2 * 3600000;
+    let startMs = Date.UTC(parts[0], parts[1] - 1, parts[2], 0, 0, 0) + minutesOfDay * 60000;
     if (startMs > nowMs - 60000) startMs = nowMs - 60000;
     const durationMs = Math.max(60000, Math.min(Number(rawDuration) || 30, 600) * 60000);
     const stopMs = Math.min(startMs + durationMs, nowMs);
