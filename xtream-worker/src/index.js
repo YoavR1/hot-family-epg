@@ -283,13 +283,24 @@ async function catchupUrl(streamId, rawStart, rawDuration) {
     // Match that length against today's guide — it identifies the show exactly,
     // regardless of how the player garbles the 1970 timestamp.
     const wanted = Number(rawDuration) || 0;
-    const isWrapped = String(rawStart).startsWith("1969-12-31");
-    if (isWrapped && wanted >= 5) {
+    // Whole-programme taps carry the length in minutes in the first segment,
+    // and the 1970/1969 value is an absolute "minutes back from now" count.
+    // Use both to pick the right day among programmes of equal length.
+    if (wanted >= 40) {
+      let rawMinutes = target / 60000;
+      if (rawMinutes < 0) rawMinutes += 1440;
       let best = null;
+      let bestDist = Infinity;
       for (const item of channel.items) {
         if (item.start_unix > nowMs) continue;
         const len = Math.round((item.stop_unix - item.start_unix) / 60000);
-        if (Math.abs(len - wanted) <= 2 && (!best || item.start_unix > best.start_unix)) best = item;
+        if (Math.abs(len - wanted) > 2) continue;
+        const back = (nowMs - item.start_unix) / 60000;
+        const d = Math.abs(back - rawMinutes);
+        if (d < bestDist) {
+          bestDist = d;
+          best = item;
+        }
       }
       if (best) return clampCatchupUrl(best.url);
     }
