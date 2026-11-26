@@ -279,7 +279,9 @@ async function catchupUrl(streamId, rawStart, rawDuration) {
   // Observed while scrubbing: 01:52, 01:53, 01:54 with windows of 17, 16, 15s.
   if (target < 86400000) {
     const nowMs = Date.now();
-    const offsetMs = target / 60;
+    // A 1969 date is a 24-hour wrap: 23:35 means 25 minutes back.
+    const wrap = String(rawStart).match(/^1969-12-31:(\d{2})-(\d{2})/);
+    const offsetMs = wrap ? (1440 - (Number(wrap[1]) * 60 + Number(wrap[2]))) * 60000 : target / 60;
     let startMs = nowMs - offsetMs;
     const earliest = nowMs - 8 * 86400000;
     if (startMs < earliest) startMs = earliest;
