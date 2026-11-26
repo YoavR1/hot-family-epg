@@ -274,39 +274,16 @@ async function catchupUrl(streamId, rawStart, rawDuration) {
   }
   const channel = all[String(streamId)];
   if (!channel || !channel.items) return "";
-  // Televizo encodes the exact target UTC clock time as 1970-01-01:HH-MM,
-  // where HH:MM = target time-of-day minus 11:59. The first path segment is
-  // the window length in minutes. Build the stream at that exact moment.
+  // Televizo encodes a relative offset against 1970-01-01 as HH:MM = seconds,
+  // and sends the requested window length in seconds as the first segment.
+  // Observed while scrubbing: 01:52, 01:53, 01:54 with windows of 17, 16, 15s.
   if (target < 86400000) {
-    const offset = target / 60000;
-    const minutesOfDay = ((offset + 719) % 1440 + 1440) % 1440;
-    const dateText = new Intl.DateTimeFormat("en-CA", {
-      timeZone: "Asia/Jerusalem", year: "numeric", month: "2-digit", day: "2-digit",
-    }).format(new Date());
-    const parts = dateText.split("-").map(Number);
     const nowMs = Date.now();
-    const midnight = Date.UTC(parts[0], parts[1] - 1, parts[2], 0, 0, 0);
-    // Clients differ: some send UTC clock time, some send the panel's local
-    // clock time. Pick the interpretation that lands in the past and nearest now.
-    const candidates = [minutesOfDay * 60000, (minutesOfDay - 120) * 60000, (minutesOfDay + 120) * 60000];
-    const wantedMinutes = Number(rawDuration) || 0;
-    let startMs = midnight + candidates[0];
-    let bestScore = Infinity;
-    for (const c of candidates) {
-      const d = midnight + c;
-      if (d > nowMs - 60000) continue;
-      let score = 1000;
-      for (const item of channel.items) {
-        if (d < item.start_unix || d > item.stop_unix) continue;
-        const len = (item.stop_unix - item.start_unix) / 60000;
-        score = Math.min(score, Math.abs(len - wantedMinutes));
-      }
-      if (score < bestScore) {
-        bestScore = score;
-        startMs = d;
-      }
-    }
-    const durationMs = Math.max(60000, Math.min(Number(rawDuration) || 30, 600) * 60000);
+    const offsetMs = target / 60;
+    let startMs = nowMs - offsetMs;
+    const earliest = nowMs - 8 * 86400000;
+    if (startMs < earliest) startMs = earliest;
+    const durationMs = Math.max(1000, Math.min(Number(rawDuration) || 30, 8 * 3600) * 1000);
     const stopMs = Math.min(startMs + durationMs, nowMs);
     const shiftedStart = startMs - 978307200000;
     const shiftedStop = stopMs - 978307200000;
