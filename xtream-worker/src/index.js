@@ -267,7 +267,7 @@ function clampCatchupUrl(u) {
   return u.replace(/stopTime=\d+/, "stopTime=" + value);
 }
 
-async function catchupUrl(streamId, rawStart) {
+async function catchupUrl(streamId, rawStart, rawDuration) {
   const target = parseXStart(rawStart);
   if (!isFinite(target)) return "";
   let all;
@@ -278,29 +278,25 @@ async function catchupUrl(streamId, rawStart) {
   }
   const channel = all[String(streamId)];
   if (!channel || !channel.items) return "";
-  // Televizo uses a 1970 date with an HH:MM offset. It appears both as
-  // time-of-day minus 11:59 (show taps) and as minutes relative to now (scrubbing).
+  // Televizo encodes the exact target clock time as 1970-01-01:HH-MM,
+  // where HH:MM = target time-of-day minus 11:59. The first path segment is
+  // the window length in minutes. Build the stream at that exact moment.
   if (target < 86400000) {
     const offset = target / 60000;
     const minutesOfDay = ((offset + 719) % 1440 + 1440) % 1440;
-    const nowRelative = Date.now() - offset * 60000;
-    const fmt = new Intl.DateTimeFormat("en-GB", { timeZone: "Asia/Jerusalem", hour: "2-digit", minute: "2-digit", hour12: false });
-    let best = null;
-    let bestScore = Infinity;
-    for (const item of channel.items) {
-      const parts = fmt.format(new Date(item.start_unix)).split(":").map(Number);
-      const mod = (parts[0] * 60 + parts[1]) % 1440;
-      const raw = Math.abs(mod - minutesOfDay);
-      const byClock = Math.min(raw, 1440 - raw);
-      const byNow = nowRelative < item.start_unix ? (item.start_unix - nowRelative) / 60000
-        : nowRelative > item.stop_unix ? (nowRelative - item.stop_unix) / 60000 : 0;
-      const score = byClock <= 30 ? byClock : 100 + byNow;
-      if (score < bestScore || (score === bestScore && best && item.start_unix > best.start_unix)) {
-        bestScore = score;
-        best = item;
-      }
-    }
-    return best && bestScore <= 30 ? clampCatchupUrl(best.url) : "";
+    const dateText = new Intl.DateTimeFormat("en-CA", {
+      timeZone: "Asia/Jerusalem", year: "numeric", month: "2-digit", day: "2-digit",
+    }).format(new Date());
+    const parts = dateText.split("-").map(Number);
+    const nowMs = Date.now();
+    let startMs = Date.UTC(parts[0], parts[1] - 1, parts[2], 0, 0, 0) + minutesOfDay * 60000 - 2 * 3600000;
+    if (startMs > nowMs - 60000) startMs = nowMs - 60000;
+    const durationMs = Math.max(60000, Math.min(Number(rawDuration) || 30, 600) * 60000);
+    const stopMs = Math.min(startMs + durationMs, nowMs);
+    const shiftedStart = startMs - 978307200000;
+    const shiftedStop = stopMs - 978307200000;
+    return "https://d1zqtf09wb8nt5.cloudfront.net" + channel.path +
+      "?startTime=" + shiftedStart + "&stopTime=" + shiftedStop;
   }
   let best = null;
   let bestDist = Infinity;
@@ -391,28 +387,23 @@ export default {
     }
 
     // Xtream timeshift URLs. Televizo uses a few variants across versions.
-    const tsA = path.match(/^\/timeshift\/[^/]+\/[^/]+\/\d+\/([^/]+)\/(\d+)\.[a-z0-9]+$/i);
+    const tsA = path.match(/^\/timeshift\/[^/]+\/[^/]+\/(\d+)\/([^/]+)\/(\d+)\.[a-z0-9]+$/i);
     if (tsA) {
-      const target = await catchupUrl(tsA[2], tsA[1]);
+      const target = await catchupUrl(tsA[3], tsA[2], tsA[1]);
       if (!target) return new Response("not found", { status: 404, headers: CORS });
       return Response.redirect(target, 302);
     }
-    const tsB = path.match(/^\/timeshift\/[^/]+\/[^/]+\/(\d+)\/([^/]+)\/\d+\.[a-z0-9]+$/i);
-    if (tsB) {
-      const target = await catchupUrl(tsB[1], tsB[2]);
-      if (!target) return new Response("not found", { status: 404, headers: CORS });
-      return Response.redirect(target, 302);
-    }
-    const tsC = path.match(/^\/live\/[^/]+\/[^/]+\/(\d+)\/([^/]+)\/\d+\.[a-z0-9]+$/i);
+    const tsC = path.match(/^\/live\/[^/]+\/[^/]+\/(\d+)\/([^/]+)\/(\d+)\.[a-z0-9]+$/i);
     if (tsC) {
-      const target = await catchupUrl(tsC[1], tsC[2]);
+      const target = await catchupUrl(tsC[1], tsC[2], tsC[3]);
       if (!target) return new Response("not found", { status: 404, headers: CORS });
       return Response.redirect(target, 302);
     }
     if (path.endsWith("timeshift.php") || path.endsWith("/timeshift")) {
       const target = await catchupUrl(
         url.searchParams.get("stream") || url.searchParams.get("stream_id") || "",
-        url.searchParams.get("start") || ""
+        url.searchParams.get("start") || "",
+        url.searchParams.get("duration") || ""
       );
       if (!target) return new Response("not found", { status: 404, headers: CORS });
       return Response.redirect(target, 302);
