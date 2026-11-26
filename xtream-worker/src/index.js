@@ -1,6 +1,6 @@
 const BASE = "https://raw.githubusercontent.com/YoavR1/hot-family-epg/HEAD/xtream/";
 const EPG = "https://raw.githubusercontent.com/YoavR1/hot-family-epg/HEAD/freetv_epg.xml.gz";
-const CACHE_KEY = "?v=46";
+const CACHE_KEY = "?v=47";
 
 const FILES = {
   get_live_categories: "live_categories.json",
@@ -139,7 +139,7 @@ async function handlePlayerApi(url) {
   if (action === "get_short_epg" || action === "get_simple_data_table" || action === "get_epg") {
     const id = String(url.searchParams.get("stream_id") || url.searchParams.get("id") || "");
     try {
-      const all = await load("catchup.json");
+      const all = await load("catchup/" + id + ".json");
       const channel = all[id];
       const items = ((channel && channel.items) || []).slice(-30);
       return json({
@@ -268,7 +268,7 @@ async function catchupUrl(streamId, rawStart, rawDuration) {
   if (!isFinite(target)) return "";
   let all;
   try {
-    all = await load("catchup.json");
+    all = await load("catchup/" + streamId + ".json");
   } catch (e) {
     return "";
   }
@@ -446,7 +446,7 @@ export default {
     if (path.endsWith("player_api.php")) return handlePlayerApi(url);
     if (path.endsWith("get.php")) return handleGet(url);
     if (path.endsWith("xmltv.php")) {
-      const r = await fetch(EPG, { cf: { cacheTtl: 3600 } });
+      const r = await fetch(EPG + CACHE_KEY, { cf: { cacheTtl: 3600 } });
       return new Response(r.body, {
         status: r.status,
         headers: {
