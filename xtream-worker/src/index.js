@@ -319,6 +319,7 @@ export default {
           }
         }
         if (!target) return new Response("not found", { status: 404, headers: CORS });
+        if (target.includes("/clearhls/")) return Response.redirect(target, 302);
         return proxyStream(request, target);
       } catch (e) {
         return json({ error: String(e) }, 502);
@@ -332,6 +333,7 @@ export default {
         const series = await load("series/" + episodeThree[1] + ".json");
         const ep = findEpisode(series, episodeThree[2], episodeThree[3]);
         if (!ep || !ep.direct_source) return new Response("not found", { status: 404, headers: CORS });
+        if (ep.direct_source.includes("/clearhls/")) return Response.redirect(ep.direct_source, 302);
         return proxyStream(request, ep.direct_source);
       } catch (e) {
         return json({ error: String(e) }, 502);
