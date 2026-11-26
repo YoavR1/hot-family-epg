@@ -1,6 +1,6 @@
 const BASE = "https://raw.githubusercontent.com/YoavR1/hot-family-epg/HEAD/xtream/";
 const EPG = "https://raw.githubusercontent.com/YoavR1/hot-family-epg/HEAD/freetv_epg.xml.gz";
-const CACHE_KEY = "?v=38";
+const CACHE_KEY = "?v=39";
 
 const FILES = {
   get_live_categories: "live_categories.json",
@@ -161,6 +161,33 @@ async function handlePlayerApi(url) {
   }
 
   return json({ error: "unsupported action", action });
+}
+
+async function clearHlsVariant(code, id, bandwidth) {
+  const base = "https://vod.freetv.tv/hls/oil/freetv/vod/" + code + "/MOVIE/LIBCODER_HLS_1080/playlist.smil/";
+  const r = await fetch(base + "playlist.m3u8?bandwidth=" + bandwidth + "&id=" + id + "&");
+  if (!r.ok) throw new Error("variant " + r.status);
+  const text = await r.text();
+  const lines = text.split(/\r?\n/)
+    .filter((l) => !l.toUpperCase().startsWith("#EXT-X-KEY"))
+    .map((l) => (l && !l.startsWith("#") && !/^https?:/i.test(l) ? base + l : l));
+  return new Response(lines.join("\n"), {
+    status: 200,
+    headers: { "Content-Type": "application/vnd.apple.mpegURL", ...CORS },
+  });
+}
+
+async function clearHlsMaster(code) {
+  const body = [
+    "#EXTM3U",
+    '#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="aac",DEFAULT=YES,AUTOSELECT=YES,NAME="he",LANGUAGE="he",URI="./clearvar/' + code + '/0"',
+    '#EXT-X-STREAM-INF:BANDWIDTH=2800000,CODECS="avc1.64001f,mp4a.40.2",AUDIO="aac"',
+    "./clearvar/" + code + "/6",
+  ].join("\n");
+  return new Response(body, {
+    status: 200,
+    headers: { "Content-Type": "application/vnd.apple.mpegURL", ...CORS },
+  });
 }
 
 async function proxyStream(request, target) {
@@ -332,6 +359,17 @@ export default {
       if (!target) return new Response("not found", { status: 404, headers: CORS });
       return Response.redirect(target, 302);
     }
+
+    const clearVar = path.match(/^\/clearvar\/([^/]+)\/(\d+)$/);
+    if (clearVar) {
+      try {
+        return await clearHlsVariant(clearVar[1], clearVar[2], clearVar[2] === "0" ? 128000 : 2800000);
+      } catch (e) {
+        return json({ error: String(e) }, 502);
+      }
+    }
+    const clearMaster = path.match(/^\/clearhls\/([^/]+)$/);
+    if (clearMaster) return clearHlsMaster(clearMaster[1]);
 
     if (path.endsWith("player_api.php")) return handlePlayerApi(url);
     if (path.endsWith("get.php")) return handleGet(url);
