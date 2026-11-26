@@ -258,6 +258,15 @@ function parseXStart(raw) {
   return isNaN(t) ? NaN : t;
 }
 
+function clampCatchupUrl(u) {
+  if (!u) return "";
+  const stop = u.match(/stopTime=(\d+)/);
+  if (!stop) return u;
+  const nowShift = Date.now() - 978307200000;
+  const value = Math.min(Number(stop[1]), nowShift);
+  return u.replace(/stopTime=\d+/, "stopTime=" + value);
+}
+
 async function catchupUrl(streamId, rawStart) {
   const target = parseXStart(rawStart);
   if (!isFinite(target)) return "";
@@ -269,19 +278,24 @@ async function catchupUrl(streamId, rawStart) {
   }
   const channel = all[String(streamId)];
   if (!channel || !channel.items) return "";
-  // Televizo encodes "time back from now" as 1970-01-01:HH-MM in timeshift URLs.
+  // Televizo encodes a signed HH:MM offset from now against the 1970 epoch.
   if (target < 86400000) {
-    const minutesBack = Math.floor(target / 60000);
-    const wanted = Date.now() - minutesBack * 60000;
-    let covering = null;
-    let nearest = null;
+    const minutes = target / 60000;
+    const now = Date.now();
+    const candidates = [now - minutes * 60000, now + minutes * 60000];
+    let best = null;
+    let bestDist = Infinity;
     for (const item of channel.items) {
-      if (item.start_unix > wanted) continue;
-      if (!nearest || item.start_unix > nearest.start_unix) nearest = item;
-      if (item.stop_unix >= wanted && (!covering || item.start_unix > covering.start_unix)) covering = item;
+      for (const wanted of candidates) {
+        const d = wanted < item.start_unix ? item.start_unix - wanted
+          : wanted > item.stop_unix ? wanted - item.stop_unix : 0;
+        if (d < bestDist) {
+          bestDist = d;
+          best = item;
+        }
+      }
     }
-    const pick = covering || nearest;
-    return pick ? pick.url : "";
+    return best && bestDist <= 6 * 3600000 ? clampCatchupUrl(best.url) : "";
   }
   let best = null;
   let bestDist = Infinity;
@@ -295,7 +309,7 @@ async function catchupUrl(streamId, rawStart) {
     }
   }
   if (!best || bestDist > 12 * 3600000) return "";
-  return best.url || "";
+  return clampCatchupUrl(best.url || "");
 }
 
 export default {
