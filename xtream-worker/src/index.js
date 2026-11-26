@@ -239,8 +239,11 @@ function parseXStart(raw) {
     if (n > 1e9) return n * 1000;
     return NaN;
   }
-  const m = raw.match(/^(\d{4})-(\d{2})-(\d{2}):(\d{2})-?(\d{2})(?::?(\d{2}))?/);
+  const m = raw.match(/^(\d{4})-(\d{2})-(\d{2})[:\-](\d{2})-?(\d{2})(?::?(\d{2}))?/);
   if (m) return Date.UTC(+m[1], +m[2] - 1, +m[3], +m[4], +m[5], +(m[6] || 0));
+  const compact = raw.match(/^(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})$/);
+  if (compact) return Date.UTC(+compact[1], +compact[2] - 1, +compact[3], +compact[4], +compact[5]);
+  if (/^-\d+$/.test(raw)) return Date.now() + Number(raw) * 60000;
   const t = Date.parse(raw);
   return isNaN(t) ? NaN : t;
 }
@@ -276,6 +279,9 @@ export default {
     const url = new URL(request.url);
     if (request.method === "OPTIONS") return new Response(null, { headers: CORS });
     const path = url.pathname.replace(/\/+$/, "") || "/";
+    if (path.includes("timeshift") || path.startsWith("/series/") || path.startsWith("/live/") || path.startsWith("/movie/")) {
+      console.log("REQ", request.method, path, url.search);
+    }
 
     // Televizo builds playback URLs itself instead of using direct_source.
     const movie = path.match(/^\/movie\/[^/]+\/[^/]+\/(\d+)\.[a-z0-9]+$/i);
@@ -284,6 +290,7 @@ export default {
         const all = await load("vod_streams.json");
         const item = all.find((x) => String(x.vod_id) === movie[1] || String(x.id) === movie[1]);
         if (!item) return new Response("not found", { status: 404, headers: CORS });
+        if (item.direct_source.includes("/clearhls/")) return Response.redirect(item.direct_source, 302);
         return proxyStream(request, item.direct_source);
       } catch (e) {
         return json({ error: String(e) }, 502);
@@ -353,7 +360,13 @@ export default {
       if (!target) return new Response("not found", { status: 404, headers: CORS });
       return Response.redirect(target, 302);
     }
-    if (path.endsWith("timeshift.php")) {
+    const tsC = path.match(/^\/live\/[^/]+\/[^/]+\/(\d+)\/([^/]+)\/\d+\.[a-z0-9]+$/i);
+    if (tsC) {
+      const target = await catchupUrl(tsC[1], tsC[2]);
+      if (!target) return new Response("not found", { status: 404, headers: CORS });
+      return Response.redirect(target, 302);
+    }
+    if (path.endsWith("timeshift.php") || path.endsWith("/timeshift")) {
       const target = await catchupUrl(
         url.searchParams.get("stream") || url.searchParams.get("stream_id") || "",
         url.searchParams.get("start") || ""
